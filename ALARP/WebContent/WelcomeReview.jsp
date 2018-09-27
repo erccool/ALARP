@@ -30,9 +30,25 @@
  	Reminder: It is expected that all downstream 3rd party terminals will be inspected prior to usage (MMG05), 
  	however there are circumstances whereby an inspection is unable to take place prior to the required date, 
  	resource constrain or not permitted. 
+	
+	<form action = "WelcomeServlet" method = "POST" enctype="multipart/form-data" onsubmit="return checkForm(this);">
+	<label for="Yes">Choose a decision</label>
+ 	<fieldset class = "form-group"  id="Yes">
+	              <select name = "type">
+					  <option value="Approved" name = "type">Approved for inspection</option>
+					  <option value="Rejected" name = "type">Inspection is not allowed</option>
+					  <option value="Moved" name = "type">Inspection allowed at a later date </option>
+				  </select>
+				  
+    </fieldset>
 	</div>
-	<div class="col-md-8  col-md-offset-6"><a href = "WelcomeReviewPartOne.jsp"><button type="submit" class="btn btn-danger" onclick ="checkForm()">Start</button></a><br>
+	
+	
+	
+	<div class="col-md-8  col-md-offset-6">
+	<input type = submit href = "WelcomeServlet" button type="submit" class="btn btn-danger" onclick ="checkForm()">Start</a><br>
 	</div>
+	</form>
 </div>
 </div>
 </div>
