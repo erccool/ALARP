@@ -31,5 +31,25 @@
 	    
 	</div>
 </nav>
+
+<nav class="navbar navbar-default nav2">
+
+	<div class="container-fluid">
+		  <ul class="nav navbar-nav">
+		      <li class = "active"><a href="Display?page=Analog">Approved</a></li>
+		      <li><a href="Display?page=Digital">Moved to a later date</a></li>
+		      <li><a href="Display?page=SmartWatch">Not Approved</a></li>
+		      <c:if test="${sessionScope.username != null}">
+		      <li><a href="AIONProfile">Profile</a></li>
+		      
+		      </c:if>
+		      <c:if test="${sessionScope.cartnum != null}">
+		      <li><a href="CartProducts">Cart</a></li>
+		      </c:if>
+		      
+		      
+		 </ul>
+	</div>
+</nav>
 		
 </div>

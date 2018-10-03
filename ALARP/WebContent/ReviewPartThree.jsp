@@ -23,39 +23,48 @@
 <div class="container">
 <div class="panel panel-primary">
 	<div class="panel-heading">  
- 		<h4 class = "text-center"><font color="orange">ALARP Decision</font></h4>
+ 		<h4 class = "text-center"><font color="orange">Moved to a later date</font></h4>
  	</div>
  	<div class="panel-body">
  	<div class = "col-md-6 col-md-offset-3">
- 	<label for="Yes">SME Decision Support</label>
- 	<fieldset class = "form-group"  id="Yes">
-	              <select name = "type">
-					  <option value="Supported" name = "type">Supported</option>
-					  <option value="Supported if the below action plan is implemented" name = "type">Supported if the below action plan is implemented</option>
-					  <option value="Rejected" name = "type">Rejected </option>
-					  <option value="Escalated to RMM " name = "type">Escalated to RMM  </option>
-				  </select>
-    </fieldset>
+ 	
+ 	<label for="Yes">Legal implications & Other restrictions (Check all that apply)</label>
+ 	<div class="checkbox" id="Yes">
+	  <label><input type="checkbox" value="">Current available AP and approved company contractors do not have appropriate visa or diplomatic ties to carry out an inspection. i.e Israels, Qatar, Iran and etc.</label>
+	</div>
+	<div class="checkbox">
+	  <label><input type="checkbox" value="">Local port requirements or authorities donot permit entry into the terminal. </label>
+	</div>
+	<div class="checkbox">
+	  <label><input type="checkbox" value="">Travel cost has been reviewed and found to be grossly disproportion.  i.e charter a private helicopter</label>
+	</div>
+	<div class="checkbox">
+	  <label><input type="checkbox" value="">Available AP or approved company contractors unable to comply with company's business travel requirements due to HSSE alerts, remoteness of terminal, war/high risk and etc. </label>
+	</div>
+	
+	<label for="Yes">Commitments regarding next inspection (Check all that apply)</label>
+ 	<div class="checkbox" id="Yes">
+	  <label><input type="checkbox" value="">A written confirmation from the counterparty agreeing to an inspection which will occur within 6 months from the first Shell chartered vessel arrival date.  </label>
+	</div>
+	<div class="checkbox">
+	  <label><input type="checkbox" value="">Counterparty has agreed in principle to an inspection which will occur within 12 months from the first Shell chartered vessel arrival date. </label>
+	</div>
+	<div class="checkbox">
+	  <label><input type="checkbox" value="">Alternative terminals available for the deal due consideration that a vessel feedback / positive vetting may impact future terminal rating. </label>
+	</div>
+	<div class="checkbox">
+	  <label><input type="checkbox" value="">Long term contract includes contractual inspection rights. </label>
+	</div>
+	<div class="checkbox">
+	  <label><input type="checkbox" value="">Business contractual obligations requires to be managed i.e existing contract, inherited, major loss of revenue.</label>
+	</div>
 	<div class="form-group">
-	  <label for="comment">Action Plan</label>
+	  <label for="comment">Other problems that prevent inspection (If Any)</label>
 	  <textarea class="form-control" rows="5" id="comment"></textarea>
 	</div>
-	<label for="Assigned">Assigned To</label>
-	<fieldset class="form-group" id="Assigned">
-      <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="Name" name = "name" required>
-    </fieldset>
-    <div class="form-group">
-	  <label for="comment">Remarks</label>
-	  <textarea class="form-control" rows="5" id="comment"></textarea>
-	</div>
-	<label for="Yes2">Action Closeout</label>
- 	<fieldset class = "form-group"  id="Yes2">
-	              <select name = "type">
-					  <option value="Supported" name = "type">Supported</option>
-					  <option value="Supported if the below action plan is implemented" name = "type">Supported if the below action plan is implemented</option>
-					  <option value="Rejected" name = "type">Rejected </option>
-					  <option value="Escalated to RMM " name = "type">Escalated to RMM  </option>
-				  </select>
+	 <fieldset class="form-group">
+                <label for="exampleInputFile">Upload Image Proof Of Problem/s</label>
+                <input type="file" class="form-control-file" id="exampleInputFile" name= "filename" required>
     </fieldset>
 	<div class="col-md-8  col-md-offset-6"><button type="submit" class="btn btn-danger" onclick ="checkForm()">Finish Review</button><br>
 	</div>

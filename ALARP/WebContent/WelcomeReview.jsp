@@ -25,31 +25,51 @@
 	<div class="panel-heading">  
  		<h4 class = "text-center"><font color="orange">Welcome</font></h4>
  	</div>
- 	<div class="panel-body">
- 	<div class = "col-md-6 col-md-offset-3">
- 	Reminder: It is expected that all downstream 3rd party terminals will be inspected prior to usage (MMG05), 
+ 	
+	
+<div class="panel panel-default">
+       			<div class="panel-body">
+       			Reminder: It is expected that all downstream 3rd party terminals will be inspected prior to usage (MMG05), 
  	however there are circumstances whereby an inspection is unable to take place prior to the required date, 
  	resource constrain or not permitted. 
-	
-	<form action = "WelcomeServlet" method = "POST" enctype="multipart/form-data" onsubmit="return checkForm(this);">
-	<label for="Yes">Choose a decision</label>
- 	<fieldset class = "form-group"  id="Yes">
-	              <select name = "type">
-					  <option value="Approved" name = "type">Approved for inspection</option>
-					  <option value="Rejected" name = "type">Inspection is not allowed</option>
-					  <option value="Moved" name = "type">Inspection allowed at a later date </option>
-				  </select>
-				  
-    </fieldset>
-	</div>
-	
-	
-	
-	<div class="col-md-8  col-md-offset-6">
-	<input type = submit href = "WelcomeServlet" button type="submit" class="btn btn-danger" onclick ="checkForm()">Start</a><br>
-	</div>
-	</form>
-</div>
+				<table class="table">  				
+					  <thead>
+					    <tr>
+					      <th scope="col">ID</th>
+					      <th scope="col">Terminal Name</th>
+					      <th scope="col">Date Submitted</th>
+					      <th scope="col">Monitor</th>
+					      <th scope="col">Edit</th>
+					      <th scope="col">SME Decision</th>
+					      
+					      
+					      <th scope="col">Status</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td>I</td>
+					      <td>Juan De La Cruz</td>
+					      <td>10-10-19</td>
+					      <td><a href="#" class="btn btn-primary a-btn-slide-text">
+						        <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>           
+						      </a>
+						  </td>
+						  <td><a href="#" class="btn btn-warning a-btn-slide-text">
+						        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>	                 
+						      </a>
+						  </td>
+					      <td>Supported</td>
+					      
+					      
+						  
+	    				  <td><span class="badge badge-warning">Success</span>
+						  </td>	
+					    </tr>
+					  </tbody>
+			</table>
+			</div>
+			</div>
 </div>
 </div>
 </body>

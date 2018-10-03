@@ -23,11 +23,11 @@
 <div class="container">
 <div class="panel panel-primary">
 	<div class="panel-heading">  
- 		<h4 class = "text-center"><font color="orange">Part One</font></h4>
+ 		<h4 class = "text-center"><font color="orange">Not Approved</font></h4>
  	</div>
  	<div class="panel-body">
  	<div class = "col-md-6 col-md-offset-3">
- 	<label for="Yes">Problem Statment (Check all that apply)</label>
+ 	<label for="Yes">What is the problem/s (Check all that apply)</label>
  	<div class="checkbox" id="Yes">
 	  <label><input type="checkbox" value="">Terminal operator does NOT permit an inspection by Shell.</label>
 	</div>
@@ -53,8 +53,12 @@
 	  <label for="comment">Supporting Statement</label>
 	  <textarea class="form-control" rows="5" id="comment"></textarea>
 	</div>
+	 <fieldset class="form-group">
+                <label for="exampleInputFile">Upload Image Proof Of Problem/s</label>
+                <input type="file" class="form-control-file" id="exampleInputFile" name= "filename" required>
+    </fieldset>
 	</div>
-	<div class="col-md-8  col-md-offset-6"><a href = "ReviewPartTwo.jsp"><button type="submit" class="btn btn-danger" onclick ="checkForm()">Proceed</button></a><br>
+	<div class="col-md-8  col-md-offset-6"><a href = "ReviewPartTwo.jsp"><button type="submit" class="btn btn-danger" onclick ="checkForm()">Finish Review</button></a><br>
 	</div>
 </div>
 </div>

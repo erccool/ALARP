@@ -23,11 +23,11 @@
 <div class="container">
 <div class="panel panel-primary">
 	<div class="panel-heading">  
- 		<h4 class = "text-center"><font color="orange">ALARP Consideration</font></h4>
+ 		<h4 class = "text-center"><font color="orange">Proof of Approval</font></h4>
  	</div>
  	<div class="panel-body">
  	<div class = "col-md-6 col-md-offset-3">
- 	<label for="Yes">Terminal & Associated asset Review</label>
+ 	<label for="Yes">Terminal & Associated asset Review (Check all that apply)</label>
  	<div class="checkbox" id="Yes">
 	  <label><input type="checkbox" value="">The terminal has been inspected by an AP or a company approved Contractor in the past 5 years. All former high observations, if any were closed.  </label>
 	</div>
@@ -48,7 +48,7 @@
 				(Random sampling of BLC questionaire used across all chapters) </label>
 	</div>
 	
-	<label for="Yes">AP Research Methodology</label>
+	<label for="Yes">AP Research Methodology (Check all that apply)</label>
  	<div class="checkbox" id="Yes">
 	  <label><input type="checkbox" value="">AP or his/her delegate has carried out a search online and internal incident database. No major relevant incidents since the terminal was in operation. (Best endeavour search)</label>
 	</div>
@@ -59,13 +59,13 @@
 	  <label><input type="checkbox" value="">No major findings from indepth research conducted by AP which covers safe port and safe berth criterias (Ref MPM OPS.10.05) along with critical navigational approaches to and from the berth. </label>
 	</div>
 	<div class="checkbox">
-	  <label><input type="checkbox" value="">The terminal has provided critical information on the terminal and approaches which includes but not limited to:  
-Bathymetry survey of jetty / approaches
-, Structural Survey 
-, Fender Manufacturer Inspection 
-, Terminal Information booklet 
-, Emergency Response Manual
-</label>
+	    <label><input type="checkbox" value="">The terminal has provided critical information on the terminal and approaches which includes but not limited to:  
+			Bathymetry survey of jetty / approaches
+			, Structural Survey 
+			, Fender Manufacturer Inspection 
+			, Terminal Information booklet 
+			, Emergency Response Manual
+		</label>
 	</div>
 	<div class="checkbox">
 	  <label><input type="checkbox" value="">Master's feedback from Shell chartered vessel was crossed referenced with no major observations. </label>
@@ -74,38 +74,11 @@ Bathymetry survey of jetty / approaches
 	  <label><input type="checkbox" value="">Information was extracted from the company's website and/or from the agents or 3rd Party source and has been reviewed by an AP. </label>
 	</div>
 	
-	<label for="Yes">Other restrictions & legal implications</label>
- 	<div class="checkbox" id="Yes">
-	  <label><input type="checkbox" value="">Current available AP and approved company contractors do not have appropriate visa or diplomatic ties to carry out an inspection. i.e Israels, Qatar, Iran and etc.</label>
+	<div class="form-group">
+	  <label for="comment">Supporting Statements and/or other comments(If Any)</label>
+	  <textarea class="form-control" rows="5" id="comment"></textarea>
 	</div>
-	<div class="checkbox">
-	  <label><input type="checkbox" value="">Local port requirements or authorities donot permit entry into the terminal. </label>
-	</div>
-	<div class="checkbox">
-	  <label><input type="checkbox" value="">Travel cost has been reviewed and found to be grossly disproportion.  i.e charter a private helicopter</label>
-	</div>
-	<div class="checkbox">
-	  <label><input type="checkbox" value="">Available AP or approved company contractors unable to comply with company's business travel requirements due to HSSE alerts, remoteness of terminal, war/high risk and etc. </label>
-	</div>
-	
-	<label for="Yes">Commitments </label>
- 	<div class="checkbox" id="Yes">
-	  <label><input type="checkbox" value="">A written confirmation from the counterparty agreeing to an inspection which will occur within 6 months from the first Shell chartered vessel arrival date.  </label>
-	</div>
-	<div class="checkbox">
-	  <label><input type="checkbox" value="">Counterparty has agreed in principle to an inspection which will occur within 12 months from the first Shell chartered vessel arrival date. </label>
-	</div>
-	<div class="checkbox">
-	  <label><input type="checkbox" value="">Alternative terminals available for the deal due consideration that a vessel feedback / positive vetting may impact future terminal rating. </label>
-	</div>
-	<div class="checkbox">
-	  <label><input type="checkbox" value="">Long term contract includes contractual inspection rights. </label>
-	</div>
-	<div class="checkbox">
-	  <label><input type="checkbox" value="">Business contractual obligations requires to be managed i.e existing contract, inherited, major loss of revenue.</label>
-	</div>
-	
-	<div class="col-md-8  col-md-offset-6"><a href = "ReviewPartThree.jsp"><button type="submit" class="btn btn-danger" onclick ="checkForm()">Proceed</button></a><br>
+	<div class="col-md-8  col-md-offset-6"><a href = "ReviewPartThree.jsp"><button type="submit" class="btn btn-danger" onclick ="checkForm()">Finish Review</button></a><br>
 	</div>
 </div>
 </div>
