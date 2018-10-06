@@ -10,8 +10,7 @@
 <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <div>
 
@@ -21,12 +20,33 @@
 		<a class="navbar-brand"><img src="Shell.png" alt="Dispute Bills" height = 120% >
         </a>
 		  <ul class="nav navbar-nav">
-		      <li><a href="Home.jsp"><font color="orange">Home</font></a></li>
+		      <li><a href="Home.jsp"><font color="orange">Decide on forms</font></a></li>
 		      <li><a href="WelcomeReview.jsp"><font color="orange">Submit Review</font></a></li>
 		      <li><a href="Display?page=Digital"><font color="orange">View Past Reviews</font></a></li>
 		 </ul>
 		<div class = "pull-right"><a href = "SignUp.jsp"><button type="button" class="btn btn-primary">Sign Up</button></a></div>
-		<div class = "pull-right"><button type="submit" class="btn btn-warning" onclick ="checkForm()">Login</button><br></div>
+		<div class = "pull-right"><button type="submit" class="btn btn-warning"data-toggle="modal" data-target="#exampleModal">Login</button><br></div>
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Please explain</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="form-group">
+				  <textarea class="form-control" rows="5" id="comment"></textarea>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-warning">Save</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 		
 	    
 	</div>
