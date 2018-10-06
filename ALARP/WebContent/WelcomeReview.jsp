@@ -19,7 +19,22 @@
 <title>ALARP: Start</title>
 </head>
 <body style="background-color:orange;">
-<div class="row"><%@ include file="Navbar.jsp" %></div></br>
+<div class="row"><%@ include file="Navbar.jsp" %>
+<nav class="navbar navbar-default nav2">
+
+	<div class="container-fluid">
+		  <ul class="nav navbar-nav">
+		      <li><a href="NotApproved.jsp">Not Approved</a></li>
+		      <li ><a href="Moved.jsp">Moved to a later date</a></li>	      
+		      <li><a href="NotLocated.jsp">Terminal is Located at a Remote Area</a></li>
+		      <li><a href="Desktop.jsp">Desktop Review</a></li>
+		      <li><a href="Unproven.jsp">Unproven Technology</a></li> 
+		      
+		      
+		 </ul>
+	</div>
+</nav></div></br>
+
 <div class="container">
 <div class="panel panel-primary">
 	<div class="panel-heading">  
@@ -32,7 +47,8 @@
        			Reminder: It is expected that all downstream 3rd party terminals will be inspected prior to usage (MMG05), 
  	however there are circumstances whereby an inspection is unable to take place prior to the required date, 
  	resource constrain or not permitted. 
-				<table class="table">  				
+ 				
+				<%--  <table class="table">  				
 					  <thead>
 					    <tr>
 					      <th scope="col">ID</th>
@@ -67,7 +83,7 @@
 						  </td>	
 					    </tr>
 					  </tbody>
-			</table>
+			</table> --%>
 			</div>
 			</div>
 </div>
