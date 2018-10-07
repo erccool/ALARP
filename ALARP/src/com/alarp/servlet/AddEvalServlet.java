@@ -49,7 +49,7 @@ public class AddEvalServlet extends HttpServlet {
 		Date date = new Date();
 		
 		eb.setType("Not Approved");
-		eb.setDate_inspected(request.getParameter(EvaluationBean.DATE_INSPECTED));
+		eb.setDate_inspected("Not applicable");
 		eb.setDate_submitted(dateFormat.format(date));
 		eb.setSme_decision("No Decision Yet");
 		eb.setQ1(request.getParameter(EvaluationBean.Q1));

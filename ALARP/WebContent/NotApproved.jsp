@@ -316,10 +316,7 @@ Berth data and parameters were extracted from Ship Shore Compatibility Check or 
  	</div>
  	<form action = "AddEvalServlet" method = "POST" enctype="multipart/form-data" onsubmit="return checkForm(this);">
  	<div class = "row"><div class = "col-md-6 col-md-offset-3">
- 	<fieldset class="form-group">
- 				<label for="formGroupExampleInput2">Date of inspection: </label>
-                <input type="text" class="fform-group mb-2" id="formGroupExampleInput2" name = "date_inspected" required>
-    </fieldset>
+ 
     </div></div>
     
  	<div class="form-group" id = answer display = "none" >

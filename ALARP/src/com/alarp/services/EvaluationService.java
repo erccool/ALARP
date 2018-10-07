@@ -30,8 +30,8 @@ public ArrayList getProduct(int id) {
 			EvaluationBean eb = new EvaluationBean();
 			eb.setDate_inspected(rs.getString(EvaluationBean.DATE_INSPECTED));
 			eb.setDate_submitted(rs.getString(EvaluationBean.DATE_INSPECTED));
-			eb.setQ1(rs.getString(EvaluationBean.DATE_INSPECTED));
-			eb.setQ2(rs.getString(EvaluationBean.DATE_INSPECTED));
+			eb.setQ1(rs.getString(EvaluationBean.Q1));
+			eb.setQ2(rs.getString(EvaluationBean.Q2));
 			eb.setQ3(rs.getString(EvaluationBean.DATE_INSPECTED));
 			eb.setQ4(rs.getString(EvaluationBean.DATE_INSPECTED));
 			eb.setQ5(rs.getString(EvaluationBean.DATE_INSPECTED));
