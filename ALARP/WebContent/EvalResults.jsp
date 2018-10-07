@@ -48,7 +48,6 @@
  	<div class="panel-body">
  	
  	<div class = "col-md-6 col-md-offset-3">
- 	Terminal operator does NOT permit an inspection by Shell.  
  	</div>
  	
  	</br></br><label for="comment">Terminal & Associated asset Review</label>
