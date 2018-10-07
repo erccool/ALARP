@@ -560,17 +560,163 @@ Alternative terminals available for the deal due consideration that a vessel fee
 	</div>
  	</div>
  	
+ 	
+ 	</br></br><label for="comment">Task 3</label>
+ 	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
+ 	
+No major findings from indepth research conducted by AP which covers safe port and safe berth criterias (Ref MPM OPS.10.05) along with critical navigational approaches to and from the berth. 
+
+ 	
+ 	</div> </div>
+ 	<div class = "row">
+ 	<div class = "col-md-6 col-md-offset-3">
+ 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+		<button onClick = "Yes13()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+	
+		</div>  
+		
+		<div class = "col-md-3 col-sm-3 col-xs-12 ">
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal13">No</button>
+	</div>  
+	</div>
+ 	</div>
+ 	
+ 	
+ 	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
+ 	
+Information was extracted from the company's website and/or from the agents or 3rd Party source and has been reviewed by an AP. 
+
+ 	
+ 	</div> </div>
+ 	<div class = "row">
+ 	<div class = "col-md-6 col-md-offset-3">
+ 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+		<button onClick = "Yes14()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+	
+		</div>  
+		
+		<div class = "col-md-3 col-sm-3 col-xs-12 ">
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal14">No</button>
+	</div>  
+	</div>
+ 	</div>
+ 	
+ 	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
+ 	
+Current available AP and approved company contractors do not have appropriate visa or diplomatic ties to carry out an inspection. i.e Israels, Qatar, Iran and etc. 
+
+ 	
+ 	</div> </div>
+ 	<div class = "row">
+ 	<div class = "col-md-6 col-md-offset-3">
+ 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+		<button onClick = "Yes15()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+	
+		</div>  
+		
+		<div class = "col-md-3 col-sm-3 col-xs-12 ">
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal15">No</button>
+	</div>  
+	</div>
+ 	</div>
+ 	
+ 	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
+ 	
+Local port requirements or authorities do not permit entry into the terminal.  	
+ 	</div> </div>
+ 	<div class = "row">
+ 	<div class = "col-md-6 col-md-offset-3">
+ 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+		<button onClick = "Yes16()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+	
+		</div>  
+		
+		<div class = "col-md-3 col-sm-3 col-xs-12 ">
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal16">No</button>
+	</div>  
+	</div>
+ 	</div>
+ 	
+ 	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
+ 	
+Travel cost has been reviewed and found to be grossly disproportion.  i.e charter a private helicopter
+ 	
+ 	</div> </div>
+ 	<div class = "row">
+ 	<div class = "col-md-6 col-md-offset-3">
+ 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+		<button onClick = "Yes17()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+	
+		</div>  
+		
+		<div class = "col-md-3 col-sm-3 col-xs-12 ">
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal17">No</button>
+	</div>  
+	</div>
+ 	</div>
+ 	
+ 	
+ 	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
+ 	
+ Available AP or approved company contractors unable to comply with company's business travel requirements due to HSSE alerts, remoteness of terminal, war/high risk and etc. 
+ 	
+ 	</div> </div>
+ 	<div class = "row">
+ 	<div class = "col-md-6 col-md-offset-3">
+ 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+		<button onClick = "Yes18()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+	
+		</div>  
+		
+		<div class = "col-md-3 col-sm-3 col-xs-12 ">
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal18">No</button>
+	</div>  
+	</div>
+ 	</div>
+ 	
+ 	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
+ 	
+Long term contract includes contractual inspection rights. 
+ 	
+ 	</div> </div>
+ 	<div class = "row">
+ 	<div class = "col-md-6 col-md-offset-3">
+ 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+		<button onClick = "Yes19 ()"type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+	
+		</div>  
+		
+		<div class = "col-md-3 col-sm-3 col-xs-12 ">
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal19">No</button>
+	</div>  
+	</div>
+ 	</div>
+ 	
+ 	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
+ 	
+Business contractual obligations requires to be managed i.e existing contract, inherited, major loss of revenue.
+ 	
+ 	</div> </div>
+ 	<div class = "row">
+ 	<div class = "col-md-6 col-md-offset-3">
+ 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+		<button onClick = "Yes20()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+	
+		</div>  
+		
+		<div class = "col-md-3 col-sm-3 col-xs-12 ">
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal20">No</button>
+	</div>  
+	</div>
+ 	</div>
  	<form action = "AddFullEvalServlet" method = "POST" enctype="multipart/form-data" onsubmit="return checkForm(this);">
  	<div class = "row"><div class = "col-md-6 col-md-offset-3">
- 		<div class="form-group" id = answer display = "none" >
-		    <label for="date_inspected">Date of Inspection: </label>
-		    <input type="input" class="fform-group mb-2" id="questosa" name="date_inspected"">
-	 </div>
+ 
     </div></div>
     
     <div class="form-group" id = answer display = "none" >
 		    <label for="type">Eval Type: </label>
-		    <input type="input" class="fform-group mb-2" id="questo" name="type" value = "Moved" readonly>
+		    <input type="input" class="fform-group mb-2" id="questo" name="type" value = "Moved">
 	 </div> 
     
  	<div class="form-group" id = answer display = "none" >

@@ -10,6 +10,22 @@ public class EvaluationBean {
 	public static final String Q4 = "q4";
 	public static final String Q5 = "q5";
 	public static final String Q6 = "q6";
+	public static final String Q7 = "q7";
+	public static final String Q8 = "q8";
+	public static final String Q9 = "q9";
+	public static final String Q10 = "q10";
+	public static final String Q11 = "q11";
+	public static final String Q12 = "q12";
+	public static final String Q13 = "q13";
+	public static final String Q14 = "q14";
+	public static final String Q15 = "q15";
+	public static final String Q16 = "q16";
+	public static final String Q17 = "q17";
+	public static final String Q18 = "q18";
+	public static final String Q19 = "q19";
+	public static final String Q20 = "q20";
+	
+	
 	public static final String DATE_SUBMITTED = "date_submitted";
 	public static final String DATE_INSPECTED = "date_inspected";
 	public static final String SME_DECISION = "sme_decision";
@@ -41,6 +57,105 @@ public class EvaluationBean {
 	private String q4;
 	private String q5;
 	private String q6;
+	private String q7;
+	public String getQ7() {
+		return q7;
+	}
+	public void setQ7(String q7) {
+		this.q7 = q7;
+	}
+	public String getQ8() {
+		return q8;
+	}
+	public void setQ8(String q8) {
+		this.q8 = q8;
+	}
+	public String getQ9() {
+		return q9;
+	}
+	public void setQ9(String q9) {
+		this.q9 = q9;
+	}
+	public String getQ10() {
+		return q10;
+	}
+	public void setQ10(String q10) {
+		this.q10 = q10;
+	}
+	public String getQ11() {
+		return q11;
+	}
+	public void setQ11(String q11) {
+		this.q11 = q11;
+	}
+	public String getQ12() {
+		return q12;
+	}
+	public void setQ12(String q12) {
+		this.q12 = q12;
+	}
+	public String getQ13() {
+		return q13;
+	}
+	public void setQ13(String q13) {
+		this.q13 = q13;
+	}
+	public String getQ14() {
+		return q14;
+	}
+	public void setQ14(String q14) {
+		this.q14 = q14;
+	}
+	public String getQ15() {
+		return q15;
+	}
+	public void setQ15(String q15) {
+		this.q15 = q15;
+	}
+	public String getQ16() {
+		return q16;
+	}
+	public void setQ16(String q16) {
+		this.q16 = q16;
+	}
+	public String getQ17() {
+		return q17;
+	}
+	public void setQ17(String q17) {
+		this.q17 = q17;
+	}
+	public String getQ18() {
+		return q18;
+	}
+	public void setQ18(String q18) {
+		this.q18 = q18;
+	}
+	public String getQ19() {
+		return q19;
+	}
+	public void setQ19(String q19) {
+		this.q19 = q19;
+	}
+	public String getQ20() {
+		return q20;
+	}
+	public void setQ20(String q20) {
+		this.q20 = q20;
+	}
+	private String q8;
+	private String q9;
+	private String q10;
+	private String q11;
+	private String q12;
+	private String q13;
+	private String q14;
+	private String q15;
+	private String q16;
+	private String q17;
+	private String q18;
+	private String q19;
+	private String q20;
+	
 	public String getType() {
 		return type;
 	}

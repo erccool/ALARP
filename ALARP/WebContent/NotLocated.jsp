@@ -49,58 +49,489 @@
 		 </ul>
 	</div>
 </nav></div></br>
-<div class="container">
-<div class="panel panel-warning">
-	<div class="panel-heading">  
- 		<h4 class = "text-center"><font color="orange">Not Located</font></h4>
- 	</div>
- 	
- 	<div class="panel-body">
- 	
- 	<div class = "col-md-6 col-md-offset-3">
-Terminal is located in a remote area which may increase the business HSSE travel risk of an AP or a company approved Contractor. 
- 	</div>
- 	
- 	</br></br><label for="comment">Terminal & Associated asset Review</label>
- 	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
- 	
- Is there any third party available?
- 	
- 	</div> </div>
- 	<div class = "row">
- 	<div class = "col-md-6 col-md-offset-3">
- 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
-	
-		</div>  
-		
-		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#exampleModal">No</button>
-		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+<div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">
 		      <div class="modal-header">
-		        <h5 class="modal-title" id="exampleModalLabel">Please explain</h5>
+		        <h5 class="modal-title" id="exampleModalLabel">Please explain below</h5>
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 		          <span aria-hidden="true">&times;</span>
 		        </button>
 		      </div>
 		      <div class="modal-body">
 		        <div class="form-group">
-				  <textarea class="form-control" rows="5" id="comment"></textarea>
+				  <textarea class="form-control" rows="5" id="comment1" > </textarea>
 				</div>
 		      </div>
 		      <div class="modal-footer">
 		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-		        <button type="button" class="btn btn-warning">Save</button>
+		        <button onClick="No1()" type="button" class="btn btn-warning" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Please explain below</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
 		      </div>
-		    </div>
-		  </div>
-		</div>
+		      <div class="modal-body">
+		        <div class="form-group">
+				  <textarea class="form-control" rows="5" id="comment2" > </textarea>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		        <button onClick="No2()" type="button" class="btn btn-warning" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Please explain below</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="form-group">
+				  <textarea class="form-control" rows="5" id="comment3" > </textarea>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		        <button onClick="No3()" type="button" class="btn btn-warning" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Please explain below</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="form-group">
+				  <textarea class="form-control" rows="5" id="comment4" > </textarea>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		        <button onClick="No4()" type="button" class="btn btn-warning" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Please explain below</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="form-group">
+				  <textarea class="form-control" rows="5" id="comment5" > </textarea>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		        <button onClick="No5()" type="button" class="btn btn-warning" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Please explain below</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="form-group">
+				  <textarea class="form-control" rows="5" id="comment6" > </textarea>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		        <button onClick="No6()" type="button" class="btn btn-warning" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Please explain below</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="form-group">
+				  <textarea class="form-control" rows="5" id="comment7" > </textarea>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		        <button onClick="No7()" type="button" class="btn btn-warning" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Please explain below</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="form-group">
+				  <textarea class="form-control" rows="5" id="comment8" > </textarea>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		        <button onClick="No8()" type="button" class="btn btn-warning" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Please explain below</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="form-group">
+				  <textarea class="form-control" rows="5" id="comment9" > </textarea>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		        <button onClick="No9()" type="button" class="btn btn-warning" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Please explain below</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="form-group">
+				  <textarea class="form-control" rows="5" id="comment10" > </textarea>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		        <button onClick="No10()" type="button" class="btn btn-warning" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Please explain below</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="form-group">
+				  <textarea class="form-control" rows="5" id="comment11" > </textarea>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		        <button onClick="No11()" type="button" class="btn btn-warning" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Please explain below</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="form-group">
+				  <textarea class="form-control" rows="5" id="comment12" > </textarea>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		        <button onClick="No12()" type="button" class="btn btn-warning" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal13" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Please explain below</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="form-group">
+				  <textarea class="form-control" rows="5" id="comment13" > </textarea>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		        <button onClick="No13()" type="button" class="btn btn-warning" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal14" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Please explain below</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="form-group">
+				  <textarea class="form-control" rows="5" id="comment14" > </textarea>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		        <button onClick="No14()" type="button" class="btn btn-warning" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal15" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Please explain below</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="form-group">
+				  <textarea class="form-control" rows="5" id="comment15" > </textarea>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		        <button onClick="No15()" type="button" class="btn btn-warning" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal16" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Please explain below</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="form-group">
+				  <textarea class="form-control" rows="5" id="comment16" > </textarea>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		        <button onClick="No16()" type="button" class="btn btn-warning" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal17" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Please explain below</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="form-group">
+				  <textarea class="form-control" rows="5" id="comment17" > </textarea>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		        <button onClick="No17()" type="button" class="btn btn-warning" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal18" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Please explain below</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="form-group">
+				  <textarea class="form-control" rows="5" id="comment18" > </textarea>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		        <button onClick="No18()" type="button" class="btn btn-warning" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal19" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Please explain below</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="form-group">
+				  <textarea class="form-control" rows="5" id="comment19" > </textarea>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		        <button onClick="No19()" type="button" class="btn btn-warning" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal20" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Please explain below</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="form-group">
+				  <textarea class="form-control" rows="5" id="comment20" > </textarea>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		        <button onClick="No20()" type="button" class="btn btn-warning" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+<div class="panel panel-warning">
+		
+	<div class="panel-heading">  
+ 		<h4 class = "text-center"><font color="orange">Not Approved</font></h4>
+ 	</div>
+ 	
+ 	
+ 	
+ 	<div class="panel-body">
+ 	
+ 	<div class = "col-md-6 col-md-offset-3">
+ 	
+ 	Terminal operator does NOT permit an inspection by Shell. 
+ 	
+ 	
+ 	</div>
+ 	
+ 	</br></br><label for="comment">Terminal & Associated asset Review</label>
+ 	
+ 	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
+ 	
+ Is there any third party available?
+ 	
+ 	</div> </div>
+ 	
+ 	<div class = "row">
+ 	<div class = "col-md-6 col-md-offset-3">
+ 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+		<button onClick = "Yes1()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+	
+		</div>  
+		
+		<div class = "col-md-3 col-sm-3 col-xs-12 ">
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal1">No</button>
 
 	</div>  
 	</div>
  	</div>
+	 
+	
+ 	
  	
  	<div class = "row"><div class = "col-md-6 col-md-offset-3">
  	
@@ -110,13 +541,12 @@ The terminal operator is reputable and operates in accordance to OCIMF / SIGTTO 
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes2()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#exampleModal">No</button>
-		
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal2">No</button>
 	</div>
  	</div>
  	
@@ -127,13 +557,12 @@ Terminal provided critical information. Is this true?
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes3()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#exampleModal">No</button>
-		
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal3">No</button>`
 	</div>  
 	</div>
  	</div>
@@ -145,13 +574,12 @@ The terminal has submitted a valid MTMSA and it has been reviewed by an AP. Is t
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes4()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#exampleModal">No</button>
-		
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal4">No</button>
 
 	</div>  
 	</div>
@@ -165,13 +593,12 @@ Master's feedback from Shell chartered vessel was crossed referenced with no maj
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes5()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#exampleModal">No</button>
-	
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal5">No</button>
 
 	</div>  
 	</div>
@@ -185,13 +612,12 @@ Berth data and parameters were extracted from Ship Shore Compatibility Check or 
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes6()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#exampleModal">No</button>
-
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal6">No</button>
 
 	</div>  
 	</div>
@@ -207,12 +633,12 @@ Berth data and parameters were extracted from Ship Shore Compatibility Check or 
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes7()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#exampleModal">No</button>
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal7">No</button>
 	</div>  
 	</div>
  	</div>
@@ -227,12 +653,12 @@ A jetty walkabout has been conducted before by an AP or an approved contractor w
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes8()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#exampleModal">No</button>
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal8">No</button>
 	</div>  
 	</div>
  	</div>
@@ -246,12 +672,12 @@ A teleconference between an AP and the terminal operations manager was conducted
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes9()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#exampleModal">No</button>
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal9">No</button>
 	</div>  
 	</div>
  	</div>
@@ -264,12 +690,12 @@ A teleconference between an AP and the terminal operations manager was conducted
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes10()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#exampleModal">No</button>
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal10">No</button>
 	</div>  
 	</div>
  	</div>
@@ -282,12 +708,12 @@ Counterparty has agreed in principle to an inspection which will occur within 12
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes11()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#exampleModal">No</button>
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal11">No</button>
 	</div>  
 	</div>
  	</div>
@@ -301,12 +727,12 @@ Alternative terminals available for the deal due consideration that a vessel fee
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes12()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#exampleModal">No</button>
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal12">No</button>
 	</div>  
 	</div>
  	</div>
@@ -322,12 +748,12 @@ No major findings from indepth research conducted by AP which covers safe port a
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes13()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#exampleModal">No</button>
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal13">No</button>
 	</div>  
 	</div>
  	</div>
@@ -342,12 +768,12 @@ Information was extracted from the company's website and/or from the agents or 3
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes14()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#exampleModal">No</button>
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal14">No</button>
 	</div>  
 	</div>
  	</div>
@@ -361,12 +787,12 @@ Current available AP and approved company contractors do not have appropriate vi
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes15()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#exampleModal">No</button>
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal15">No</button>
 	</div>  
 	</div>
  	</div>
@@ -378,12 +804,12 @@ Local port requirements or authorities do not permit entry into the terminal.
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes16()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#exampleModal">No</button>
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal16">No</button>
 	</div>  
 	</div>
  	</div>
@@ -396,12 +822,12 @@ Travel cost has been reviewed and found to be grossly disproportion.  i.e charte
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes17()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#exampleModal">No</button>
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal17">No</button>
 	</div>  
 	</div>
  	</div>
@@ -415,12 +841,12 @@ Travel cost has been reviewed and found to be grossly disproportion.  i.e charte
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes18()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#exampleModal">No</button>
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal18">No</button>
 	</div>  
 	</div>
  	</div>
@@ -433,12 +859,12 @@ Long term contract includes contractual inspection rights.
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes19 ()"type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#exampleModal">No</button>
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal19">No</button>
 	</div>  
 	</div>
  	</div>
@@ -451,23 +877,320 @@ Business contractual obligations requires to be managed i.e existing contract, i
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes20()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#exampleModal">No</button>
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal20">No</button>
 	</div>  
 	</div>
  	</div>
- 	
+ 	<form action = "AddFullEvalServlet" method = "POST" enctype="multipart/form-data" onsubmit="return checkForm(this);">
+ 	<div class = "row"><div class = "col-md-6 col-md-offset-3">
+ 
+    </div></div>
+    
+    <div class="form-group" id = answer display = "none" >
+		    <label for="type">Eval Type: </label>
+		    <input type="input" class="fform-group mb-2" id="questo" name="type" value = "Terminal Located In A Remote Area">
+	 </div> 
+    
+ 	<div class="form-group" id = answer display = "none" >
+		    <label for="email">Answer 1: </label>
+		    <input type="email" class="fform-group mb-2" id="ques1" name="q1" readonly>
+	 </div> 
+	 
+	 <div class="form-group" id = answer display = "none" >
+		    <label for="email">Answer 2: </label>
+		    <input type="email" class="fform-group mb-2" id="ques2" name="q2" readonly>
+	 </div> 
+	 
+	 <div class="form-group" id = answer display = "none" >
+		    <label for="email">Answer 3: </label>
+		    <input type="email" class="fform-group mb-2" id="ques3" name="q3" readonly>
+	 </div> 
+	 
+	 <div class="form-group" id = answer display = "none" >
+		    <label for="email">Answer 4: </label>
+		    <input type="email" class="fform-group mb-2" id="ques4" name="q4" readonly>
+	 </div> 
+	 
+	 <div class="form-group" id = answer display = "none" >
+		    <label for="email">Answer 5: </label>
+		    <input type="email" class="fform-group mb-2" id="ques5" name="q5" readonly>
+	 </div> 
+	 
+	 <div class="form-group" id = answer display = "none" >
+		    <label for="email">Answer 6: </label>
+		    <input type="email" class="fform-group mb-2" id="ques6" name="q6" readonly>
+	 </div> 
+	 
+	 
+	 <div class="form-group" id = answer display = "none" >
+		    <label for="email">Answer 7: </label>
+		    <input type="email" class="fform-group mb-2" id="ques7" name="q7" readonly>
+	 </div> 
+	 
+	 <div class="form-group" id = answer display = "none" >
+		    <label for="email">Answer 8: </label>
+		    <input type="email" class="fform-group mb-2" id="ques8" name="q8" readonly>
+	 </div> 
+	 
+	 <div class="form-group" id = answer display = "none" >
+		    <label for="email">Answer 9: </label>
+		    <input type="email" class="fform-group mb-2" id="ques9" name="q9" readonly>
+	 </div> 
+	 
+	 <div class="form-group" id = answer display = "none" >
+		    <label for="email">Answer 10: </label>
+		    <input type="email" class="fform-group mb-2" id="ques10" name="q10" readonly>
+	 </div> 
+	 
+	 <div class="form-group" id = answer display = "none" >
+		    <label for="email">Answer 11: </label>
+		    <input type="email" class="fform-group mb-2" id="ques11" name="q11" readonly>
+	 </div> 
+	 
+	 <div class="form-group" id = answer display = "none" >
+		    <label for="email">Answer 12: </label>
+		    <input type="email" class="fform-group mb-2" id="ques12" name="q12" readonly>
+	 </div> 
+	 
+	 <div class="form-group" id = answer display = "none" >
+		    <label for="email">Answer 13: </label>
+		    <input type="email" class="fform-group mb-2" id="ques13" name="q13" readonly>
+	 </div> 
+	 
+	 <div class="form-group" id = answer display = "none" >
+		    <label for="email">Answer 14: </label>
+		    <input type="email" class="fform-group mb-2" id="ques14" name="q14" readonly>
+	 </div> 
+	 
+	 <div class="form-group" id = answer display = "none" >
+		    <label for="email">Answer 15: </label>
+		    <input type="email" class="fform-group mb-2" id="ques15" name="q15" readonly>
+	 </div> 
+	 
+	 <div class="form-group" id = answer display = "none" >
+		    <label for="email">Answer 16: </label>
+		    <input type="email" class="fform-group mb-2" id="ques16" name="q16" readonly>
+	 </div> 
+	 
+	 <div class="form-group" id = answer display = "none" >
+		    <label for="email">Answer 17: </label>
+		    <input type="email" class="fform-group mb-2" id="ques17" name="q17" readonly>
+	 </div> 
+	 
+	 <div class="form-group" id = answer display = "none" >
+		    <label for="email">Answer 18: </label>
+		    <input type="email" class="fform-group mb-2" id="ques18" name="q18" readonly>
+	 </div> 
+	 
+	 <div class="form-group" id = answer display = "none" >
+		    <label for="email">Answer 19: </label>
+		    <input type="email" class="fform-group mb-2" id="ques19" name="q19" readonly>
+	 </div> 
+	 
+	 <div class="form-group" id = answer display = "none" >
+		    <label for="email">Answer 20: </label>
+		    <input type="email" class="fform-group mb-2" id="ques20" name="q20" readonly>
+	 </div> 
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
- 	</br></br></br></br><button type="submit" class="btn btn-lg btn-warning signup-btn active">Submit</button>
+ 	<button type="submit" class="btn btn-lg btn-warning signup-btn active">Submit</button>
  	</div>
  	</div>
+	</form>
+</div>
+</div>
 
-</div>
-</div>
+
+<script>
+		function Yes1() {
+		    document.getElementById("ques1").value = "Yes";
+		   
+		}
+		
+		function No1() {
+		    document.getElementById("ques1").value = "No: " + document.getElementById("comment1").value;
+		   
+		}
+		
+		function Yes2() {
+		    document.getElementById("ques2").value = "Yes";
+		   
+		}
+		
+		function No2() {
+		    document.getElementById("ques2").value = "No: " + document.getElementById("comment2").value;
+		   
+		}
+		
+		function Yes3() {
+		    document.getElementById("ques3").value = "Yes";
+		   
+		}
+		
+		function No3() {
+		    document.getElementById("ques3").value = "No: " + document.getElementById("comment3").value;
+		   
+		}
+		
+		function Yes4() {
+		    document.getElementById("ques4").value = "Yes";
+		   
+		}
+		
+		function No4() {
+		    document.getElementById("ques4").value = "No: " + document.getElementById("comment4").value;
+		   
+		}function Yes5() {
+		    document.getElementById("ques5").value = "Yes";
+		   
+		}
+		
+		function No5() {
+		    document.getElementById("ques5").value = "No: " + document.getElementById("comment5").value;
+		   
+		}
+		
+		function Yes6() {
+		    document.getElementById("ques6").value = "Yes";
+		   
+		}
+		
+		function No6() {
+		    document.getElementById("ques6").value = "No: " + document.getElementById("comment6").value;
+		   
+		}
+		
+		function Yes7() {
+		    document.getElementById("ques7").value = "Yes";
+		   
+		}
+		
+		function No7() {
+		    document.getElementById("ques7").value = "No: " + document.getElementById("comment7").value;
+		   
+		}
+		function Yes8() {
+		    document.getElementById("ques8").value = "Yes";
+		   
+		}
+		
+		function No8() {
+		    document.getElementById("ques8").value = "No: " + document.getElementById("comment8").value;
+		   
+		}
+		function Yes9() {
+		    document.getElementById("ques9").value = "Yes";
+		   
+		}
+		
+		function No9() {
+		    document.getElementById("ques9").value = "No: " + document.getElementById("comment9").value;
+		   
+		}
+		function Yes10() {
+		    document.getElementById("ques10").value = "Yes";
+		   
+		}
+		
+		function No10() {
+		    document.getElementById("ques10").value = "No: " + document.getElementById("comment10").value;
+		   
+		}
+		function Yes11() {
+		    document.getElementById("ques11").value = "Yes";
+		   
+		}
+		
+		function No11() {
+		    document.getElementById("ques11").value = "No: " + document.getElementById("comment11").value;
+		   
+		}
+		function Yes12() {
+		    document.getElementById("ques12").value = "Yes";
+		   
+		}
+		
+		function No12() {
+		    document.getElementById("ques12").value = "No: " + document.getElementById("comment12").value;
+		   
+		}
+		function Yes13() {
+		    document.getElementById("ques13").value = "Yes";
+		   
+		}
+		
+		function No13() {
+		    document.getElementById("ques13").value = "No: " + document.getElementById("comment13").value;
+		   
+		}
+		function Yes14() {
+		    document.getElementById("ques14").value = "Yes";
+		   
+		}
+		
+		function No14() {
+		    document.getElementById("ques14").value = "No: " + document.getElementById("comment14").value;
+		   
+		}
+		function Yes15() {
+		    document.getElementById("ques15").value = "Yes";
+		   
+		}
+		
+		function No15() {
+		    document.getElementById("ques15").value = "No: " + document.getElementById("comment15").value;
+		   
+		}
+		function Yes16() {
+		    document.getElementById("ques16").value = "Yes";
+		   
+		}
+		
+		function No16() {
+		    document.getElementById("ques16").value = "No: " + document.getElementById("comment16").value;
+		   
+		}
+		function Yes17() {
+		    document.getElementById("ques17").value = "Yes";
+		   
+		}
+		
+		function No17() {
+		    document.getElementById("ques17").value = "No: " + document.getElementById("comment17").value;
+		   
+		}
+		function Yes18() {
+		    document.getElementById("ques18").value = "Yes";
+		   
+		}
+		
+		function No18() {
+		    document.getElementById("ques18").value = "No: " + document.getElementById("comment18").value;
+		   
+		}
+		function Yes19() {
+		    document.getElementById("ques19").value = "Yes";
+		   
+		}
+		
+		function No19() {
+		    document.getElementById("ques19").value = "No: " + document.getElementById("comment19").value;
+		   
+		}
+		function Yes20() {
+		    document.getElementById("ques20").value = "Yes";
+		   
+		}
+		
+		function No20() {
+		    document.getElementById("ques20").value = "No: " + document.getElementById("comment20").value;
+		   
+		}
+</script>
 </body>
 </html>

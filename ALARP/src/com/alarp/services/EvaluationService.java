@@ -109,6 +109,7 @@ public void decide(int id, String decision) {
 }
 
 public void addEvaluation(EvaluationBean e) {
+
 	String sql = "INSERT INTO alarp." + EvaluationBean.TABLE_NAME + "("
 			+ EvaluationBean.TYPE + ","
 			+ EvaluationBean.DATE_INSPECTED + ","
@@ -144,4 +145,74 @@ public void addEvaluation(EvaluationBean e) {
 		b.printStackTrace();
 	}
 }
+
+public void addFullEvaluation (EvaluationBean e) {
+
+	String sql = "INSERT INTO alarp." + EvaluationBean.TABLE_NAME + "("
+			+ EvaluationBean.TYPE + ","
+			+ EvaluationBean.DATE_INSPECTED + ","
+			+ EvaluationBean.DATE_SUBMITTED + ","
+			+ EvaluationBean.SME_DECISION + ","
+			+ EvaluationBean.Q1 + ","
+			+ EvaluationBean.Q2 + ","
+			+ EvaluationBean.Q3 + ","
+			+ EvaluationBean.Q4 + ","
+			+ EvaluationBean.Q5 + ","
+			+ EvaluationBean.Q6 + ","
+			+ EvaluationBean.Q7 + ","
+			+ EvaluationBean.Q8 + ","
+			+ EvaluationBean.Q9 + ","			
+			+ EvaluationBean.Q10 + ","			
+			+ EvaluationBean.Q11 + ","			
+			+ EvaluationBean.Q12 + ","			
+			+ EvaluationBean.Q13 + ","			
+			+ EvaluationBean.Q14 + ","			
+			+ EvaluationBean.Q15 + ","			
+			+ EvaluationBean.Q16 + ","			
+			+ EvaluationBean.Q17 + ","			
+			+ EvaluationBean.Q18 + ","			
+			+ EvaluationBean.Q19 + ","			
+			+ EvaluationBean.Q20 + ")"					
+			
+			+ "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+	
+	System.out.println("Hey this is the statement: " + sql); 
+	
+	try {
+		Class.forName("com.mysql.jdbc.Driver");
+		Connection con = DriverManager.getConnection(url,username,password);
+		PreparedStatement st = con.prepareStatement(sql);
+		st.setString(1, e.getType());
+		st.setString(2, e.getDate_inspected());
+		st.setString(3, e.getDate_submitted());
+		st.setString(4, e.getSme_decision());
+		st.setString(5, e.getQ1());
+		st.setString(6, e.getQ2());
+		st.setString(7, e.getQ3());
+		st.setString(8, e.getQ4());
+		st.setString(9, e.getQ5());
+		st.setString(10, e.getQ6());
+		st.setString(11, e.getQ7());
+		st.setString(12, e.getQ8());
+		st.setString(13, e.getQ9());
+		st.setString(14, e.getQ10());
+		st.setString(15, e.getQ11());
+		st.setString(16, e.getQ12());
+		st.setString(17, e.getQ13());
+		st.setString(18, e.getQ14());
+		st.setString(19, e.getQ15());
+		st.setString(20, e.getQ16());
+		st.setString(21, e.getQ17());
+		st.setString(22, e.getQ18());
+		st.setString(23, e.getQ19());
+		st.setString(24, e.getQ20());
+
+		
+		st.executeUpdate();
+	} catch (ClassNotFoundException | SQLException b) {
+		// TODO Auto-generated catch block
+		b.printStackTrace();
+	}
+}
+
 }
