@@ -12,7 +12,7 @@ import com.alarp.javabean.EvaluationBean;
 
 import org.apache.tomcat.dbcp.dbcp2.BasicDataSource;
 public class EvaluationService {
-	static String url ="jdbc:mysql://localhost:3306/secprg";
+	static String url ="jdbc:mysql://localhost:3306/alarp";
 	static String username ="root";
 	static String password = "password";
 
