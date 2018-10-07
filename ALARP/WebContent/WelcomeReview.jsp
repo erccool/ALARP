@@ -36,7 +36,7 @@
 </nav></div></br>
 
 <div class="container">
-<div class="panel panel-primary">
+<div class="panel panel-warning">
 	<div class="panel-heading">  
  		<h4 class = "text-center"><font color="orange">Welcome</font></h4>
  	</div>

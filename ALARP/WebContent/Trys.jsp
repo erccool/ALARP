@@ -52,21 +52,31 @@
 	Is this correct?
  	
  	</div> </div>
- 	<div class = "row">
+ 	
  	<div class = "col-md-6 col-md-offset-3">
- 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-	<button type="submit" class="btn btn-lg btn-primary signup-btn active">Yes</button>
 
-	</div>  
+		<button onClick = "myFunction()" type="submit" class="btn btn-lg btn-warning signup-btn">Yes</button>
 	
-	<div class = "col-md-3 col-sm-3 col-xs-12 ">
-	<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#exampleModal">No</button>
-<!-- Button trigger modal -->
-	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		 
+		
+		
+		<button  type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#exampleModal">No</button>
+		
+		<div class="form-group" id = answer>
+		    <label for="email">Answer: </label>
+		    <input type="email" class="fform-group mb-2" id="email" readonly>
+	  	</div> 
+		
+
+	 
+	</div>
+	
+	
+ 	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header">
-	        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+	        <h5 class="modal-title" id="exampleModalLabel">Modal titles</h5>
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 	          <span aria-hidden="true">&times;</span>
 	        </button>
@@ -81,15 +91,12 @@
 	    </div>
 	  </div>
 	</div>
-
-	</div>  
-	</div>
- 	</div>
- 	<div class = "row">
- 	<div class = "col-md-6 col-md-offset-3">
- 	<button type="submit" class="btn btn-lg btn-warning signup-btn active">Continue</button>
- 	</div>
- 	</div>
- 	</div>
+	
+	<script>
+		function myFunction() {
+		    var x = document.getElementById("email").value = "yo";
+		   
+		}
+	</script>
 </body>
 </html>

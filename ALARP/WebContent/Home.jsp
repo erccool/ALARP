@@ -25,7 +25,7 @@
         </a>
 		  <ul class="nav navbar-nav">
 		      <li><a href="Home.jsp"><font color="orange">Decide on forms</font></a></li>
-		      <li><a href="WelcomeReview.jsp"><font color="orange">Submit Review</font></a></li>
+		      <li><a href="WelcomeReview.jsp"><font color="orange">Submit Evaluation</font></a></li>
 		      <li><a href="Display?page=Digital"><font color="orange">View Past Reviews</font></a></li>
 		 </ul>
 		<div class = "pull-right"><a href = "SignUp.jsp"><button type="button" class="btn btn-warning">Sign Up</button></a></div>
