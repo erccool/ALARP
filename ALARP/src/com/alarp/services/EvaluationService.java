@@ -15,7 +15,45 @@ public class EvaluationService {
 	static String url ="jdbc:mysql://localhost:3306/secprg";
 	static String username ="root";
 	static String password = "password";
+
+
+public ArrayList getProduct(int id) {
+	ArrayList<EvaluationBean> eval = new ArrayList<>();
+	String sql = "SELECT * FROM alarp.eval WHERE " + EvaluationBean.IDEVAL + "=" + id;
 	
+	try {
+		Class.forName("com.mysql.jdbc.Driver");
+		Connection con = DriverManager.getConnection(url,username,password);
+		PreparedStatement st = con.prepareStatement(sql);
+		ResultSet rs = st.executeQuery();
+		while(rs.next()) {
+			EvaluationBean eb = new EvaluationBean();
+			eb.setDate_inspected(rs.getString(EvaluationBean.DATE_INSPECTED));
+			eb.setDate_submitted(rs.getString(EvaluationBean.DATE_INSPECTED));
+			eb.setQ1(rs.getString(EvaluationBean.DATE_INSPECTED));
+			eb.setQ2(rs.getString(EvaluationBean.DATE_INSPECTED));
+			eb.setQ3(rs.getString(EvaluationBean.DATE_INSPECTED));
+			eb.setQ4(rs.getString(EvaluationBean.DATE_INSPECTED));
+			eb.setQ5(rs.getString(EvaluationBean.DATE_INSPECTED));
+			eb.setQ6(rs.getString(EvaluationBean.DATE_INSPECTED));
+			eb.setSme_decision(rs.getString(EvaluationBean.DATE_INSPECTED));
+			eb.setType(rs.getString(EvaluationBean.DATE_INSPECTED));
+
+			
+			eval.add(eb);
+		}		
+
+	} catch (ClassNotFoundException | SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+	
+	return eval;
+}
+
+
+
 public ArrayList getAllEvaluations() {
 	ArrayList<EvaluationBean> evalLists = new ArrayList<>();
 	

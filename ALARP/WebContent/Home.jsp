@@ -76,8 +76,8 @@
 					  <thead>
 					    <tr>
 					      <th scope="col">ID</th>
-					      <th scope="col">Submitted by</th>
 					      <th scope="col">Date Submitted</th>
+					      <th scope="col">Date Of Inspection</th>
 					      <th scope="col">Evaluators Decision</th>
 					      <th scope="col">SME Decision</th>
 					      <th scope="col">View</th>
