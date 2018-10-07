@@ -13,16 +13,16 @@ import com.alarp.javabean.EvaluationBean;
 import com.alarp.services.EvaluationService;
 
 /**
- * Servlet implementation class GetEvalServlet
+ * Servlet implementation class GetFullEval
  */
-@WebServlet("/GetEvalServlet")
-public class GetEvalServlet extends HttpServlet {
+@WebServlet("/GetFullEval")
+public class GetFullEval extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public GetEvalServlet() {
+    public GetFullEval() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -33,32 +33,16 @@ public class GetEvalServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
-		
+	
 		int ideval = Integer.parseInt(request.getParameter("id"));
 		EvaluationService EvalsService = new EvaluationService();
-		ArrayList<EvaluationBean> eval = EvalsService.getEval(ideval);
-		System.out.println("This is the type bitch " + eval.get(0).getType() );
+		ArrayList<EvaluationBean> eval = EvalsService.getFullEval(ideval);
 		
 		request.setAttribute("eval", eval);
-		if(eval.get(0).getType().equals("Not Approved"))
-			request.getRequestDispatcher("EvalResults.jsp").forward(request, response);
+		
+		request.getRequestDispatcher("FullEvalResults.jsp").forward(request, response);
+		
 
-		else if(eval.get(0).getType().equals("Moved")) {
-			System.out.println("This is the type bitch:" + eval.get(0).getType() );
-			eval = EvalsService.getFullEval(ideval);			
-			request.setAttribute("eval", eval);
-			request.getRequestDispatcher("SemiFullEvalResults.jsp").forward(request, response);
-			
-		}
-		else {
-			eval = EvalsService.getFullEval(ideval);
-			request.setAttribute("eval", eval);
-			request.getRequestDispatcher("FullEvalResults.jsp").forward(request, response);
-		}
-
-		
-		
-		
 	}
 
 	/**

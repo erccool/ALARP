@@ -54,7 +54,56 @@ public ArrayList getEval(int id) {
 	return eval;
 }
 
+public ArrayList getFullEval(int id) {
+	ArrayList<EvaluationBean> eval = new ArrayList<>();
+	String sql = "SELECT * FROM alarp.eval WHERE " + EvaluationBean.IDEVAL + "=" + id;
+	
+	try {
+		Class.forName("com.mysql.jdbc.Driver");
+		Connection con = DriverManager.getConnection(url,username,password);
+		PreparedStatement st = con.prepareStatement(sql);
+		ResultSet rs = st.executeQuery();
+		while(rs.next()) {
+			EvaluationBean eb = new EvaluationBean();
+			eb.setIdeval(id);
+			eb.setDate_inspected(rs.getString(EvaluationBean.DATE_INSPECTED));
+			eb.setDate_submitted(rs.getString(EvaluationBean.DATE_INSPECTED));
+			eb.setQ1(rs.getString(EvaluationBean.Q1));
+			eb.setQ2(rs.getString(EvaluationBean.Q2));
+			eb.setQ3(rs.getString(EvaluationBean.Q3));
+			eb.setQ4(rs.getString(EvaluationBean.Q4));
+			eb.setQ5(rs.getString(EvaluationBean.Q5));
+			eb.setQ6(rs.getString(EvaluationBean.Q6));
+			eb.setQ7(rs.getString(EvaluationBean.Q7));
+			eb.setQ8(rs.getString(EvaluationBean.Q8));
+			eb.setQ9(rs.getString(EvaluationBean.Q9));
+			eb.setQ10(rs.getString(EvaluationBean.Q10));
+			eb.setQ11(rs.getString(EvaluationBean.Q11));
+			eb.setQ12(rs.getString(EvaluationBean.Q12));
+			eb.setQ13(rs.getString(EvaluationBean.Q13));
+			eb.setQ14(rs.getString(EvaluationBean.Q14));
+			eb.setQ15(rs.getString(EvaluationBean.Q15));
+			eb.setQ16(rs.getString(EvaluationBean.Q16));
+			eb.setQ17(rs.getString(EvaluationBean.Q17));
+			eb.setQ18(rs.getString(EvaluationBean.Q18));
+			eb.setQ19(rs.getString(EvaluationBean.Q19));
+			eb.setQ20(rs.getString(EvaluationBean.Q20));
 
+			eb.setSme_decision(rs.getString(EvaluationBean.SME_DECISION));
+			eb.setType(rs.getString(EvaluationBean.TYPE));
+
+			
+			eval.add(eb);
+		}		
+
+	} catch (ClassNotFoundException | SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+	
+	return eval;
+}
 
 public ArrayList getAllEvaluations() {
 	ArrayList<EvaluationBean> evalLists = new ArrayList<>();
