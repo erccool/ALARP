@@ -17,7 +17,8 @@ public class EvaluationService {
 	static String password = "password";
 
 
-public ArrayList getProduct(int id) {
+
+public ArrayList getEval(int id) {
 	ArrayList<EvaluationBean> eval = new ArrayList<>();
 	String sql = "SELECT * FROM alarp.eval WHERE " + EvaluationBean.IDEVAL + "=" + id;
 	
@@ -28,16 +29,17 @@ public ArrayList getProduct(int id) {
 		ResultSet rs = st.executeQuery();
 		while(rs.next()) {
 			EvaluationBean eb = new EvaluationBean();
+			eb.setIdeval(id);
 			eb.setDate_inspected(rs.getString(EvaluationBean.DATE_INSPECTED));
 			eb.setDate_submitted(rs.getString(EvaluationBean.DATE_INSPECTED));
 			eb.setQ1(rs.getString(EvaluationBean.Q1));
 			eb.setQ2(rs.getString(EvaluationBean.Q2));
-			eb.setQ3(rs.getString(EvaluationBean.DATE_INSPECTED));
-			eb.setQ4(rs.getString(EvaluationBean.DATE_INSPECTED));
-			eb.setQ5(rs.getString(EvaluationBean.DATE_INSPECTED));
-			eb.setQ6(rs.getString(EvaluationBean.DATE_INSPECTED));
-			eb.setSme_decision(rs.getString(EvaluationBean.DATE_INSPECTED));
-			eb.setType(rs.getString(EvaluationBean.DATE_INSPECTED));
+			eb.setQ3(rs.getString(EvaluationBean.Q3));
+			eb.setQ4(rs.getString(EvaluationBean.Q4));
+			eb.setQ5(rs.getString(EvaluationBean.Q5));
+			eb.setQ6(rs.getString(EvaluationBean.Q6));
+			eb.setSme_decision(rs.getString(EvaluationBean.SME_DECISION));
+			eb.setType(rs.getString(EvaluationBean.TYPE));
 
 			
 			eval.add(eb);
@@ -84,6 +86,28 @@ public ArrayList getAllEvaluations() {
 	return evalLists;
 }
 	
+public void decide(int id, String decision) {
+	String sql = "UPDATE alarp.eval SET " 
+			+ EvaluationBean.SME_DECISION + " = " + "? "
+			+ "WHERE " + EvaluationBean.IDEVAL + " = " + "?";
+	
+	System.out.println("Hey this is the statement: " + sql); 
+
+	
+	try {
+		Class.forName("com.mysql.jdbc.Driver");
+		Connection con = DriverManager.getConnection(url,username,password);
+		PreparedStatement st = con.prepareStatement(sql);
+		st.setString(1, decision);
+		st.setInt(2, id);
+		System.out.println(st);
+		st.executeUpdate();
+	} catch (ClassNotFoundException | SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+}
+
 public void addEvaluation(EvaluationBean e) {
 	String sql = "INSERT INTO alarp." + EvaluationBean.TABLE_NAME + "("
 			+ EvaluationBean.TYPE + ","

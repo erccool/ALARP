@@ -20,6 +20,7 @@
 <title>ALARP: Start</title>
 </head>
 <body style="background-color:orange;">
+
 <div class="row">
 <nav class="nnavbar navbar-inverse navbar-static-top nav-upper nav1">
 
@@ -59,7 +60,7 @@
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" readonly>No because it is not available</textarea>
+		    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" readonly>${eval[0].q1}</textarea>
 
 
 	</div>  
@@ -74,7 +75,7 @@ The terminal operator is reputable and operates in accordance to OCIMF / SIGTTO 
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" readonly>Yes</textarea>
+		    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" readonly>${eval[0].q2}</textarea>
 
 	</div>
  	</div>
@@ -86,7 +87,7 @@ Terminal provided critical information. Is this true?
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" readonly>No because information was not given</textarea>
+		    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" readonly>${eval[0].q3}</textarea>
 
 	</div>  
 	</div>
@@ -99,7 +100,7 @@ The terminal has submitted a valid MTMSA and it has been reviewed by an AP. Is t
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" readonly>Yes</textarea>
+		    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" readonly>${eval[0].q4}</textarea>
 
 
 	</div>  
@@ -114,7 +115,7 @@ Master's feedback from Shell chartered vessel was crossed referenced with no maj
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" readonly>Yes</textarea>
+		    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" readonly>${eval[0].q5}</textarea>
 
 	</div>  
 	</div>
@@ -128,7 +129,7 @@ Berth data and parameters were extracted from Ship Shore Compatibility Check or 
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class="form-group"><div class = "col-md-9 col-sm-3 col-xs-12 ">
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" readonly>Yes</textarea>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" readonly>${eval[0].q6}</textarea>
     </div>
   </div> 
 	</div>
@@ -136,31 +137,39 @@ Berth data and parameters were extracted from Ship Shore Compatibility Check or 
  	
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
- 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-warning signup-btn active">Supported</button>
+ 	<form action = "SupportServlet" method = "POST" enctype="multipart/form-data" onsubmit="return checkForm(this);">
+ 	
+ 	<div class = "col-md-3 col-sm-3 col-xs-12 ">
+ 	<div class="form-group" id = answer display = "none" >
+		    <input type="email" class="fform-group mb-2" id="id" name="id" readonly value="${eval[0].ideval}" hidden>
+	 </div> 
+	 <div class="form-group" id = answer display = "none" >
+		    <input type="email" class="fform-group mb-2" id="decision" name="decision" readonly value="Supported" hidden>
+	 </div> 
+		<button type="submit" class="btn btn-lg btn-warning signup-btn active">Supported</button></a>
 	
 		</div>  
-		
+	</form>	
 	<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#exampleModal">Not supported</button>
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#exampleModal">Supported with conditions</button>
 		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">
 		      <div class="modal-header">
-		        <h5 class="modal-title" id="exampleModalLabel">Please provide proof</h5>
+		        <h5 class="modal-title" id="exampleModalLabel">Please provide conditions</h5>
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 		          <span aria-hidden="true">&times;</span>
 		        </button>
 		      </div>
 		      <div class="modal-body">
 		        <fieldset class="form-group">
-                <label for="exampleInputFile">Upload file</label>
-                <input type="file" class="form-control-file" id="exampleInputFile" name= "filename" required>
-              </fieldset>
+				<div class="form-group">
+				  <textarea class="form-control" rows="5" id="comment1" name = "decision" > </textarea>
+				</div>              
+				</fieldset>
 		      </div>
 		      <div class="modal-footer">
-		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-		        <button type="button" class="btn btn-warning">Save</button>
+		        <button onClick="No1()" type="button" class="btn btn-warning" data-dismiss="modal">Submit</button>
 		      </div>
 		    </div>
 		  </div>
@@ -170,5 +179,14 @@ Berth data and parameters were extracted from Ship Shore Compatibility Check or 
 
 </div>
 </div>
+
+<script>
+
+function No1() {
+    document.getElementById("decision").value = "Supported if: " + document.getElementById("comment1").value;
+   
+}
+
+</script>
 </body>
 </html>

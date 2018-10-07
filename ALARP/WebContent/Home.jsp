@@ -108,7 +108,7 @@
 					      <td>${e.date_inspected }</td>
 					      <td>${e.type }</td>
 					      <td>${e.sme_decision }</td>
-					      <td><a href="EvalResults.jsp" class="btn btn-warning a-btn-slide-text">
+					      <td><a href="GetEvalServlet?id=${e.ideval}" class="btn btn-warning a-btn-slide-text">
 						        <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>           
 						      </a>
 						  </td>
