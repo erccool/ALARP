@@ -2,6 +2,7 @@ package com.alarp.javabean;
 
 public class EvaluationBean {
 	public static final String TABLE_NAME = "eval";
+	public static final String IDEVAL = "ideval";
 	public static final String TYPE = "type";
 	public static final String Q1 = "q1";
 	public static final String Q2 = "q2";
@@ -13,6 +14,16 @@ public class EvaluationBean {
 	public static final String DATE_INSPECTED = "date_inspected";
 	public static final String SME_DECISION = "sme_decision";
 	
+	
+	private int ideval;
+	
+
+	public int getIdeval() {
+		return ideval;
+	}
+	public void setIdeval(int ideval) {
+		this.ideval = ideval;
+	}
 	private String sme_decision;
 	public String getSme_decision() {
 		return sme_decision;

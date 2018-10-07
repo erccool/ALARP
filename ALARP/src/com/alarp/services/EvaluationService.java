@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+
 import com.alarp.db.DBManager;
 
 import com.alarp.javabean.EvaluationBean;
@@ -14,6 +15,36 @@ public class EvaluationService {
 	static String url ="jdbc:mysql://localhost:3306/secprg";
 	static String username ="root";
 	static String password = "password";
+	
+public ArrayList getAllEvaluations() {
+	ArrayList<EvaluationBean> evalLists = new ArrayList<>();
+	
+	String sql1 = "select * from alarp.eval";
+
+	try {
+		Class.forName("com.mysql.jdbc.Driver");
+		Connection con = DriverManager.getConnection(url,username,password);
+		PreparedStatement st = con.prepareStatement(sql1);
+		ResultSet rs = st.executeQuery();
+		while(rs.next()) {
+			EvaluationBean eb = new EvaluationBean();
+			
+			eb.setDate_inspected(rs.getString(EvaluationBean.DATE_INSPECTED));
+			eb.setDate_submitted(rs.getString(EvaluationBean.DATE_SUBMITTED));
+			eb.setType(rs.getString(EvaluationBean.TYPE));
+			eb.setSme_decision(rs.getString(EvaluationBean.SME_DECISION));
+			eb.setIdeval(rs.getInt(EvaluationBean.IDEVAL));
+			
+			evalLists.add(eb);
+		}		
+
+	} catch (ClassNotFoundException | SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+	return evalLists;
+}
 	
 public void addEvaluation(EvaluationBean e) {
 	String sql = "INSERT INTO alarp." + EvaluationBean.TABLE_NAME + "("

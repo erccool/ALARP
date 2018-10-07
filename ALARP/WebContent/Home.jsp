@@ -24,7 +24,7 @@
 		<a class="navbar-brand"><img src="Shell.png" alt="Dispute Bills" height = 120% >
         </a>
 		  <ul class="nav navbar-nav">
-		      <li><a href="Home.jsp"><font color="orange">Decide on forms</font></a></li>
+		      <li><a href="GetAllEvalServlet"><font color="orange">Decide on forms</font></a></li>
 		      <li><a href="WelcomeReview.jsp"><font color="orange">Submit Evaluation</font></a></li>
 		      <li><a href="Display?page=Digital"><font color="orange">View Past Reviews</font></a></li>
 		 </ul>
@@ -99,8 +99,26 @@
 						       <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>         
 						      </a>
 						  </td>	
-						  </a>
+					
 					    </tr>
+					    <c:forEach items = "${evalLists}" var = "e">
+					    <tr>
+					    <td>${e.ideval }</td></a>
+					      <td>${e.date_submitted }</td>
+					      <td>${e.date_inspected }</td>
+					      <td>${e.type }</td>
+					      <td>${e.sme_decision }</td>
+					      <td><a href="EvalResults.jsp" class="btn btn-warning a-btn-slide-text">
+						        <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>           
+						      </a>
+						  </td>
+	    				  <td><a href="#" class="btn btn-danger a-btn-slide-text">
+						       <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>         
+						      </a>
+						  </td>	
+					     </tr>
+					    </c:forEach>
+					    
 					  </tbody>
 			</table>
 			</div>

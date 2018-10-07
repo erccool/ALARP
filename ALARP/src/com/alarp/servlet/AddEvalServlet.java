@@ -61,7 +61,7 @@ public class AddEvalServlet extends HttpServlet {
 		
 		EvaluationService evaluationsService = new EvaluationService();
 		evaluationsService.addEvaluation(eb);
-		request.getRequestDispatcher("Home.jsp").forward(request, response);
+		request.getRequestDispatcher("GetAllEvalServlet").forward(request, response);
 
 	}
 
