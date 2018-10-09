@@ -20,12 +20,12 @@
 		<a class="navbar-brand"><img src="Shell.png" alt="Dispute Bills" height = 120% >
         </a>
 		  <ul class="nav navbar-nav">
-		      <li><a href="Home.jsp"><font color="orange">Decide on forms</font></a></li>
+		      <li><a href="GetAllEvalServlet"><font color="orange">Decide on forms</font></a></li>
 		      <li><a href="WelcomeReview.jsp"><font color="orange">Submit Review</font></a></li>
 		      <li><a href="Display?page=Digital"><font color="orange">View Past Reviews</font></a></li>
 		 </ul>
-		<div class = "pull-right"><a href = "SignUp.jsp"><button type="button" class="btn btn-primary">Sign Up</button></a></div>
-		<div class = "pull-right"><button type="submit" class="btn btn-warning"data-toggle="modal" data-target="#exampleModal">Login</button><br></div>
+		<div class = "pull-right"><a href = "SignUp.jsp"><button type="button" class="btn btn-warning">Sign Up</button></a></div>
+		<div class = "pull-right"><button type="submit" class="btn btn-danger"data-toggle="modal" data-target="#exampleModal">Login</button><br></div>
 		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">

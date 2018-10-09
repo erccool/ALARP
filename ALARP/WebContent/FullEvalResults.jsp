@@ -28,7 +28,7 @@
 		<a class="navbar-brand"><img src="Shell.png" alt="Dispute Bills" height = 120% >
         </a>
 		  <ul class="nav navbar-nav">
-		      <li><a href="Home.jsp"><font color="orange">Decide On Forms</font></a></li>
+		      <li><a href="GetAllEvalServlet"><font color="orange">Decide On Forms</font></a></li>
 		      <li><a href="WelcomeReview.jsp"><font color="orange">Submit Review</font></a></li>
 		      <li><a href="Display?page=Digital"><font color="orange">View Past Reviews</font></a></li>
 		 </ul>

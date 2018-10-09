@@ -27,7 +27,7 @@
 		<a class="navbar-brand"><img src="Shell.png" alt="Dispute Bills" height = 120% >
         </a>
 		  <ul class="nav navbar-nav">
-		      <li><a href="Home.jsp"><font color="orange">Home</font></a></li>
+		      <li><a href="GetAllEvalServlet"><font color="orange">Decide On Forms</font></a></li>
 		      <li><a href="WelcomeReview.jsp"><font color="orange">Submit Review</font></a></li>
 		      <li><a href="Display?page=Digital"><font color="orange">View Past Reviews</font></a></li>
 		 </ul>
@@ -41,7 +41,7 @@
 
 	<div class="container-fluid">
 		  <ul class="nav navbar-nav">
-		      <li ><a href="NotApproved.jsp">Not Approved</a></li>
+		      <li ><a href="NotApproved.jsp">Not Permitted</a></li>
 		      <li ><a href="Moved.jsp">Moved to a later date</a></li>	      
 		      <li class ="active"><a href="NotLocated.jsp">Terminal is Located at a Remote Area</a></li>
 		      <li><a href="Desktop.jsp">Desktop Review</a></li>
@@ -494,7 +494,7 @@
 <div class="panel panel-warning">
 		
 	<div class="panel-heading">  
- 		<h4 class = "text-center"><font color="orange">Not Approved</font></h4>
+ 		<h4 class = "text-center"><font color="orange">Located at a Remote Area</font></h4>
  	</div>
  	
  	
@@ -503,7 +503,7 @@
  	
  	<div class = "col-md-6 col-md-offset-3">
  	
- 	Terminal operator does NOT permit an inspection by Shell. 
+Terminal is located in a remote area which may increase the business HSSE travel risk of an AP or a company approved Contractor. 
  	
  	
  	</div>

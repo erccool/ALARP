@@ -27,7 +27,7 @@
 		<a class="navbar-brand"><img src="Shell.png" alt="Dispute Bills" height = 120% >
         </a>
 		  <ul class="nav navbar-nav">
-		      <li><a href="Home.jsp"><font color="orange">Home</font></a></li>
+		      <li><a href="GetAllEvalServlet"><font color="orange">Decide On Forms</font></a></li>
 		      <li><a href="WelcomeReview.jsp"><font color="orange">Submit Review</font></a></li>
 		      <li><a href="Display?page=Digital"><font color="orange">View Past Reviews</font></a></li>
 		 </ul>
@@ -41,10 +41,10 @@
 
 	<div class="container-fluid">
 		  <ul class="nav navbar-nav">
-		      <li class ="active"><a href="NotApproved.jsp">Not Approved</a></li>
+		      <li class ="active"><a href="NotApproved.jsp">Not Permitted</a></li>
 		      <li ><a href="Moved.jsp">Moved to a later date</a></li>	      
-		      <li><a href="NotLocated.jsp">Terminal is Located at a Remote Area</a></li>
-		      <li><a href="Desktop.jsp">Desktop Review</a></li>
+		      <li><a href="NotLocated.jsp">Located at a Remote Area</a></li>
+		      <li><a href="Desktop.jsp">Annual exposure exceeded over 100 clearance / CARM waiver</a></li>
 		      <li><a href="Unproven.jsp">Unproven Technology</a></li> 
 		 </ul>
 	</div>
@@ -202,21 +202,25 @@
  	
  	</br></br><label for="comment">Terminal & Associated asset Review</label>
  	
- 	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
- 	
- Is there any third party available?
+ 	<div class = "row" id = "comment">
+ 	<div class = "col-md-6 col-md-offset-3">
+ 	<div class="form-group" id = answer display = "none" >
+		    <label for="email"> Is there any third party available?  </label>
+		    <input type="email" class="fform-group mb-2" id="ques1a" name="q1" readonly>
+	 </div> 
+
  	
  	</div> </div>
  	
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes1()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes1()" type="submit" class="btn btn-md btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal1">No</button>
+		<button type="submit" class="btn btn-danger signup-btn active" data-toggle="modal" data-target="#Modal1">No</button>
 
 	</div>  
 	</div>
@@ -226,52 +230,74 @@
  	
  	
  	<div class = "row"><div class = "col-md-6 col-md-offset-3">
+ 	<label for="email">The terminal operator is reputable and operates in accordance to OCIMF / SIGTTO guidelines and recommendations. Is this true?
+</label>
+		    <input type="email" class="fform-group mb-2" id="ques2a" name="q2" readonly>
  	
-The terminal operator is reputable and operates in accordance to OCIMF / SIGTTO guidelines and recommendations. Is this true?
- 	
- 	</div> </div>
+ 	</div> </div> <br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes2()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes2()" type="submit" class="btn  btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal2">No</button>
+		<button type="submit" class="btn  btn-danger signup-btn active" data-toggle="modal" data-target="#Modal2">No</button>
 	</div>
- 	</div>
+ 	</div><br>
  	
- 	<div class = "row"><div class = "col-md-6 col-md-offset-3">
+ 	 <br><div class = "row"><div class = "col-md-6 col-md-offset-3">
+ 	<label for="email">Terminal provided critical information. Is this true? </label>
+		    <input type="email" class="fform-group mb-2" id="ques3a" name="q2" readonly>
  	
-Terminal provided critical information. Is this true?
- 	</div> </div>
+ 	</div> </div> <br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes3()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes3()" type="submit" class="btn  btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal3">No</button>`
+		<button type="submit" class="btn  btn-danger signup-btn active" data-toggle="modal" data-target="#Modal3">No</button>`
 	</div>  
 	</div>
  	</div>
  	
  	<div class = "row"><div class = "col-md-6 col-md-offset-3">
- 	
-The terminal has submitted a valid MTMSA and it has been reviewed by an AP. Is this true?	
- 	</div> </div>
+ 	<label for="email">The terminal has submitted a valid MTMSA and it has been reviewed by an AP. Is this true?	</label>
+		    <input type="email" class="fform-group mb-2" id="ques4a" name="q2" readonly> 	
+ 	</div> </div> <br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes4()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes4()" type="submit" class="btn   btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal4">No</button>
+		<button type="submit" class="btn   btn-danger signup-btn active" data-toggle="modal" data-target="#Modal4">No</button>
+
+	</div>  
+	</div>
+ 	</div>
+ 	
+ 	<div class = "row"><div class = "col-md-6 col-md-offset-3">
+ 	<label for="email">Master's feedback from Shell chartered vessel was crossed referenced with no major observations. Is this true?
+	</label>
+		    <input type="email" class="fform-group mb-2" id="ques5a" name="q2" readonly> 
+ 	
+ 	</div> </div> <br>
+ 	<div class = "row">
+ 	<div class = "col-md-6 col-md-offset-3">
+ 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+		<button onClick = "Yes5()" type="submit" class="btn  btn-warning signup-btn active">Yes</button>
+	
+		</div>  
+		
+		<div class = "col-md-3 col-sm-3 col-xs-12 ">
+		<button type="submit" class="btn  btn-danger signup-btn active" data-toggle="modal" data-target="#Modal5">No</button>
 
 	</div>  
 	</div>
@@ -279,78 +305,68 @@ The terminal has submitted a valid MTMSA and it has been reviewed by an AP. Is t
  	
  	<div class = "row"><div class = "col-md-6 col-md-offset-3">
  	
-Master's feedback from Shell chartered vessel was crossed referenced with no major observations. Is this true?
- 	
- 	</div> </div>
+ 	<label for="email">Berth data and parameters were extracted from Ship Shore Compatibility Check or berth fit check documents provided by the terminal. Is this true?
+	</label>
+		    <input type="email" class="fform-group mb-2" id="ques6a" name="q2" readonly> 
+ 	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes5()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes6()" type="submit" class="btn   btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal5">No</button>
-
-	</div>  
-	</div>
- 	</div>
- 	
- 	<div class = "row"><div class = "col-md-6 col-md-offset-3">
- 	
-Berth data and parameters were extracted from Ship Shore Compatibility Check or berth fit check documents provided by the terminal. Is this true?
- 	
- 	</div> </div>
- 	<div class = "row">
- 	<div class = "col-md-6 col-md-offset-3">
- 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes6()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
-	
-		</div>  
-		
-		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal6">No</button>
+		<button type="submit" class="btn   btn-danger signup-btn active" data-toggle="modal" data-target="#Modal6">No</button>
 
 	</div>  
 	</div>
  	</div>
  	<form action = "AddEvalServlet" method = "POST" enctype="multipart/form-data" onsubmit="return checkForm(this);">
  	<div class = "row"><div class = "col-md-6 col-md-offset-3">
- 
+ 	<br>
+ 	<label for="SMEinput">SME</label>
+ 	<fieldset class = "form-group" id = "SMEinput">
+	              <select name = "SME">
+					  <option value="1" name = "SME">SME1</option>
+					  <option value="2" name = "SME">SME2</option>
+					  <option value="3" name = "SME">SME3</option>
+				  </select>
+    </fieldset>
     </div></div>
     
  	<div class="form-group" id = answer display = "none" >
-		    <label for="email">Answer 1: </label>
-		    <input type="email" class="fform-group mb-2" id="ques1" name="q1" readonly>
+		    <label for="email" hidden>Answer 1: </label>
+		    <input type="email" class="fform-group mb-2" id="ques1" name="q1" readonly hidden>
 	 </div> 
 	 
-	 <div class="form-group" id = answer display = "none" >
+	 <div class="form-group" id = answer display = "none" hidden>
 		    <label for="email">Answer 2: </label>
 		    <input type="email" class="fform-group mb-2" id="ques2" name="q2" readonly>
 	 </div> 
 	 
-	 <div class="form-group" id = answer display = "none" >
+	 <div class="form-group" id = answer display = "none" hidden>
 		    <label for="email">Answer 3: </label>
 		    <input type="email" class="fform-group mb-2" id="ques3" name="q3" readonly>
 	 </div> 
 	 
-	 <div class="form-group" id = answer display = "none" >
+	 <div class="form-group" id = answer display = "none" hidden>
 		    <label for="email">Answer 4: </label>
 		    <input type="email" class="fform-group mb-2" id="ques4" name="q4" readonly>
 	 </div> 
 	 
-	 <div class="form-group" id = answer display = "none" >
+	 <div class="form-group" id = answer display = "none" hidden>
 		    <label for="email">Answer 5: </label>
 		    <input type="email" class="fform-group mb-2" id="ques5" name="q5" readonly>
 	 </div> 
 	 
-	 <div class="form-group" id = answer display = "none" >
+	 <div class="form-group" id = answer display = "none" hidden>
 		    <label for="email">Answer 6: </label>
 		    <input type="email" class="fform-group mb-2" id="ques6" name="q6" readonly>
 	 </div> 
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
- 	<button type="submit" class="btn btn-lg btn-warning signup-btn active">Submit</button>
+ 	<button type="submit" class="btn  btn-warning signup-btn active">Submit</button>
  	</div>
  	</div>
 	</form>
@@ -361,21 +377,22 @@ Berth data and parameters were extracted from Ship Shore Compatibility Check or 
 <script>
 		function Yes1() {
 		    document.getElementById("ques1").value = "Yes";
-		   
 		}
 		
 		function No1() {
 		    document.getElementById("ques1").value = "No: " + document.getElementById("comment1").value;
+		    document.getElementById("ques1a").value = "No: " + document.getElementById("comment1").value;
 		   
 		}
 		
 		function Yes2() {
 		    document.getElementById("ques2").value = "Yes";
-		   
+
 		}
 		
 		function No2() {
 		    document.getElementById("ques2").value = "No: " + document.getElementById("comment2").value;
+		    document.getElementById("ques2a").value = "No: " + document.getElementById("comment2").value;
 		   
 		}
 		
@@ -386,6 +403,7 @@ Berth data and parameters were extracted from Ship Shore Compatibility Check or 
 		
 		function No3() {
 		    document.getElementById("ques3").value = "No: " + document.getElementById("comment3").value;
+		    document.getElementById("ques3a").value = "No: " + document.getElementById("comment3").value;
 		   
 		}
 		
@@ -396,6 +414,7 @@ Berth data and parameters were extracted from Ship Shore Compatibility Check or 
 		
 		function No4() {
 		    document.getElementById("ques4").value = "No: " + document.getElementById("comment4").value;
+		    document.getElementById("ques4a").value = "No: " + document.getElementById("comment4").value;
 		   
 		}function Yes5() {
 		    document.getElementById("ques5").value = "Yes";
@@ -404,16 +423,17 @@ Berth data and parameters were extracted from Ship Shore Compatibility Check or 
 		
 		function No5() {
 		    document.getElementById("ques5").value = "No: " + document.getElementById("comment5").value;
-		   
+		    document.getElementById("ques5a").value = "No: " + document.getElementById("comment5").value;
+		    
 		}
 		
 		function Yes6() {
 		    document.getElementById("ques6").value = "Yes";
-		   
 		}
 		
 		function No6() {
 		    document.getElementById("ques6").value = "No: " + document.getElementById("comment6").value;
+		    document.getElementById("ques6a").value = "No: " + document.getElementById("comment6").value;
 		   
 		}
 </script>
