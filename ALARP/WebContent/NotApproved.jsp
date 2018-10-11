@@ -19,7 +19,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>ALARP: Start</title>
 </head>
-<body style="background-color:white;">
+<body style="background-color:lemonchiffon;">
 <div class="row">
 <nav class="nnavbar navbar-inverse navbar-static-top nav-upper nav1">
 
@@ -183,22 +183,15 @@
 </div>
 
 <div class="container ">
-<div class="panel panel-danger">
-		
+<div class="panel panel-default">
+
 	<div class="panel-heading">  
- 		<h4 class = "text-center"><font color="red">Not Approved</font></h4>
+ 		<h4 class = "text-center"><font color="red">Terminal operator does NOT permit an inspection by Shell. </font></h4>
  	</div>
  	
  	
- 	
- 	<div class="panel-body bg-warning">
- 	
- 	<div class = "col-md-6 col-md-offset-3">
- 	
- 	Terminal operator does NOT permit an inspection by Shell. 
- 	
- 	
- 	</div>
+<font color="red">		
+ 	<div class="panel-body bg-default">
  	
  	</br></br><label for="comment">Terminal & Associated asset Review</label>
  	
@@ -370,6 +363,7 @@
  	</div>
  	</div>
 	</form>
+</font>
 </div>
 </div>
 
