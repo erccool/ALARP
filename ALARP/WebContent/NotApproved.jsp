@@ -19,7 +19,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>ALARP: Start</title>
 </head>
-<body style="background-color:orange;">
+<body style="background-color:white;">
 <div class="row">
 <nav class="nnavbar navbar-inverse navbar-static-top nav-upper nav1">
 
@@ -182,16 +182,16 @@
   </div>
 </div>
 
-<div class="container">
-<div class="panel panel-warning">
+<div class="container ">
+<div class="panel panel-danger">
 		
 	<div class="panel-heading">  
- 		<h4 class = "text-center"><font color="orange">Not Approved</font></h4>
+ 		<h4 class = "text-center"><font color="red">Not Approved</font></h4>
  	</div>
  	
  	
  	
- 	<div class="panel-body">
+ 	<div class="panel-body bg-warning">
  	
  	<div class = "col-md-6 col-md-offset-3">
  	
