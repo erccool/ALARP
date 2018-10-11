@@ -19,7 +19,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>ALARP: Start</title>
 </head>
-<body style="background-color:orange;">
+<body style="background-color:lemonchiffon;">
 <div class="row">
 <nav class="nnavbar navbar-inverse navbar-static-top nav-upper nav1">
 
@@ -43,8 +43,8 @@
 		  <ul class="nav navbar-nav">
 		      <li ><a href="NotApproved.jsp">Not Approved</a></li>
 		      <li class ="active"><a href="Moved.jsp">Moved to a later date</a></li>	      
-		      <li><a href="NotLocated.jsp">Terminal is Located at a Remote Area</a></li>
-		      <li ><a href="Desktop.jsp">Desktop Review</a></li>
+		      <li><a href="NotLocated.jsp">Located at a Remote Area</a></li>
+		      <li ><a href="Desktop.jsp">Annual exposure exceeded over 100 clearance / CARM waiver</a></li>
 		      <li ><a href="Unproven.jsp">Unproven Technology</a></li> 
 		 </ul>
 	</div>
@@ -316,38 +316,38 @@
 
 
 <div class="container">
-<div class="panel panel-warning">
+<div class="panel panel-default">
 		
 	<div class="panel-heading">  
- 		<h4 class = "text-center"><font color="orange">Moved</font></h4>
+ 		<h4 class = "text-center"><font color="black">Terminal operator permits an inspection however due to Shell resources constrains, unable to schedule an inspection prior to the required date. 
+</font></h4>
  	</div>
  	
  	
- 	
+ 	<font color="gray">
  	<div class="panel-body">
- 	
- 	<div class = "col-md-6 col-md-offset-3">
- 	Terminal operator permits an inspection however due to Shell resources constrains, unable to schedule an inspection prior to the required date. 
-
- 	</div>
  	
  	</br></br><label for="comment">Terminal & Associated asset Review</label>
  	
- 	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
- 	
- Is there any third party available?
+ 	<div class = "row" id = "comment">
+ 	<div class = "col-md-6 col-md-offset-3">
+ 	<div class="form-group" id = answer display = "none" >
+		    <label for="email"> Is there any third party available?  </label>
+		    <input type="email" class="fform-group mb-2" id="ques1a" name="q1" readonly>
+	 </div> 
+
  	
  	</div> </div>
  	
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes1()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes1()" type="submit" class="btn btn-md btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal1">No</button>
+		<button type="submit" class="btn btn-danger signup-btn active" data-toggle="modal" data-target="#Modal1">No</button>
 
 	</div>  
 	</div>
@@ -357,52 +357,74 @@
  	
  	
  	<div class = "row"><div class = "col-md-6 col-md-offset-3">
+ 	<label for="email">The terminal operator is reputable and operates in accordance to OCIMF / SIGTTO guidelines and recommendations. Is this true?
+</label>
+		    <input type="email" class="fform-group mb-2" id="ques2a" name="q2" readonly>
  	
-The terminal operator is reputable and operates in accordance to OCIMF / SIGTTO guidelines and recommendations. Is this true?
- 	
- 	</div> </div>
+ 	</div> </div> <br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes2()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes2()" type="submit" class="btn  btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal2">No</button>
+		<button type="submit" class="btn  btn-danger signup-btn active" data-toggle="modal" data-target="#Modal2">No</button>
 	</div>
- 	</div>
+ 	</div><br>
  	
- 	<div class = "row"><div class = "col-md-6 col-md-offset-3">
+ 	 <br><div class = "row"><div class = "col-md-6 col-md-offset-3">
+ 	<label for="email">Terminal provided critical information. Is this true? </label>
+		    <input type="email" class="fform-group mb-2" id="ques3a" name="q2" readonly>
  	
-Terminal provided critical information. Is this true?
- 	</div> </div>
+ 	</div> </div> <br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes3()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes3()" type="submit" class="btn  btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal3">No</button>`
+		<button type="submit" class="btn  btn-danger signup-btn active" data-toggle="modal" data-target="#Modal3">No</button>`
 	</div>  
 	</div>
  	</div>
  	
  	<div class = "row"><div class = "col-md-6 col-md-offset-3">
- 	
-The terminal has submitted a valid MTMSA and it has been reviewed by an AP. Is this true?	
- 	</div> </div>
+ 	<label for="email">The terminal has submitted a valid MTMSA and it has been reviewed by an AP. Is this true?	</label>
+		    <input type="email" class="fform-group mb-2" id="ques4a" name="q2" readonly> 	
+ 	</div> </div> <br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes4()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes4()" type="submit" class="btn   btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal4">No</button>
+		<button type="submit" class="btn   btn-danger signup-btn active" data-toggle="modal" data-target="#Modal4">No</button>
+
+	</div>  
+	</div>
+ 	</div>
+ 	
+ 	<div class = "row"><div class = "col-md-6 col-md-offset-3">
+ 	<label for="email">Master's feedback from Shell chartered vessel was crossed referenced with no major observations. Is this true?
+	</label>
+		    <input type="email" class="fform-group mb-2" id="ques5a" name="q2" readonly> 
+ 	
+ 	</div> </div> <br>
+ 	<div class = "row">
+ 	<div class = "col-md-6 col-md-offset-3">
+ 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+		<button onClick = "Yes5()" type="submit" class="btn  btn-warning signup-btn active">Yes</button>
+	
+		</div>  
+		
+		<div class = "col-md-3 col-sm-3 col-xs-12 ">
+		<button type="submit" class="btn  btn-danger signup-btn active" data-toggle="modal" data-target="#Modal5">No</button>
 
 	</div>  
 	</div>
@@ -410,37 +432,20 @@ The terminal has submitted a valid MTMSA and it has been reviewed by an AP. Is t
  	
  	<div class = "row"><div class = "col-md-6 col-md-offset-3">
  	
-Master's feedback from Shell chartered vessel was crossed referenced with no major observations. Is this true?
- 	
- 	</div> </div>
+ 	<label for="email">
+ 	Berth data and parameters were extracted from Ship Shore Compatibility Check or berth fit check documents provided by the terminal. Is this true?
+	</label>
+		    <input type="email" class="fform-group mb-2" id="ques6a" name="q2" readonly> 
+ 	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes5()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes6()" type="submit" class="btn   btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal5">No</button>
-
-	</div>  
-	</div>
- 	</div>
- 	
- 	<div class = "row"><div class = "col-md-6 col-md-offset-3">
- 	
-Berth data and parameters were extracted from Ship Shore Compatibility Check or berth fit check documents provided by the terminal. Is this true?
- 	
- 	</div> </div>
- 	<div class = "row">
- 	<div class = "col-md-6 col-md-offset-3">
- 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes6()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
-	
-		</div>  
-		
-		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal6">No</button>
+		<button type="submit" class="btn   btn-danger signup-btn active" data-toggle="modal" data-target="#Modal6">No</button>
 
 	</div>  
 	</div>
@@ -448,10 +453,10 @@ Berth data and parameters were extracted from Ship Shore Compatibility Check or 
  	
  	</br></br><label for="comment">Task 2</label>
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
- 	
+ 	<label for="email">
  The terminal has been inspected by an AP or a company approved Contractor in the past 5 years. All former high observations, if any were closed. 
-
- 	
+	</label>
+		    <input type="email" class="fform-group mb-2" id="ques7a" name="q2" readonly> 		
  	</div> </div>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
@@ -468,9 +473,10 @@ Berth data and parameters were extracted from Ship Shore Compatibility Check or 
  	
  	
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
- 	
+ 	<label for="email">
 A jetty walkabout has been conducted before by an AP or an approved contractor which may form part of the terminal. 
-
+	</label>
+		    <input type="email" class="fform-group mb-2" id="ques8a" name="q2" readonly> 		
  	
  	</div> </div>
  	<div class = "row">
@@ -487,10 +493,11 @@ A jetty walkabout has been conducted before by an AP or an approved contractor w
  	</div>
  	
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
- 	
+ 	<label for="email"> 	
 A teleconference between an AP and the terminal operations manager was conducted with no significant observation or issues. (Random sampling of BLC questionnaire used across all chapters) 
-
- 	
+	</label>
+	<input type="email" class="fform-group mb-2" id="ques9a" name="q2" readonly> 		
+ 		
  	</div> </div>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
@@ -506,9 +513,11 @@ A teleconference between an AP and the terminal operations manager was conducted
  	</div>
  	
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
- 	
+ 	<label for="email"> 	
  A written confirmation from the counterparty agreeing to an inspection which will occur within 6 months from the first Shell chartered vessel arrival date.
- 	
+ 	</label>
+	<input type="email" class="fform-group mb-2" id="ques10a" name="q2" readonly> 		
+
  	</div> </div>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
@@ -524,8 +533,10 @@ A teleconference between an AP and the terminal operations manager was conducted
  	</div>
  	
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
- 	
+ 	<label for="email"> 	 	
 Counterparty has agreed in principle to an inspection which will occur within 12 months from the first Shell chartered vessel arrival date. 
+ 	</label>
+	<input type="email" class="fform-group mb-2" id="ques11a" name="q2" readonly> 		
  	
  	</div> </div>
  	<div class = "row">
@@ -543,8 +554,10 @@ Counterparty has agreed in principle to an inspection which will occur within 12
  	
  	
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
- 	
+ 	<label for="email">
 Alternative terminals available for the deal due consideration that a vessel feedback / positive vetting may impact future terminal rating. 
+ 	</label>
+	<input type="email" class="fform-group mb-2" id="ques12a" name="q2" readonly> 		
  	
  	</div> </div>
  	<div class = "row">
@@ -566,79 +579,89 @@ Alternative terminals available for the deal due consideration that a vessel fee
 		    <label for="date_inspected">Date of Inspection: </label>
 		    <input type="input" class="fform-group mb-2" id="questosa" name="date_inspected"">
 	 </div>
+	 <br>
+	 <label for="SMEinput">SME</label>
+ 	<fieldset class = "form-group" id = "SMEinput">
+	              <select name = "SME">
+					  <option value="1" name = "SME">SME1</option>
+					  <option value="2" name = "SME">SME2</option>
+					  <option value="3" name = "SME">SME3</option>
+				  </select>
+    </fieldset>
     </div></div>
     
-    <div class="form-group" id = answer display = "none" >
+    <div class="form-group" id = answer display = "none" hidden>
 		    <label for="type">Eval Type: </label>
 		    <input type="input" class="fform-group mb-2" id="questo" name="type" value = "Moved" readonly>
 	 </div> 
     
- 	<div class="form-group" id = answer display = "none" >
+ 	<div class="form-group" id = answer display = "none" hidden>
 		    <label for="email">Answer 1: </label>
 		    <input type="email" class="fform-group mb-2" id="ques1" name="q1" readonly>
 	 </div> 
 	 
-	 <div class="form-group" id = answer display = "none" >
+	 <div class="form-group" id = answer display = "none" hidden>
 		    <label for="email">Answer 2: </label>
 		    <input type="email" class="fform-group mb-2" id="ques2" name="q2" readonly>
 	 </div> 
 	 
-	 <div class="form-group" id = answer display = "none" >
+	 <div class="form-group" id = answer display = "none" hidden>
 		    <label for="email">Answer 3: </label>
 		    <input type="email" class="fform-group mb-2" id="ques3" name="q3" readonly>
 	 </div> 
 	 
-	 <div class="form-group" id = answer display = "none" >
+	 <div class="form-group" id = answer display = "none" hidden>
 		    <label for="email">Answer 4: </label>
 		    <input type="email" class="fform-group mb-2" id="ques4" name="q4" readonly>
 	 </div> 
 	 
-	 <div class="form-group" id = answer display = "none" >
+	 <div class="form-group" id = answer display = "none" hidden>
 		    <label for="email">Answer 5: </label>
 		    <input type="email" class="fform-group mb-2" id="ques5" name="q5" readonly>
 	 </div> 
 	 
-	 <div class="form-group" id = answer display = "none" >
+	 <div class="form-group" id = answer display = "none" hidden>
 		    <label for="email">Answer 6: </label>
 		    <input type="email" class="fform-group mb-2" id="ques6" name="q6" readonly>
 	 </div> 
 	 
 	 
-	 <div class="form-group" id = answer display = "none" >
+	 <div class="form-group" id = answer display = "none" hidden>
 		    <label for="email">Answer 7: </label>
 		    <input type="email" class="fform-group mb-2" id="ques7" name="q7" readonly>
 	 </div> 
 	 
-	 <div class="form-group" id = answer display = "none" >
+	 <div class="form-group" id = answer display = "none" hidden>
 		    <label for="email">Answer 8: </label>
 		    <input type="email" class="fform-group mb-2" id="ques8" name="q8" readonly>
 	 </div> 
 	 
-	 <div class="form-group" id = answer display = "none" >
+	 <div class="form-group" id = answer display = "none" hidden>
 		    <label for="email">Answer 9: </label>
 		    <input type="email" class="fform-group mb-2" id="ques9" name="q9" readonly>
 	 </div> 
 	 
-	 <div class="form-group" id = answer display = "none" >
+	 <div class="form-group" id = answer display = "none" hidden>
 		    <label for="email">Answer 10: </label>
 		    <input type="email" class="fform-group mb-2" id="ques10" name="q10" readonly>
 	 </div> 
 	 
-	 <div class="form-group" id = answer display = "none" >
+	 <div class="form-group" id = answer display = "none" hidden>
 		    <label for="email">Answer 11: </label>
 		    <input type="email" class="fform-group mb-2" id="ques11" name="q11" readonly>
 	 </div> 
 	 
-	 <div class="form-group" id = answer display = "none" >
+	 <div class="form-group" id = answer display = "none" hidden>
 		    <label for="email">Answer 12: </label>
 		    <input type="email" class="fform-group mb-2" id="ques12" name="q12" readonly>
 	 </div> 
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
- 	<button type="submit" class="btn btn-lg btn-warning signup-btn active">Submit</button>
+ 	<br><button type="submit" class="btn btn-lg btn-warning signup-btn active">Submit</button>
  	</div>
  	</div>
 	</form>
+</font>
 </div>
 </div>
 
@@ -651,7 +674,7 @@ Alternative terminals available for the deal due consideration that a vessel fee
 		
 		function No1() {
 		    document.getElementById("ques1").value = "No: " + document.getElementById("comment1").value;
-		   
+		    document.getElementById("ques1a").value = "No: " + document.getElementById("comment1").value;		   
 		}
 		
 		function Yes2() {
@@ -661,6 +684,7 @@ Alternative terminals available for the deal due consideration that a vessel fee
 		
 		function No2() {
 		    document.getElementById("ques2").value = "No: " + document.getElementById("comment2").value;
+		    document.getElementById("ques2a").value = "No: " + document.getElementById("comment2").value;
 		   
 		}
 		
@@ -671,6 +695,7 @@ Alternative terminals available for the deal due consideration that a vessel fee
 		
 		function No3() {
 		    document.getElementById("ques3").value = "No: " + document.getElementById("comment3").value;
+		    document.getElementById("ques3a").value = "No: " + document.getElementById("comment3").value;
 		   
 		}
 		
@@ -681,6 +706,7 @@ Alternative terminals available for the deal due consideration that a vessel fee
 		
 		function No4() {
 		    document.getElementById("ques4").value = "No: " + document.getElementById("comment4").value;
+		    document.getElementById("ques4a").value = "No: " + document.getElementById("comment4").value;
 		   
 		}function Yes5() {
 		    document.getElementById("ques5").value = "Yes";
@@ -689,16 +715,17 @@ Alternative terminals available for the deal due consideration that a vessel fee
 		
 		function No5() {
 		    document.getElementById("ques5").value = "No: " + document.getElementById("comment5").value;
-		   
+		    document.getElementById("ques5a").value = "No: " + document.getElementById("comment5").value;
+		    
 		}
 		
 		function Yes6() {
 		    document.getElementById("ques6").value = "Yes";
-		   
 		}
 		
 		function No6() {
 		    document.getElementById("ques6").value = "No: " + document.getElementById("comment6").value;
+		    document.getElementById("ques6a").value = "No: " + document.getElementById("comment6").value;
 		   
 		}
 		
@@ -709,6 +736,7 @@ Alternative terminals available for the deal due consideration that a vessel fee
 		
 		function No7() {
 		    document.getElementById("ques7").value = "No: " + document.getElementById("comment7").value;
+		    document.getElementById("ques7a").value = "No: " + document.getElementById("comment6").value;
 		   
 		}
 		function Yes8() {
@@ -718,6 +746,7 @@ Alternative terminals available for the deal due consideration that a vessel fee
 		
 		function No8() {
 		    document.getElementById("ques8").value = "No: " + document.getElementById("comment8").value;
+		    document.getElementById("ques8a").value = "No: " + document.getElementById("comment6").value;
 		   
 		}
 		function Yes9() {
@@ -727,6 +756,7 @@ Alternative terminals available for the deal due consideration that a vessel fee
 		
 		function No9() {
 		    document.getElementById("ques9").value = "No: " + document.getElementById("comment9").value;
+		    document.getElementById("ques9a").value = "No: " + document.getElementById("comment6").value;
 		   
 		}
 		function Yes10() {
@@ -736,6 +766,7 @@ Alternative terminals available for the deal due consideration that a vessel fee
 		
 		function No10() {
 		    document.getElementById("ques10").value = "No: " + document.getElementById("comment10").value;
+		    document.getElementById("ques10a").value = "No: " + document.getElementById("comment6").value;
 		   
 		}
 		function Yes11() {
@@ -745,6 +776,7 @@ Alternative terminals available for the deal due consideration that a vessel fee
 		
 		function No11() {
 		    document.getElementById("ques11").value = "No: " + document.getElementById("comment11").value;
+		    document.getElementById("ques11a").value = "No: " + document.getElementById("comment6").value;
 		   
 		}
 		function Yes12() {
@@ -754,6 +786,7 @@ Alternative terminals available for the deal due consideration that a vessel fee
 		
 		function No12() {
 		    document.getElementById("ques12").value = "No: " + document.getElementById("comment12").value;
+		    document.getElementById("ques12a").value = "No: " + document.getElementById("comment6").value;
 		   
 		}
 </script>

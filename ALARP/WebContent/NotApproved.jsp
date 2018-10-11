@@ -186,11 +186,11 @@
 <div class="panel panel-default">
 
 	<div class="panel-heading">  
- 		<h4 class = "text-center"><font color="red">Terminal operator does NOT permit an inspection by Shell. </font></h4>
+ 		<h4 class = "text-center"><font color="black">Terminal operator does NOT permit an inspection by Shell. </font></h4>
  	</div>
  	
  	
-<font color="red">		
+<font color="gray">		
  	<div class="panel-body bg-default">
  	
  	</br></br><label for="comment">Terminal & Associated asset Review</label>
