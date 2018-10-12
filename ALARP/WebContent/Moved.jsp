@@ -31,9 +31,51 @@
 		      <li><a href="WelcomeReview.jsp"><font color="orange">Submit Review</font></a></li>
 		      <li><a href="Display?page=Digital"><font color="orange">View Past Reviews</font></a></li>
 		 </ul>
-		<div class = "pull-right"><a href = "SignUp.jsp"><button type="button" class="btn btn-danger">Sign Up</button></a></div>
-		<div class = "pull-right"><button type="submit" class="btn btn-warning" onclick ="checkForm()">Login</button><br></div>
-		
+		<c:choose>
+  				<c:when test="${sessionScope.iduser != null}">
+  				<form action="Logout" class="navbar-form navbar-right">
+      				<input type="submit" class="btn btn-info" value="Logout" onclick = "myFunction2()">
+      				<script>
+						function myFunction2() {
+    					alert("Successfully Logged Out.");
+						}
+						
+					</script>
+      			</form>
+                </c:when>
+                <c:otherwise>
+                <div class = "pull-right"><button type="submit" class="btn btn-danger"data-toggle="modal" data-target="#ModalLogin">Login</button><br></div> 
+				<form id="signin" class="navbar-form navbar-right" role="form" action="Login" method="post">
+					<div class="modal fade" id="ModalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+						      <div class="modal-body">
+								  <div class="form-group">
+								    <label for="uname">Username</label>
+								    <input id="uname" type="text" class="form-control" name="username" placeholder="username">
+								  </div>
+								  <div class="form-group">
+								    <label for="exampleInputPassword1">Password</label>
+								    <input id="password" type="password" class="form-control" name="password" placeholder ="password">
+								  </div>										      
+							  </div>
+						      <div class="modal-footer">
+						        <button type="submit" class="btn btn-danger" >Login</button>
+						        <button type="button" class="btn btn-warning">Cancel</button>
+						      </div>
+					      	
+					    </div>
+					  </div>
+					</div>  
+				</form>              
+                </c:otherwise>
+    		</c:choose>			
 	    
 	</div>
 </nav>

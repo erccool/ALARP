@@ -157,6 +157,22 @@ public void decide(int id, String decision) {
 	}
 }
 
+public void deleteEval(int id) {
+	ArrayList<EvaluationBean> product = new ArrayList<>();
+	
+	String sql = "DELETE FROM alarp.eval WHERE "  + EvaluationBean.IDEVAL + " = " + id;
+	try {
+		Class.forName("com.mysql.jdbc.Driver");
+		Connection con = DriverManager.getConnection(url,username,password);
+		PreparedStatement st = con.prepareStatement(sql);
+		st.executeUpdate();	
+
+	} catch (ClassNotFoundException | SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+}
+
 public void addEvaluation(EvaluationBean e) {
 
 	String sql = "INSERT INTO alarp." + EvaluationBean.TABLE_NAME + "("

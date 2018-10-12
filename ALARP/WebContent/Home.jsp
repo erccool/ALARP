@@ -26,18 +26,7 @@ function alertSessionTimeout() {
 <body style="background-color:orange;">
 
 <%
-	if(session.getAttribute("isadmin")!=null){
-  	response.sendRedirect("error.jsp");
-  }
-  else if(session.getAttribute("isproductmanager")!=null){
-  	  	response.sendRedirect("error.jsp");
-  	}
-
-  else if(session.getAttribute("username")==null){
-	  	response.sendRedirect("error.jsp");
-	}
-
-  else if(session.getAttribute("normuser")!=null){
+	if(session.getAttribute("username")==null){
 	  	response.sendRedirect("error.jsp");
 	}
 %>
@@ -150,7 +139,7 @@ function alertSessionTimeout() {
 						        <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>           
 						      </a>
 						  </td>
-	    				  <td><a href="#" class="btn btn-danger a-btn-slide-text">
+	    				  <td><a href="DeleteEvalServlet?id=${e.ideval}" class="btn btn-danger a-btn-slide-text">
 						       <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>         
 						      </a>
 						  </td>	
