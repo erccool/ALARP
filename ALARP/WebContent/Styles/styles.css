@@ -1,9 +1,14 @@
 @charset "ISO-8859-1";
 
+.navbar{
+	background-color: #d9534f !important;
+}
+
 .nav1 {
 	height: auto !important;
 	min-height: inherit !important;
 	margin-bottom: 0px !important;
+	background-color: #d9534f !important;
 }
 
 .nav2 {

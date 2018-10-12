@@ -10,6 +10,14 @@
 <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+function startCountdown() {
+    window.setTimeout(alertSessionTimeout, ${pageContext.session.maxInactiveInterval * 1000});
+}
+
+function alertSessionTimeout() {
+    alert("You're session is going to timeout in 1 minute.");
+</script>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -28,40 +36,53 @@
 		      <li><a href="WelcomeReview.jsp"><font color="orange">Submit Evaluation</font></a></li>
 		      <li><a href="Display?page=Digital"><font color="orange">View Past Reviews</font></a></li>
 		 </ul>
-		<div class = "pull-right"><a href = "SignUp.jsp"><button type="button" class="btn btn-warning">Sign Up</button></a></div>
-		<div class = "pull-right"><button type="submit" class="btn btn-danger"data-toggle="modal" data-target="#ModalLogin">Login</button><br></div>
-		<div class="modal fade" id="ModalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		  <div class="modal-dialog" role="document">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-		          <span aria-hidden="true">&times;</span>
-		        </button>
-		      </div>
-		      <div class="modal-body">
-		        <form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-</form>		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-danger" data-dismiss="modal">Login</button>
-		        <button type="button" class="btn btn-warning">Cancel</button>
-		      </div>
-		    </div>
-		  </div>
-		</div>
+		<c:choose>
+  				<c:when test="${sessionScope.iduser != null}">
+  				<form action="Logout" class="navbar-form navbar-right">
+      				<input type="submit" class="btn btn-info" value="Logout" onclick = "myFunction2()">
+      				<script>
+						function myFunction2() {
+    					alert("Successfully Logged Out.");
+						}
+						
+					</script>
+      			</form>
+                </c:when>
+                <c:otherwise>
+                <div class = "pull-right"><button type="submit" class="btn btn-danger"data-toggle="modal" data-target="#ModalLogin">Login</button><br></div> 
+				<form id="signin" class="navbar-form navbar-right" role="form" action="Login" method="post">
+					<div class="modal fade" id="ModalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+						      <div class="modal-body">
+								  <div class="form-group">
+								    <label for="uname">Username</label>
+								    <input id="uname" type="text" class="form-control" name="username" placeholder="username">
+								  </div>
+								  <div class="form-group">
+								    <label for="exampleInputPassword1">Password</label>
+								    <input id="password" type="password" class="form-control" name="password" placeholder ="password">
+								  </div>										      
+							  </div>
+						      <div class="modal-footer">
+						        <button type="submit" class="btn btn-danger" >Login</button>
+						        <button type="button" class="btn btn-warning">Cancel</button>
+						      </div>
+					      	
+					    </div>
+					  </div>
+					</div>  
+				</form>              
+                </c:otherwise>
+    		</c:choose>	
+		
+		
 		
 	    
 	</div>

@@ -41,6 +41,7 @@ public class Login extends HttpServlet {
 		// TODO Auto-generated method stub
 		String uname = request.getParameter("username");
 		String pass = request.getParameter("password");
+		System.out.println("Username eto: " + uname + "password eto: " + pass);
 		String action = "";
 		UserBean u = new UserBean();
 		LoginDao dao = new LoginDao();
@@ -106,7 +107,7 @@ public class Login extends HttpServlet {
 					session.setAttribute("username", uname);
 					session.setAttribute("iduser", dao.getiduser(uname));
 					System.out.println("username: "+uname);
-					response.sendRedirect("Home.jsp");
+					response.sendRedirect("GetAllEvalServlet");
 					action = uname + " ID: " + dao.getiduser(uname) + " logged in at " + LocalDateTime.now();
 				}
 				}
@@ -146,8 +147,8 @@ public class Login extends HttpServlet {
 				outb.println("location='Home.jsp';");
 				outb.println("</script>");
 			}
-
-			try (PrintWriter wr = new PrintWriter(new BufferedWriter(new FileWriter("C:\\Users\\JC\\Documents\\logfiles.txt", true)))) {
+			/*
+			try (PrintWriter wr = new PrintWriter(new BufferedWriter(new FileWriter("C:\\Documents\\logfiles.txt", true)))) {
 				System.out.println("File Opened");
 			    wr.println(action);
 			    wr.close();
@@ -155,7 +156,7 @@ public class Login extends HttpServlet {
 			    System.err.format("IOException: %s%n", x);
 			    System.out.println("File not opened");
 			}
-			//file writing code end
+			//file writing code end*/
 			
 		} catch (SQLException e) {
 			

@@ -78,7 +78,7 @@ public class LoginDao {
 	
 	public boolean check(String uname, String pass) throws SQLException {
 		
-		String sql = "select * from user where username=? and password=?";
+		String sql = "select * from alarp.user where username=? and password=?";
 		
 		
 		try {
@@ -87,6 +87,7 @@ public class LoginDao {
 			PreparedStatement st = con.prepareStatement(sql);
 			st.setString(1, uname);
 			st.setString(2, pass);
+			System.out.println("This is the statement bro ---> " + st);
 			ResultSet rs = st.executeQuery();
 			
 			if(rs.next()) {
@@ -149,7 +150,7 @@ public class LoginDao {
 	}
 	
 	public void addnewentry(int id) {
-		  String sql = "INSERT INTO alarp.sessiontracking(attempts,logged,userid) values (1,now(),?)";
+		  String sql = "INSERT INTO alarp.sessiontracking(ipaddress,attempts,logged,userid) values (192,1,now(),?)";
 		  
 		  try {
 			Class.forName("com.mysql.jdbc.Driver");
