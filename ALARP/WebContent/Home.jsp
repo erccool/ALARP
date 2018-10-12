@@ -25,6 +25,23 @@ function alertSessionTimeout() {
 </head>
 <body style="background-color:orange;">
 
+<%
+	if(session.getAttribute("isadmin")!=null){
+  	response.sendRedirect("error.jsp");
+  }
+  else if(session.getAttribute("isproductmanager")!=null){
+  	  	response.sendRedirect("error.jsp");
+  	}
+
+  else if(session.getAttribute("username")==null){
+	  	response.sendRedirect("error.jsp");
+	}
+
+  else if(session.getAttribute("normuser")!=null){
+	  	response.sendRedirect("error.jsp");
+	}
+%>
+
 <div class="row">
 <nav class="nnavbar navbar-inverse navbar-static-top nav-upper nav1">
 
