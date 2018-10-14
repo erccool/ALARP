@@ -18,8 +18,8 @@ public class EmailSend {
 
     public void send(){
     	String host ="smtp.gmail.com" ;
-        String user = "edward_curugan@dlsu.edu.ph";
-        String pass = "Oggbog12!";
+        String user = "evaluator.alarpterminal@gmail.com";
+        String pass = "alarpeval123";
         String to = "edward_curugan@dlsu.edu.ph";
         String from = "edward_curugan@dlsu.edu.ph";
         String subject = "New Evaluation";

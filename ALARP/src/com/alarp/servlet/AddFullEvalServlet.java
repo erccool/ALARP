@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.alarp.javabean.EmailSend;
 import com.alarp.javabean.EvaluationBean;
 import com.alarp.services.EvaluationService;
 
@@ -79,7 +80,10 @@ public class AddFullEvalServlet extends HttpServlet {
 		eb.setQ19(request.getParameter(EvaluationBean.Q19));
 		eb.setQ20(request.getParameter(EvaluationBean.Q20));
 
+EmailSend es = new EmailSend();
 		
+		
+		es.send();
 		EvaluationService evaluationsService = new EvaluationService();
 		evaluationsService.addFullEvaluation(eb);
 		request.getRequestDispatcher("WelcomeReview.jsp").forward(request, response);
