@@ -16,7 +16,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>ALARP: Start</title>
 </head>
-<body style="background-color:orange;">
+<body style="background-color:lemonchiffon;">
 <nav class="nnavbar navbar-inverse navbar-static-top nav-upper nav1">
 <div class="row">
 <div class="container-fluid">
@@ -91,9 +91,9 @@
 </nav></div></br>
 
 <div class="container">
-<div class="panel panel-warning">
+<div class="panel panel-default">
 	<div class="panel-heading">  
- 		<h4 class = "text-center"><font color="orange">Welcome</font></h4>
+ 		<h4 class = "text-center"><font color="black">Welcome</font></h4>
  	</div>
  	
 	

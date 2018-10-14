@@ -19,7 +19,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>ALARP: Start</title>
 </head>
-<body style="background-color:orange;">
+<body style="background-color:lemonchiffon;">
 
 <div class="row">
 <nav class="nnavbar navbar-inverse navbar-static-top nav-upper nav1">

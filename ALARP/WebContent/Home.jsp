@@ -23,7 +23,7 @@ function alertSessionTimeout() {
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Home</title>
 </head>
-<body style="background-color:orange;">
+<body style="background-color:lemonchiffon;">
 
 <%
 	if(session.getAttribute("username")==null){
