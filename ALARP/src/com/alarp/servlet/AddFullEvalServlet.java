@@ -82,7 +82,7 @@ public class AddFullEvalServlet extends HttpServlet {
 		
 		EvaluationService evaluationsService = new EvaluationService();
 		evaluationsService.addFullEvaluation(eb);
-		request.getRequestDispatcher("GetAllEvalServlet").forward(request, response);
+		request.getRequestDispatcher("WelcomeReview.jsp").forward(request, response);
 
 	}
 
