@@ -13,7 +13,7 @@ import com.alarp.javabean.SessionBean;
 import com.alarp.javabean.UserBean;
 
 public class LoginDao {
-	String url ="jdbc:mysql://localhost:3306/secprg";
+	String url ="jdbc:mysql://localhost:3306/alarp";
 	String username ="root";
 	String password = "password";
 	
