@@ -11,25 +11,37 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<style>
+.bg-company-red {
+    background-color: darkred;
+}
+
+.bg-company-white {
+    background-color: white;
+}
+</style>
+
 <html>
+
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>ALARP: Start</title>
 </head>
 <body style="background-color:lemonchiffon;">
-<nav class="nnavbar navbar-inverse navbar-static-top nav-upper nav1">
-<div class="row">
-<div class="container-fluid">
+<nav class="nnavbar navbar-inverse navbar-static-top nav-upper nav1 bg-company-red">
+
+	<div class="container-fluid">
 		<a class="navbar-brand"><img src="Shell.png" alt="Dispute Bills" height = 120% >
         </a>
 		  <ul class="nav navbar-nav">
-		      <li><a href="WelcomeReview.jsp"><font color="orange">Submit Review</font></a></li>
-		      <li><a href="Display?page=Digital"><font color="orange">View Past Reviews</font></a></li>
+		      <li><a href="GetAllEvalServlet"><font color="white">Decide On Forms</font></a></li>
+		      <li><a href="WelcomeReview.jsp"><font color="white">Submit Review</font></a></li>
+		      <li><a href="Display?page=Digital"><font color="white">View Past Reviews</font></a></li>
 		 </ul>
 		<c:choose>
   				<c:when test="${sessionScope.iduser != null}">
   				<form action="Logout" class="navbar-form navbar-right">
-      				<input type="submit" class="btn btn-info" value="Logout" onclick = "myFunction2()">
+      				<input type="submit" class="btn btn-info bg-company-yellow" value="Logout" onclick = "myFunction2()">
       				<script>
 						function myFunction2() {
     					alert("Successfully Logged Out.");
@@ -39,7 +51,7 @@
       			</form>
                 </c:when>
                 <c:otherwise>
-                <div class = "pull-right"><button type="submit" class="btn btn-danger"data-toggle="modal" data-target="#ModalLogin">Login</button><br></div> 
+                <div class = "pull-right"><button type="submit" class="btn btn-danger bg-company-white"data-toggle="modal" data-target="#ModalLogin"><font color="black">Login</font></button><br></div> 
 				<form id="signin" class="navbar-form navbar-right" role="form" action="Login" method="post">
 					<div class="modal fade" id="ModalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 					  <div class="modal-dialog" role="document">
@@ -70,8 +82,7 @@
 					</div>  
 				</form>              
                 </c:otherwise>
-    		</c:choose>	
-		
+    		</c:choose>			
 	    
 	</div>
 </nav>

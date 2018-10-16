@@ -12,7 +12,13 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <style>
+.bg-company-red {
+    background-color: darkred;
+}
 
+.bg-company-white {
+    background-color: white;
+}
 </style>
 <html>
 <head>
@@ -21,20 +27,20 @@
 </head>
 <body style="background-color:lemonchiffon;">
 <div class="row">
-<nav class="nnavbar navbar-inverse navbar-static-top nav-upper nav1">
+<nav class="nnavbar navbar-inverse navbar-static-top nav-upper nav1 bg-company-red">
 
 	<div class="container-fluid">
 		<a class="navbar-brand"><img src="Shell.png" alt="Dispute Bills" height = 120% >
         </a>
 		  <ul class="nav navbar-nav">
-		      <li><a href="GetAllEvalServlet"><font color="orange">Decide On Forms</font></a></li>
-		      <li><a href="WelcomeReview.jsp"><font color="orange">Submit Review</font></a></li>
-		      <li><a href="Display?page=Digital"><font color="orange">View Past Reviews</font></a></li>
+		      <li><a href="GetAllEvalServlet"><font color="white">Decide On Forms</font></a></li>
+		      <li><a href="WelcomeReview.jsp"><font color="white">Submit Review</font></a></li>
+		      <li><a href="Display?page=Digital"><font color="white">View Past Reviews</font></a></li>
 		 </ul>
-<c:choose>
+		<c:choose>
   				<c:when test="${sessionScope.iduser != null}">
   				<form action="Logout" class="navbar-form navbar-right">
-      				<input type="submit" class="btn btn-info" value="Logout" onclick = "myFunction2()">
+      				<input type="submit" class="btn btn-info bg-company-yellow" value="Logout" onclick = "myFunction2()">
       				<script>
 						function myFunction2() {
     					alert("Successfully Logged Out.");
@@ -44,7 +50,7 @@
       			</form>
                 </c:when>
                 <c:otherwise>
-                <div class = "pull-right"><button type="submit" class="btn btn-danger"data-toggle="modal" data-target="#ModalLogin">Login</button><br></div> 
+                <div class = "pull-right"><button type="submit" class="btn btn-danger bg-company-white"data-toggle="modal" data-target="#ModalLogin"><font color="black">Login</font></button><br></div> 
 				<form id="signin" class="navbar-form navbar-right" role="form" action="Login" method="post">
 					<div class="modal fade" id="ModalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 					  <div class="modal-dialog" role="document">
@@ -549,7 +555,7 @@
  	<div class = "row" id = "comment">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class="form-group" id = answer display = "none" >
-		    <label for="email"> The terminal operator is reputable and operates in accordance to OCIMF / SIGTTO guidelines and recommendations. Is this true?
+		    <label for="email">1.1 The terminal operator is reputable and operates in accordance to OCIMF / SIGTTO guidelines and recommendations. Is this true?
 </label>
 		    <input type="email" class="fform-group mb-2" id="ques1a" name="q1" readonly>
 	 </div> 
@@ -575,7 +581,7 @@
  	
  	
  	<div class = "row"><div class = "col-md-6 col-md-offset-3">
- 	<label for="email">The terminal has submitted a valid MTMSA and it has been reviewed by an AP. True?</label>
+ 	<label for="email">1.2 The terminal has submitted a valid MTMSA and it has been reviewed by an AP. True?</label>
 		    <input type="email" class="fform-group mb-2" id="ques2a" name="q2" readonly>
  	
  	</div> </div> <br>
@@ -592,7 +598,7 @@
  	</div><br>
  	
  	 <br><div class = "row"><div class = "col-md-6 col-md-offset-3">
- 	<label for="email">The terminal has shared a 3rd party or internal report that may be considered a BLC equivalent. 
+ 	<label for="email">1.3 The terminal has shared a 3rd party or internal report that may be considered a BLC equivalent. 
  Is this true? </label>
 		    <input type="email" class="fform-group mb-2" id="ques3a" name="q2" readonly>
  	
@@ -611,7 +617,7 @@
  	</div>
  	
  	<div class = "row"><div class = "col-md-6 col-md-offset-3">
- 	<label for="email">A teleconference between an AP and the terminal operations manager was conducted with no significant observation or issues. 
+ 	<label for="email">1.4 A teleconference between an AP and the terminal operations manager was conducted with no significant observation or issues. 
 (Random sampling of BLC questionaire used across all chapters)
  Is this true?	</label>
 		    <input type="email" class="fform-group mb-2" id="ques4a" name="q2" readonly> 	
@@ -632,7 +638,7 @@
 
  	
  	<div class = "row" ><div class = "col-md-6 col-md-offset-3">
- 	<label for="email"> Do you want to add risk reduction actions, mitigations or justifications?
+ 	<label for="email">1.5 Do you want to add risk reduction actions, mitigations or justifications?
 	</label>
 		    <input type="email" class="fform-group mb-2" id="ques5a" name="q2" readonly> 
  	
@@ -653,7 +659,7 @@
  	<div class = "row"><div class = "col-md-6 col-md-offset-3">
  	
  	<label for="email">
- 	A jetty walkabout has been conducted before by an AP or an approved contractor which may form part of the terminal. 
+ 	1.6 A jetty walkabout has been conducted before by an AP or an approved contractor which may form part of the terminal. 
  Is this true?
 	</label>
 		    <input type="email" class="fform-group mb-2" id="ques6a" name="q2" readonly> 
@@ -675,19 +681,19 @@
  	
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
  	<label for="email">
-The terminal has been inspected by an AP or a company approved Contractor in the past 5 years. All former high observations, if any were closed. 
+1.7 The terminal has been inspected by an AP or a company approved Contractor in the past 5 years. All former high observations, if any were closed. 
 Is this true?	</label>
 		    <input type="email" class="fform-group mb-2" id="ques7a" name="q2" readonly> 		
  	</div> </div>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes7()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes7()" type="submit" class="btn btn-md btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal7">No</button>
+		<button type="submit" class="btn btn-md btn-danger signup-btn active" data-toggle="modal" data-target="#Modal7">No</button>
 	</div>  
 	</div>
  	</div>
@@ -695,7 +701,7 @@ Is this true?	</label>
  	</br></br><label for="comment">AP Research Methodology</label>
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
  	<label for="email">
-Information was extracted from the company's website and/or from the agents or 3rd Party source and has been reviewed by an AP. 
+2.1 Information was extracted from the company's website and/or from the agents or 3rd Party source and has been reviewed by an AP. 
 Is this true?	</label>
 		    <input type="email" class="fform-group mb-2" id="ques8a" name="q2" readonly> 		
  	
@@ -703,19 +709,19 @@ Is this true?	</label>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes8()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes8()" type="submit" class="btn btn-md btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal8">No</button>
+		<button type="submit" class="btn btn-md btn-danger signup-btn active" data-toggle="modal" data-target="#Modal8">No</button>
 	</div>  
 	</div>
  	</div>
  	
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
  	<label for="email"> 	
-Master's feedback from Shell chartered vessel was crossed referenced with no major observations. 
+2.2 Master's feedback from Shell chartered vessel was crossed referenced with no major observations. 
 Is this true?	</label>
 	<input type="email" class="fform-group mb-2" id="ques9a" name="q2" readonly> 		
  		
@@ -723,19 +729,19 @@ Is this true?	</label>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes9()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes9()" type="submit" class="btn btn-md btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal9">No</button>
+		<button type="submit" class="btn btn-md btn-danger signup-btn active" data-toggle="modal" data-target="#Modal9">No</button>
 	</div>  
 	</div>
  	</div>
  	
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
  	<label for="email"> 	
-The terminal has provided critical information on the terminal and approaches which includes but not limited to:  
+2.3 The terminal has provided critical information on the terminal and approaches which includes but not limited to:  
 - Bathymetry survey of jetty / approaches
 - Structural Survey 
 - Fender Manufacturer Inspection 
@@ -748,19 +754,19 @@ Is this true? 	</label>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes10()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes10()" type="submit" class="btn btn-md btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal10">No</button>
+		<button type="submit" class="btn btn-md btn-danger signup-btn active" data-toggle="modal" data-target="#Modal10">No</button>
 	</div>  
 	</div>
  	</div>
  	
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
  	<label for="email"> 	 	
-No major findings from in depth research conducted by AP which covers safe port and safe berth criterias (Ref MPM OPS.10.05) along with critical navigational approaches to and from the berth. 
+2.4 No major findings from in depth research conducted by AP which covers safe port and safe berth criterias (Ref MPM OPS.10.05) along with critical navigational approaches to and from the berth. 
 Is this true? 	</label>
 	<input type="email" class="fform-group mb-2" id="ques11a" name="q2" readonly> 		
  	
@@ -768,12 +774,12 @@ Is this true? 	</label>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes11()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes11()" type="submit" class="btn btn-md btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal11">No</button>
+		<button type="submit" class="btn btn-md btn-danger signup-btn active" data-toggle="modal" data-target="#Modal11">No</button>
 	</div>  
 	</div>
  	</div>
@@ -781,7 +787,7 @@ Is this true? 	</label>
  	
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
  	<label for="email">
-Berth data and parameters were extracted from Ship Shore Compatibility Check or berth fit check documents provided by the terminal. 
+2.5 Berth data and parameters were extracted from Ship Shore Compatibility Check or berth fit check documents provided by the terminal. 
 Is this true? 	</label>
 	<input type="email" class="fform-group mb-2" id="ques12a" name="q2" readonly> 		
  	
@@ -789,12 +795,12 @@ Is this true? 	</label>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes12()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes12()" type="submit" class="btn btn-md btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal12">No</button>
+		<button type="submit" class="btn btn-md btn-danger signup-btn active" data-toggle="modal" data-target="#Modal12">No</button>
 	</div>  
 	</div>
  	</div>
@@ -802,7 +808,7 @@ Is this true? 	</label>
  	
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
  	<label for="email"> 	
-AP or his/her delegate has carried out a search online and internal incident database. No major relevant incidents since the terminal was in operation. (Best endeavour search)
+2.6 AP or his/her delegate has carried out a search online and internal incident database. No major relevant incidents since the terminal was in operation. (Best endeavour search)
 Is this true?	</label>
 	<input type="email" class="fform-group mb-2" id="ques13a" name="q2" readonly> 		
 	
@@ -811,12 +817,12 @@ Is this true?	</label>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes13()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes13()" type="submit" class="btn btn-md btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal13">No</button>
+		<button type="submit" class="btn btn-md btn-danger signup-btn active" data-toggle="modal" data-target="#Modal13">No</button>
 	</div>  
 	</div>
  	</div>
@@ -824,7 +830,7 @@ Is this true?	</label>
  	</br></br><label for="comment">Other restrictions & legal implications</label> 	
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
  	<label for="email"> 	 	
-Current available AP and approved company contractors do not have appropriate visa or diplomatic ties to carry out an inspection. i.e Israels, Qatar, Iran and etc. 
+3.1 Current available AP and approved company contractors do not have appropriate visa or diplomatic ties to carry out an inspection. i.e Israels, Qatar, Iran and etc. 
 Is this true?	</label>
 	<input type="email" class="fform-group mb-2" id="ques14a" name="q2" readonly> 		
 	
@@ -833,19 +839,19 @@ Is this true?	</label>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes14()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes14()" type="submit" class="btn btn-md btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal14">No</button>
+		<button type="submit" class="btn btn-md btn-danger signup-btn active" data-toggle="modal" data-target="#Modal14">No</button>
 	</div>  
 	</div>
  	</div>
  	
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
  	<label for="email"> 	 	 	
-Local port requirements or authorities donot permit entry into the terminal. 
+3.2 Local port requirements or authorities donot permit entry into the terminal. 
 Is this true?	</label>
 	<input type="email" class="fform-group mb-2" id="ques15a" name="q2" readonly> 		
 	
@@ -854,19 +860,19 @@ Is this true?	</label>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes15()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes15()" type="submit" class="btn btn-md btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal15">No</button>
+		<button type="submit" class="btn btn-md btn-danger signup-btn active" data-toggle="modal" data-target="#Modal15">No</button>
 	</div>  
 	</div>
  	</div>
  	
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
  	<label for="email"> 	 	 	 	
-Travel cost has been reviewed and found to be grossly disproportion.  i.e charter a private helicopter
+3.3 Travel cost has been reviewed and found to be grossly disproportion.  i.e charter a private helicopter
 Is this true? 	</label>
 	<input type="email" class="fform-group mb-2" id="ques16a" name="q2" readonly> 		
  	
@@ -874,19 +880,19 @@ Is this true? 	</label>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes16()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes16()" type="submit" class="btn   btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal16">No</button>
+		<button type="submit" class="btn   btn-danger signup-btn active" data-toggle="modal" data-target="#Modal16">No</button>
 	</div>  
 	</div>
  	</div>
  	
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
  	<label for="email"> 	 	 	 	
-Available AP or approved company contractors unable to comply with company's business travel requirements due to HSSE alerts, remoteness of terminal, war/high risk and etc. 
+3.4 Available AP or approved company contractors unable to comply with company's business travel requirements due to HSSE alerts, remoteness of terminal, war/high risk and etc. 
 Is this true? 	</label>
 	<input type="email" class="fform-group mb-2" id="ques17a" name="q2" readonly> 		 	
  	
@@ -894,12 +900,12 @@ Is this true? 	</label>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes17()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes17()" type="submit" class="btn   btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal17">No</button>
+		<button type="submit" class="btn   btn-danger signup-btn active" data-toggle="modal" data-target="#Modal17">No</button>
 	</div>  
 	</div>
  	</div>
@@ -907,7 +913,7 @@ Is this true? 	</label>
  	</br></br><label for="comment">Commitments</label> 	
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
  	<label for="email">
-Alternative terminals available for the deal due consideration that a vessel feedback / positive vetting may impact future terminal rating. 
+4.1 Alternative terminals available for the deal due consideration that a vessel feedback / positive vetting may impact future terminal rating. 
 Is this true? 	</label>
 	<input type="email" class="fform-group mb-2" id="ques18a" name="q2" readonly> 		 	
  	
@@ -915,19 +921,19 @@ Is this true? 	</label>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes18()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes18()" type="submit" class="btn   btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal18">No</button>
+		<button type="submit" class="btn  btn-danger signup-btn active" data-toggle="modal" data-target="#Modal18">No</button>
 	</div>  
 	</div>
  	</div>
  	
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
  	<label for="email">	
-Long term contract includes contractual inspection rights. Is this true?
+4.2 Long term contract includes contractual inspection rights. Is this true?
  	</label>
 	<input type="email" class="fform-group mb-2" id="ques19a" name="q2" readonly> 		 	
  	
@@ -935,19 +941,19 @@ Long term contract includes contractual inspection rights. Is this true?
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes19 ()"type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes19 ()"type="submit" class="btn   btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal19">No</button>
+		<button type="submit" class="btn   btn-danger signup-btn active" data-toggle="modal" data-target="#Modal19">No</button>
 	</div>  
 	</div>
  	</div>
  	
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
  	<label for="email">
-Business contractual obligations requires to be managed i.e existing contract, inherited, major loss of revenue.
+4.3 Business contractual obligations requires to be managed i.e existing contract, inherited, major loss of revenue.
  	</label>
 	<input type="email" class="fform-group mb-2" id="ques20a" name="q2" readonly> 		 	
  	
@@ -955,12 +961,12 @@ Business contractual obligations requires to be managed i.e existing contract, i
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes20()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes20()" type="submit" class="btn   btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal20">No</button>
+		<button type="submit" class="btn   btn-danger signup-btn active" data-toggle="modal" data-target="#Modal20">No</button>
 	</div>  
 	</div>
  	</div>
@@ -1084,7 +1090,7 @@ Business contractual obligations requires to be managed i.e existing contract, i
 	 </div> 
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
- 	<br><button type="submit" class="btn btn-lg btn-warning signup-btn active">Submit</button>
+ 	<br><button type="submit" class="btn btn-md btn-warning signup-btn active">Submit</button>
  	</div>
  	</div>
 	</form>
