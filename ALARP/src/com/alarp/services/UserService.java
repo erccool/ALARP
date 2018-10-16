@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class UserService {
-	static String url ="jdbc:mysql://localhost:3306/secprg";
+	static String url ="jdbc:mysql://localhost:3306/alarp";
 	static String username ="root";
 	static String passwords = "password";
 	

@@ -224,6 +224,160 @@
   </div>
 </div>
 
+<div class="modal fade" id="Modal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Please explain below</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="form-group">
+				  <textarea class="form-control" rows="5" id="comment7" > </textarea>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		        <button onClick="No7()" type="button" class="btn btn-warning" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Please explain below</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="form-group">
+				  <textarea class="form-control" rows="5" id="comment8" > </textarea>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		        <button onClick="No8()" type="button" class="btn btn-warning" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Please explain below</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="form-group">
+				  <textarea class="form-control" rows="5" id="comment9" > </textarea>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		        <button onClick="No9()" type="button" class="btn btn-warning" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Please explain below</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="form-group">
+				  <textarea class="form-control" rows="5" id="comment10" > </textarea>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		        <button onClick="No10()" type="button" class="btn btn-warning" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Please explain below</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="form-group">
+				  <textarea class="form-control" rows="5" id="comment11" > </textarea>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		        <button onClick="No11()" type="button" class="btn btn-warning" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Please explain below</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="form-group">
+				  <textarea class="form-control" rows="5" id="comment12" > </textarea>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		        <button onClick="No12()" type="button" class="btn btn-warning" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal13" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Please explain below</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="form-group">
+				  <textarea class="form-control" rows="5" id="comment13" > </textarea>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		        <button onClick="No13()" type="button" class="btn btn-warning" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="container ">
 <div class="panel panel-default">
 
@@ -240,7 +394,8 @@
  	<div class = "row" id = "comment">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class="form-group" id = answer display = "none" >
-		    <label for="email"> Is there any third party available?  </label>
+		    <label for="email"> The terminal operator is reputable and operates in accordance to OCIMF / SIGTTO guidelines and recommendations. Is this true?
+</label>
 		    <input type="email" class="fform-group mb-2" id="ques1a" name="q1" readonly>
 	 </div> 
 
@@ -265,8 +420,7 @@
  	
  	
  	<div class = "row"><div class = "col-md-6 col-md-offset-3">
- 	<label for="email">The terminal operator is reputable and operates in accordance to OCIMF / SIGTTO guidelines and recommendations. Is this true?
-</label>
+ 	<label for="email">The terminal has submitted a valid MTMSA and it has been reviewed by an AP. True?</label>
 		    <input type="email" class="fform-group mb-2" id="ques2a" name="q2" readonly>
  	
  	</div> </div> <br>
@@ -283,7 +437,8 @@
  	</div><br>
  	
  	 <br><div class = "row"><div class = "col-md-6 col-md-offset-3">
- 	<label for="email">Terminal provided critical information. Is this true? </label>
+ 	<label for="email">The terminal has shared a 3rd party or internal report that may be considered a BLC equivalent. 
+ Is this true? </label>
 		    <input type="email" class="fform-group mb-2" id="ques3a" name="q2" readonly>
  	
  	</div> </div> <br>
@@ -301,7 +456,9 @@
  	</div>
  	
  	<div class = "row"><div class = "col-md-6 col-md-offset-3">
- 	<label for="email">The terminal has submitted a valid MTMSA and it has been reviewed by an AP. Is this true?	</label>
+ 	<label for="email">A teleconference between an AP and the terminal operations manager was conducted with no significant observation or issues. 
+(Random sampling of BLC questionaire used across all chapters)
+ Is this true?	</label>
 		    <input type="email" class="fform-group mb-2" id="ques4a" name="q2" readonly> 	
  	</div> </div> <br>
  	<div class = "row">
@@ -317,9 +474,10 @@
 	</div>  
 	</div>
  	</div>
+
  	
- 	<div class = "row"><div class = "col-md-6 col-md-offset-3">
- 	<label for="email">Master's feedback from Shell chartered vessel was crossed referenced with no major observations. Is this true?
+ 	<div class = "row" ><div class = "col-md-6 col-md-offset-3">
+ 	<label for="email"> Do you want to add risk reduction actions, mitigations or justifications?
 	</label>
 		    <input type="email" class="fform-group mb-2" id="ques5a" name="q2" readonly> 
  	
@@ -327,21 +485,21 @@
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes5()" type="submit" class="btn  btn-warning signup-btn active">Yes</button>
+		<button type="submit" class="btn  btn-warning signup-btn active" data-toggle="modal" data-target="#Modal5">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn  btn-danger signup-btn active" data-toggle="modal" data-target="#Modal5">No</button>
-
+		<button onClick = "Yes5()" type="submit" class="btn  btn-danger signup-btn active">No</button>
 	</div>  
 	</div>
  	</div>
  	
- 	<div class = "row"><div class = "col-md-6 col-md-offset-3">
+ 	</br></br><label for="comment">AP Research Methodology</label> 	
+ 	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
  	
- 	<label for="email">Berth data and parameters were extracted from Ship Shore Compatibility Check or berth fit check documents provided by the terminal. Is this true?
-	</label>
+ 	<label for="email">Information was extracted from the company's website and/or from the agents or 3rd Party source and has been reviewed by an AP. 
+Is this true?</label>
 		    <input type="email" class="fform-group mb-2" id="ques6a" name="q2" readonly> 
  	</div> </div><br>
  	<div class = "row">
@@ -357,7 +515,157 @@
 	</div>  
 	</div>
  	</div>
- 	<form action = "AddEvalServlet" method = "POST" enctype="multipart/form-data" onsubmit="return checkForm(this);">
+ 	
+ 	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
+ 	
+ 	<label for="email">Master's feedback from Shell chartered vessel was crossed referenced with no major observations. Is this true?
+</label>
+		    <input type="email" class="fform-group mb-2" id="ques7a" name="q2" readonly> 
+ 	</div> </div><br>
+ 	<div class = "row">
+ 	<div class = "col-md-6 col-md-offset-3">
+ 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+		<button onClick = "Yes7()" type="submit" class="btn   btn-warning signup-btn active">Yes</button>
+	
+		</div>  
+		
+		<div class = "col-md-3 col-sm-3 col-xs-12 ">
+		<button type="submit" class="btn   btn-danger signup-btn active" data-toggle="modal" data-target="#Modal7">No</button>
+
+	</div>  
+	</div>
+ 	</div>
+ 	
+ 	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
+ 	
+ 	<label for="email">The terminal has provided critical information on the terminal and approaches which includes but not limited to:  
+- Bathymetry survey of jetty / approaches
+- Structural Survey 
+- Fender Manufacturer Inspection 
+- Terminal Information booklet 
+- Emergency Response Manual
+Is this true?
+</label>
+		    <input type="email" class="fform-group mb-2" id="ques8a" name="q2" readonly> 
+ 	</div> </div><br>
+ 	<div class = "row">
+ 	<div class = "col-md-6 col-md-offset-3">
+ 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+		<button onClick = "Yes8()" type="submit" class="btn   btn-warning signup-btn active">Yes</button>
+	
+		</div>  
+		
+		<div class = "col-md-3 col-sm-3 col-xs-12 ">
+		<button type="submit" class="btn   btn-danger signup-btn active" data-toggle="modal" data-target="#Modal8">No</button>
+
+	</div>  
+	</div>
+ 	</div>
+ 	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
+ <label for="email">No major findings from indepth research conducted by AP which covers safe port and safe berth criterias (Ref MPM OPS.10.05) along with critical navigational approaches to and from the berth. 
+Is this true?
+</label>
+		    <input type="email" class="fform-group mb-2" id="ques9a" name="q2" readonly> 
+ 	</div> </div><br>
+ 	<div class = "row">
+ 	<div class = "col-md-6 col-md-offset-3">
+ 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+		<button onClick = "Yes9()" type="submit" class="btn   btn-warning signup-btn active">Yes</button>
+	
+		</div>  
+		
+		<div class = "col-md-3 col-sm-3 col-xs-12 ">
+		<button type="submit" class="btn   btn-danger signup-btn active" data-toggle="modal" data-target="#Modal9">No</button>
+
+	</div>  
+	</div>
+ 	</div>
+ 	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
+ 	<label for="email">Berth data and parameters were extracted from Ship Shore Compatibility Check or berth fit check documents provided by the terminal. 
+Is this true?
+</label>
+		    <input type="email" class="fform-group mb-2" id="ques10a" name="q2" readonly> 
+ 	</div> </div><br>
+ 	<div class = "row">
+ 	<div class = "col-md-6 col-md-offset-3">
+ 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+		<button onClick = "Yes10()" type="submit" class="btn   btn-warning signup-btn active">Yes</button>
+	
+		</div>  
+		
+		<div class = "col-md-3 col-sm-3 col-xs-12 ">
+		<button type="submit" class="btn   btn-danger signup-btn active" data-toggle="modal" data-target="#Modal10">No</button>
+
+	</div>  
+	</div>
+ 	</div>
+ 	
+ 	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
+ 	<label for="email"> 	 	
+AP or his/her delegate has carried out a search online and internal incident database. No major relevant incidents since the terminal was in operation. (Best endeavour search)
+Is this true?
+ 	</label>
+	<input type="email" class="fform-group mb-2" id="ques11a" name="q2" readonly> 		
+ 	
+ 	</div> </div>
+ 	<div class = "row">
+ 	<div class = "col-md-6 col-md-offset-3">
+ 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+		<button onClick = "Yes11()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+	
+		</div>  
+		
+		<div class = "col-md-3 col-sm-3 col-xs-12 ">
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal11">No</button>
+	</div>  
+	</div>
+ 	</div>
+ 	
+ 	
+ 	</br></br><label for="comment">Commitments </label> 	
+ 	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
+ 	<label for="email">
+Business contractual obligations requires to be managed i.e existing contract, inherited, major loss of revenue.
+Is this true? 	
+ 	</label>
+	<input type="email" class="fform-group mb-2" id="ques12a" name="q2" readonly> 		
+ 	
+ 	</div> </div>
+ 	<div class = "row">
+ 	<div class = "col-md-6 col-md-offset-3">
+ 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+		<button onClick = "Yes12()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+	
+		</div>  
+		
+		<div class = "col-md-3 col-sm-3 col-xs-12 ">
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal12">No</button>
+	</div>  
+	</div>
+ 	</div>
+ 	
+ 	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
+ 	<label for="email"> 	
+Long term contract includes contractual inspection rights. Is this true?
+	</label>
+	<input type="email" class="fform-group mb-2" id="ques13a" name="q2" readonly> 		
+	
+ 	
+ 	</div> </div>
+ 	<div class = "row">
+ 	<div class = "col-md-6 col-md-offset-3">
+ 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+		<button onClick = "Yes13()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+	
+		</div>  
+		
+		<div class = "col-md-3 col-sm-3 col-xs-12 ">
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal13">No</button>
+	</div>  
+	</div>
+ 	</div>
+ 	
+ 	<form action = "AddFullEvalServlet" method = "POST" enctype="multipart/form-data" onsubmit="return checkForm(this);">
  	<div class = "row"><div class = "col-md-6 col-md-offset-3">
  	<br>
  	<label for="SMEinput">SME</label>
@@ -369,6 +677,11 @@
 				  </select>
     </fieldset>
     </div></div>
+    
+    <div class="form-group" id = answer display = "none" hidden>
+		    <label for="type">Eval Type: </label>
+		    <input type="input" class="fform-group mb-2" id="questo" name="type" value = "Not Permitted" readonly>
+	 </div> 
     
  	<div class="form-group" id = answer display = "none" >
 		    <label for="email" hidden>Answer 1: </label>
@@ -399,6 +712,42 @@
 		    <label for="email">Answer 6: </label>
 		    <input type="email" class="fform-group mb-2" id="ques6" name="q6" readonly>
 	 </div> 
+	 
+	 <div class="form-group" id = answer display = "none" hidden>
+		    <label for="email">Answer 7: </label>
+		    <input type="email" class="fform-group mb-2" id="ques7" name="q7" readonly>
+	 </div> 
+	 
+	 <div class="form-group" id = answer display = "none" hidden>
+		    <label for="email">Answer 8: </label>
+		    <input type="email" class="fform-group mb-2" id="ques8" name="q8" readonly>
+	 </div> 
+	 
+	 <div class="form-group" id = answer display = "none" hidden>
+		    <label for="email">Answer 9: </label>
+		    <input type="email" class="fform-group mb-2" id="ques9" name="q9" readonly>
+	 </div> 
+	 
+	 <div class="form-group" id = answer display = "none" hidden>
+		    <label for="email">Answer 10: </label>
+		    <input type="email" class="fform-group mb-2" id="ques10" name="q10" readonly>
+	 </div> 
+	 
+	 <div class="form-group" id = answer display = "none" hidden>
+		    <label for="email">Answer 11: </label>
+		    <input type="email" class="fform-group mb-2" id="ques11" name="q11" readonly>
+	 </div> 
+	 
+	 <div class="form-group" id = answer display = "none" hidden>
+		    <label for="email">Answer 12: </label>
+		    <input type="email" class="fform-group mb-2" id="ques12" name="q12" readonly>
+	 </div> 
+	 
+	 <div class="form-group" id = answer display = "none" hidden>
+		    <label for="email">Answer 13: </label>
+		    <input type="email" class="fform-group mb-2" id="ques13" name="q13" readonly>
+	 </div> 
+	 
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<button type="submit" class="btn  btn-warning signup-btn active">Submit</button>
@@ -453,13 +802,13 @@
 		    document.getElementById("ques4a").value = "No: " + document.getElementById("comment4").value;
 		   
 		}function Yes5() {
-		    document.getElementById("ques5").value = "Yes";
+		    document.getElementById("ques5").value = "No";
 		   
 		}
 		
 		function No5() {
-		    document.getElementById("ques5").value = "No: " + document.getElementById("comment5").value;
-		    document.getElementById("ques5a").value = "No: " + document.getElementById("comment5").value;
+		    document.getElementById("ques5").value = "Yes: " + document.getElementById("comment5").value;
+		    document.getElementById("ques5a").value = "Yes: " + document.getElementById("comment5").value;
 		    
 		}
 		
@@ -470,6 +819,78 @@
 		function No6() {
 		    document.getElementById("ques6").value = "No: " + document.getElementById("comment6").value;
 		    document.getElementById("ques6a").value = "No: " + document.getElementById("comment6").value;
+		   
+		}
+		
+		function Yes7() {
+		    document.getElementById("ques7").value = "Yes";
+		   
+		}
+		
+		function No7() {
+		    document.getElementById("ques7").value = "No: " + document.getElementById("comment7").value;
+		    document.getElementById("ques7a").value = "No: " + document.getElementById("comment7").value;
+		   
+		}
+		function Yes8() {
+		    document.getElementById("ques8").value = "Yes";
+		   
+		}
+		
+		function No8() {
+		    document.getElementById("ques8").value = "No: " + document.getElementById("comment8").value;
+		    document.getElementById("ques8a").value = "No: " + document.getElementById("comment8").value;
+		   
+		}
+		function Yes9() {
+		    document.getElementById("ques9").value = "Yes";
+		   
+		}
+		
+		function No9() {
+		    document.getElementById("ques9").value = "No: " + document.getElementById("comment9").value;
+		    document.getElementById("ques9a").value = "No: " + document.getElementById("comment9").value;
+		   
+		}
+		function Yes10() {
+		    document.getElementById("ques10").value = "Yes";
+		   
+		}
+		
+		function No10() {
+		    document.getElementById("ques10").value = "No: " + document.getElementById("comment10").value;
+		    document.getElementById("ques10a").value = "No: " + document.getElementById("comment10").value;
+		   
+		}
+		
+		function Yes11() {
+		    document.getElementById("ques11").value = "Yes";
+		   
+		}
+		
+		function No11() {
+		    document.getElementById("ques11").value = "No: " + document.getElementById("comment11").value;
+		    document.getElementById("ques11a").value = "No: " + document.getElementById("comment11").value;
+		   
+		}
+		function Yes12() {
+		    document.getElementById("ques12").value = "Yes";
+		   
+		}
+		
+		function No12() {
+		    document.getElementById("ques12").value = "No: " + document.getElementById("comment12").value;
+		    document.getElementById("ques12a").value = "No: " + document.getElementById("comment12").value;
+		   
+		}
+		function Yes13() {
+		    document.getElementById("ques13").value = "Yes";
+		   
+		}
+		
+		function No13() {
+		    document.getElementById("ques13").value = "No: " + document.getElementById("comment13").value;
+		    document.getElementById("ques13a").value = "No: " + document.getElementById("comment13").value;
 		   
 		}
 </script>

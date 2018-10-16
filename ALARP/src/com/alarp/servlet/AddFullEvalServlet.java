@@ -45,7 +45,7 @@ public class AddFullEvalServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		EvaluationBean eb = new EvaluationBean();
-		
+		EmailSend es = new EmailSend();		
 		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
 		Date date = new Date();
 		
@@ -79,13 +79,16 @@ public class AddFullEvalServlet extends HttpServlet {
 		eb.setQ18(request.getParameter(EvaluationBean.Q18));
 		eb.setQ19(request.getParameter(EvaluationBean.Q19));
 		eb.setQ20(request.getParameter(EvaluationBean.Q20));
+		eb.setQ21(request.getParameter(EvaluationBean.Q21));
+		eb.setQ22(request.getParameter(EvaluationBean.Q22));
 
-EmailSend es = new EmailSend();
+
 		
 		
-		es.send();
+		
 		EvaluationService evaluationsService = new EvaluationService();
 		evaluationsService.addFullEvaluation(eb);
+		es.send();
 		request.getRequestDispatcher("WelcomeReview.jsp").forward(request, response);
 
 	}

@@ -88,6 +88,8 @@ public ArrayList getFullEval(int id) {
 			eb.setQ18(rs.getString(EvaluationBean.Q18));
 			eb.setQ19(rs.getString(EvaluationBean.Q19));
 			eb.setQ20(rs.getString(EvaluationBean.Q20));
+			eb.setQ21(rs.getString(EvaluationBean.Q21));
+			eb.setQ22(rs.getString(EvaluationBean.Q22));
 
 			eb.setSme_decision(rs.getString(EvaluationBean.SME_DECISION));
 			eb.setType(rs.getString(EvaluationBean.TYPE));
@@ -236,10 +238,12 @@ public void addFullEvaluation (EvaluationBean e) {
 			+ EvaluationBean.Q16 + ","			
 			+ EvaluationBean.Q17 + ","			
 			+ EvaluationBean.Q18 + ","			
-			+ EvaluationBean.Q19 + ","			
-			+ EvaluationBean.Q20 + ")"					
+			+ EvaluationBean.Q19 + ","		
+			+ EvaluationBean.Q20 + ","
+			+ EvaluationBean.Q21 + ","
+			+ EvaluationBean.Q22 + ")"					
 			
-			+ "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+			+ "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 	
 	System.out.println("Hey this is the statement: " + sql); 
 	
@@ -271,8 +275,8 @@ public void addFullEvaluation (EvaluationBean e) {
 		st.setString(22, e.getQ18());
 		st.setString(23, e.getQ19());
 		st.setString(24, e.getQ20());
-
-		
+		st.setString(25, e.getQ21());
+		st.setString(26, e.getQ22());
 		st.executeUpdate();
 	} catch (ClassNotFoundException | SQLException b) {
 		// TODO Auto-generated catch block

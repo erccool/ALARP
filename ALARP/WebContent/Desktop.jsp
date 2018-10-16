@@ -532,6 +532,49 @@
   </div>
 </div>
 
+<div class="modal fade" id="Modal21" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Please explain below</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="form-group">
+				  <textarea class="form-control" rows="5" id="comment21" > </textarea>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		        <button onClick="No21()" type="button" class="btn btn-warning" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal22" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Please explain below</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="form-group">
+				  <textarea class="form-control" rows="5" id="comment22" > </textarea>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		        <button onClick="No22()" type="button" class="btn btn-warning" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="container">
 <div class="panel panel-default">
 		
@@ -545,12 +588,13 @@
  	<div class="panel-body bg-default">
 
  	
- 	</br></br></br><label for="comment">Terminal & Associated asset Review</label>
+ 	</br></br><label for="comment">Terminal & Associated asset Review</label>
  	
  	<div class = "row" id = "comment">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class="form-group" id = answer display = "none" >
-		    <label for="email"> Is there any third party available?  </label>
+		    <label for="email"> The terminal operator is reputable and operates in accordance to OCIMF / SIGTTO guidelines and recommendations. Is this true?
+</label>
 		    <input type="email" class="fform-group mb-2" id="ques1a" name="q1" readonly>
 	 </div> 
 
@@ -575,8 +619,7 @@
  	
  	
  	<div class = "row"><div class = "col-md-6 col-md-offset-3">
- 	<label for="email">The terminal operator is reputable and operates in accordance to OCIMF / SIGTTO guidelines and recommendations. Is this true?
-</label>
+ 	<label for="email">The terminal has submitted a valid MTMSA and it has been reviewed by an AP. True?</label>
 		    <input type="email" class="fform-group mb-2" id="ques2a" name="q2" readonly>
  	
  	</div> </div> <br>
@@ -593,7 +636,8 @@
  	</div><br>
  	
  	 <br><div class = "row"><div class = "col-md-6 col-md-offset-3">
- 	<label for="email">Terminal provided critical information. Is this true? </label>
+ 	<label for="email">The terminal has shared a 3rd party or internal report that may be considered a BLC equivalent. 
+ Is this true? </label>
 		    <input type="email" class="fform-group mb-2" id="ques3a" name="q2" readonly>
  	
  	</div> </div> <br>
@@ -611,7 +655,9 @@
  	</div>
  	
  	<div class = "row"><div class = "col-md-6 col-md-offset-3">
- 	<label for="email">The terminal has submitted a valid MTMSA and it has been reviewed by an AP. Is this true?	</label>
+ 	<label for="email">A teleconference between an AP and the terminal operations manager was conducted with no significant observation or issues. 
+(Random sampling of BLC questionaire used across all chapters)
+ Is this true?	</label>
 		    <input type="email" class="fform-group mb-2" id="ques4a" name="q2" readonly> 	
  	</div> </div> <br>
  	<div class = "row">
@@ -627,9 +673,10 @@
 	</div>  
 	</div>
  	</div>
+
  	
- 	<div class = "row"><div class = "col-md-6 col-md-offset-3">
- 	<label for="email">Master's feedback from Shell chartered vessel was crossed referenced with no major observations. Is this true?
+ 	<div class = "row" ><div class = "col-md-6 col-md-offset-3">
+ 	<label for="email"> Do you want to add risk reduction actions, mitigations or justifications?
 	</label>
 		    <input type="email" class="fform-group mb-2" id="ques5a" name="q2" readonly> 
  	
@@ -637,13 +684,12 @@
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes5()" type="submit" class="btn  btn-warning signup-btn active">Yes</button>
+		<button type="submit" class="btn  btn-warning signup-btn active" data-toggle="modal" data-target="#Modal5">Yes</button>
 	
 		</div>  
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn  btn-danger signup-btn active" data-toggle="modal" data-target="#Modal5">No</button>
-
+		<button onClick = "Yes5()" type="submit" class="btn  btn-danger signup-btn active">No</button>
 	</div>  
 	</div>
  	</div>
@@ -651,7 +697,8 @@
  	<div class = "row"><div class = "col-md-6 col-md-offset-3">
  	
  	<label for="email">
- 	Berth data and parameters were extracted from Ship Shore Compatibility Check or berth fit check documents provided by the terminal. Is this true?
+ 	A jetty walkabout has been conducted before by an AP or an approved contractor which may form part of the terminal. 
+ Is this true?
 	</label>
 		    <input type="email" class="fform-group mb-2" id="ques6a" name="q2" readonly> 
  	</div> </div><br>
@@ -669,11 +716,11 @@
 	</div>
  	</div>
  	
- 	</br></br><label for="comment">Task 2</label>
+ 	
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
  	<label for="email">
- The terminal has been inspected by an AP or a company approved Contractor in the past 5 years. All former high observations, if any were closed. 
-	</label>
+The terminal has been inspected by an AP or a company approved Contractor in the past 5 years. All former high observations, if any were closed. 
+Is this true?	</label>
 		    <input type="email" class="fform-group mb-2" id="ques7a" name="q2" readonly> 		
  	</div> </div>
  	<div class = "row">
@@ -689,11 +736,11 @@
 	</div>
  	</div>
  	
- 	
+ 	</br></br><label for="comment">AP Research Methodology</label>
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
  	<label for="email">
-A jetty walkabout has been conducted before by an AP or an approved contractor which may form part of the terminal. 
-	</label>
+Information was extracted from the company's website and/or from the agents or 3rd Party source and has been reviewed by an AP. 
+Is this true?	</label>
 		    <input type="email" class="fform-group mb-2" id="ques8a" name="q2" readonly> 		
  	
  	</div> </div>
@@ -712,8 +759,8 @@ A jetty walkabout has been conducted before by an AP or an approved contractor w
  	
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
  	<label for="email"> 	
-A teleconference between an AP and the terminal operations manager was conducted with no significant observation or issues. (Random sampling of BLC questionnaire used across all chapters) 
-	</label>
+Master's feedback from Shell chartered vessel was crossed referenced with no major observations. 
+Is this true?	</label>
 	<input type="email" class="fform-group mb-2" id="ques9a" name="q2" readonly> 		
  		
  	</div> </div>
@@ -732,8 +779,13 @@ A teleconference between an AP and the terminal operations manager was conducted
  	
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
  	<label for="email"> 	
- A written confirmation from the counterparty agreeing to an inspection which will occur within 6 months from the first Shell chartered vessel arrival date.
- 	</label>
+The terminal has provided critical information on the terminal and approaches which includes but not limited to:  
+- Bathymetry survey of jetty / approaches
+- Structural Survey 
+- Fender Manufacturer Inspection 
+- Terminal Information booklet 
+- Emergency Response Manual
+Is this true? 	</label>
 	<input type="email" class="fform-group mb-2" id="ques10a" name="q2" readonly> 		
 
  	</div> </div>
@@ -752,8 +804,8 @@ A teleconference between an AP and the terminal operations manager was conducted
  	
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
  	<label for="email"> 	 	
-Counterparty has agreed in principle to an inspection which will occur within 12 months from the first Shell chartered vessel arrival date. 
- 	</label>
+No major findings from in depth research conducted by AP which covers safe port and safe berth criterias (Ref MPM OPS.10.05) along with critical navigational approaches to and from the berth. 
+Is this true? 	</label>
 	<input type="email" class="fform-group mb-2" id="ques11a" name="q2" readonly> 		
  	
  	</div> </div>
@@ -773,8 +825,8 @@ Counterparty has agreed in principle to an inspection which will occur within 12
  	
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
  	<label for="email">
-Alternative terminals available for the deal due consideration that a vessel feedback / positive vetting may impact future terminal rating. 
- 	</label>
+Berth data and parameters were extracted from Ship Shore Compatibility Check or berth fit check documents provided by the terminal. 
+Is this true? 	</label>
 	<input type="email" class="fform-group mb-2" id="ques12a" name="q2" readonly> 		
  	
  	</div> </div>
@@ -792,11 +844,10 @@ Alternative terminals available for the deal due consideration that a vessel fee
  	</div>
  	
  	
- 	</br></br><label for="comment">Task 3</label>
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
  	<label for="email"> 	
-No major findings from indepth research conducted by AP which covers safe port and safe berth criterias (Ref MPM OPS.10.05) along with critical navigational approaches to and from the berth. 
-	</label>
+AP or his/her delegate has carried out a search online and internal incident database. No major relevant incidents since the terminal was in operation. (Best endeavour search)
+Is this true?	</label>
 	<input type="email" class="fform-group mb-2" id="ques13a" name="q2" readonly> 		
 	
  	
@@ -814,11 +865,11 @@ No major findings from indepth research conducted by AP which covers safe port a
 	</div>
  	</div>
  	
- 	
+ 	</br></br><label for="comment">Other restrictions & legal implications</label> 	
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
  	<label for="email"> 	 	
-Information was extracted from the company's website and/or from the agents or 3rd Party source and has been reviewed by an AP. 
-	</label>
+Current available AP and approved company contractors do not have appropriate visa or diplomatic ties to carry out an inspection. i.e Israels, Qatar, Iran and etc. 
+Is this true?	</label>
 	<input type="email" class="fform-group mb-2" id="ques14a" name="q2" readonly> 		
 	
  	
@@ -838,8 +889,8 @@ Information was extracted from the company's website and/or from the agents or 3
  	
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
  	<label for="email"> 	 	 	
-Current available AP and approved company contractors do not have appropriate visa or diplomatic ties to carry out an inspection. i.e Israels, Qatar, Iran and etc. 
-	</label>
+Local port requirements or authorities donot permit entry into the terminal. 
+Is this true?	</label>
 	<input type="email" class="fform-group mb-2" id="ques15a" name="q2" readonly> 		
 	
  	
@@ -859,8 +910,8 @@ Current available AP and approved company contractors do not have appropriate vi
  	
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
  	<label for="email"> 	 	 	 	
-Local port requirements or authorities do not permit entry into the terminal.  	
- 	</label>
+Travel cost has been reviewed and found to be grossly disproportion.  i.e charter a private helicopter
+Is this true? 	</label>
 	<input type="email" class="fform-group mb-2" id="ques16a" name="q2" readonly> 		
  	
  	</div> </div>
@@ -879,8 +930,8 @@ Local port requirements or authorities do not permit entry into the terminal.
  	
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
  	<label for="email"> 	 	 	 	
-Travel cost has been reviewed and found to be grossly disproportion.  i.e charter a private helicopter
- 	</label>
+Available AP or approved company contractors unable to comply with company's business travel requirements due to HSSE alerts, remoteness of terminal, war/high risk and etc. 
+Is this true? 	</label>
 	<input type="email" class="fform-group mb-2" id="ques17a" name="q2" readonly> 		 	
  	
  	</div> </div>
@@ -897,11 +948,11 @@ Travel cost has been reviewed and found to be grossly disproportion.  i.e charte
 	</div>
  	</div>
  	
- 	
+ 	</br></br><label for="comment">Commitments</label> 	
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
  	<label for="email">
- Available AP or approved company contractors unable to comply with company's business travel requirements due to HSSE alerts, remoteness of terminal, war/high risk and etc. 
- 	</label>
+A written confirmation from the counterparty agreeing to an inspection which will occur within 6 months from the first Shell chartered vessel arrival date. 
+Is this true? 	</label>
 	<input type="email" class="fform-group mb-2" id="ques18a" name="q2" readonly> 		 	
  	
  	</div> </div>
@@ -920,8 +971,8 @@ Travel cost has been reviewed and found to be grossly disproportion.  i.e charte
  	
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
  	<label for="email">	
-Long term contract includes contractual inspection rights. 
- 	</label>
+Counterparty has agreed in principle to an inspection which will occur within 12 months from the first Shell chartered vessel arrival date. 
+Is this true? 	</label>
 	<input type="email" class="fform-group mb-2" id="ques19a" name="q2" readonly> 		 	
  	
  	</div> </div>
@@ -940,8 +991,8 @@ Long term contract includes contractual inspection rights.
  	
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
  	<label for="email">
-Business contractual obligations requires to be managed i.e existing contract, inherited, major loss of revenue.
- 	</label>
+Alternative terminals available for the deal due consideration that a vessel feedback / positive vetting may impact future terminal rating. 
+Is this true? 	</label>
 	<input type="email" class="fform-group mb-2" id="ques20a" name="q2" readonly> 		 	
  	
  	</div> </div>
@@ -954,6 +1005,46 @@ Business contractual obligations requires to be managed i.e existing contract, i
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
 		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal20">No</button>
+	</div>  
+	</div>
+ 	</div>
+ 	
+ 	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
+ 	<label for="email">
+Long term contract includes contractual inspection rights. 
+Is this true? 	</label>
+	<input type="email" class="fform-group mb-2" id="ques21a" name="q2" readonly> 		 	
+ 	
+ 	</div> </div>
+ 	<div class = "row">
+ 	<div class = "col-md-6 col-md-offset-3">
+ 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+		<button onClick = "Yes21()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+	
+		</div>  
+		
+		<div class = "col-md-3 col-sm-3 col-xs-12 ">
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal21">No</button>
+	</div>  
+	</div>
+ 	</div>
+ 	
+ 	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
+ 	<label for="email">
+Business contractual obligations requires to be managed i.e existing contract, inherited, major loss of revenue.
+Is this true? 	</label>
+	<input type="email" class="fform-group mb-2" id="ques22a" name="q2" readonly> 		 	
+ 	
+ 	</div> </div>
+ 	<div class = "row">
+ 	<div class = "col-md-6 col-md-offset-3">
+ 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+		<button onClick = "Yes22()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+	
+		</div>  
+		
+		<div class = "col-md-3 col-sm-3 col-xs-12 ">
+		<button type="submit" class="btn btn-lg btn-danger signup-btn active" data-toggle="modal" data-target="#Modal22">No</button>
 	</div>  
 	</div>
  	</div>
@@ -1075,6 +1166,16 @@ Business contractual obligations requires to be managed i.e existing contract, i
 		    <label for="email">Answer 20: </label>
 		    <input type="email" class="fform-group mb-2" id="ques20" name="q20" readonly>
 	 </div> 
+	 
+	 <div class="form-group" id = answer display = "none" hidden>
+		    <label for="email">Answer 21: </label>
+		    <input type="email" class="fform-group mb-2" id="ques21" name="q21" readonly>
+	 </div> 
+	 
+	 <div class="form-group" id = answer display = "none" hidden>
+		    <label for="email">Answer 22: </label>
+		    <input type="email" class="fform-group mb-2" id="ques22" name="q22" readonly>
+	 </div> 
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<button type="submit" class="btn btn-lg btn-warning signup-btn active">Submit</button>
@@ -1129,13 +1230,13 @@ Business contractual obligations requires to be managed i.e existing contract, i
 		    document.getElementById("ques4a").value = "No: " + document.getElementById("comment4").value;
 		   
 		}function Yes5() {
-		    document.getElementById("ques5").value = "Yes";
+		    document.getElementById("ques5").value = "No";
 		   
 		}
 		
 		function No5() {
-		    document.getElementById("ques5").value = "No: " + document.getElementById("comment5").value;
-		    document.getElementById("ques5a").value = "No: " + document.getElementById("comment5").value;
+		    document.getElementById("ques5").value = "Yes: " + document.getElementById("comment5").value;
+		    document.getElementById("ques5a").value = "Yes: " + document.getElementById("comment5").value;
 		    
 		}
 		
@@ -1156,7 +1257,7 @@ Business contractual obligations requires to be managed i.e existing contract, i
 		
 		function No7() {
 		    document.getElementById("ques7").value = "No: " + document.getElementById("comment7").value;
-		    document.getElementById("ques7a").value = "No: " + document.getElementById("comment6").value;
+		    document.getElementById("ques7a").value = "No: " + document.getElementById("comment7").value;
 		   
 		}
 		function Yes8() {
@@ -1166,7 +1267,7 @@ Business contractual obligations requires to be managed i.e existing contract, i
 		
 		function No8() {
 		    document.getElementById("ques8").value = "No: " + document.getElementById("comment8").value;
-		    document.getElementById("ques8a").value = "No: " + document.getElementById("comment6").value;
+		    document.getElementById("ques8a").value = "No: " + document.getElementById("comment8").value;
 		   
 		}
 		function Yes9() {
@@ -1176,7 +1277,7 @@ Business contractual obligations requires to be managed i.e existing contract, i
 		
 		function No9() {
 		    document.getElementById("ques9").value = "No: " + document.getElementById("comment9").value;
-		    document.getElementById("ques9a").value = "No: " + document.getElementById("comment6").value;
+		    document.getElementById("ques9a").value = "No: " + document.getElementById("comment9").value;
 		   
 		}
 		function Yes10() {
@@ -1186,7 +1287,7 @@ Business contractual obligations requires to be managed i.e existing contract, i
 		
 		function No10() {
 		    document.getElementById("ques10").value = "No: " + document.getElementById("comment10").value;
-		    document.getElementById("ques10a").value = "No: " + document.getElementById("comment6").value;
+		    document.getElementById("ques10a").value = "No: " + document.getElementById("comment10").value;
 		   
 		}
 		function Yes11() {
@@ -1196,7 +1297,7 @@ Business contractual obligations requires to be managed i.e existing contract, i
 		
 		function No11() {
 		    document.getElementById("ques11").value = "No: " + document.getElementById("comment11").value;
-		    document.getElementById("ques11a").value = "No: " + document.getElementById("comment6").value;
+		    document.getElementById("ques11a").value = "No: " + document.getElementById("comment11").value;
 		   
 		}
 		function Yes12() {
@@ -1206,7 +1307,7 @@ Business contractual obligations requires to be managed i.e existing contract, i
 		
 		function No12() {
 		    document.getElementById("ques12").value = "No: " + document.getElementById("comment12").value;
-		    document.getElementById("ques12a").value = "No: " + document.getElementById("comment6").value;
+		    document.getElementById("ques12a").value = "No: " + document.getElementById("comment12").value;
 		   
 		}
 		function Yes13() {
@@ -1216,7 +1317,7 @@ Business contractual obligations requires to be managed i.e existing contract, i
 		
 		function No13() {
 		    document.getElementById("ques13").value = "No: " + document.getElementById("comment13").value;
-		    document.getElementById("ques13a").value = "No: " + document.getElementById("comment6").value;
+		    document.getElementById("ques13a").value = "No: " + document.getElementById("comment13").value;
 		   
 		}
 		function Yes14() {
@@ -1226,7 +1327,7 @@ Business contractual obligations requires to be managed i.e existing contract, i
 		
 		function No14() {
 		    document.getElementById("ques14").value = "No: " + document.getElementById("comment14").value;
-		    document.getElementById("ques14a").value = "No: " + document.getElementById("comment6").value;
+		    document.getElementById("ques14a").value = "No: " + document.getElementById("comment14").value;
 		   
 		}
 		function Yes15() {
@@ -1236,7 +1337,7 @@ Business contractual obligations requires to be managed i.e existing contract, i
 		
 		function No15() {
 		    document.getElementById("ques15").value = "No: " + document.getElementById("comment15").value;
-		    document.getElementById("ques15a").value = "No: " + document.getElementById("comment6").value;
+		    document.getElementById("ques15a").value = "No: " + document.getElementById("comment15").value;
 		   
 		}
 		function Yes16() {
@@ -1246,7 +1347,7 @@ Business contractual obligations requires to be managed i.e existing contract, i
 		
 		function No16() {
 		    document.getElementById("ques16").value = "No: " + document.getElementById("comment16").value;
-		    document.getElementById("ques16a").value = "No: " + document.getElementById("comment6").value;
+		    document.getElementById("ques16a").value = "No: " + document.getElementById("comment16").value;
 		   
 		}
 		function Yes17() {
@@ -1256,7 +1357,7 @@ Business contractual obligations requires to be managed i.e existing contract, i
 		
 		function No17() {
 		    document.getElementById("ques17").value = "No: " + document.getElementById("comment17").value;
-		    document.getElementById("ques17a").value = "No: " + document.getElementById("comment6").value;
+		    document.getElementById("ques17a").value = "No: " + document.getElementById("comment17").value;
 		   
 		}
 		function Yes18() {
@@ -1266,7 +1367,7 @@ Business contractual obligations requires to be managed i.e existing contract, i
 		
 		function No18() {
 		    document.getElementById("ques18").value = "No: " + document.getElementById("comment18").value;
-		    document.getElementById("ques18a").value = "No: " + document.getElementById("comment6").value;
+		    document.getElementById("ques18a").value = "No: " + document.getElementById("comment18").value;
 		   
 		}
 		function Yes19() {
@@ -1276,7 +1377,7 @@ Business contractual obligations requires to be managed i.e existing contract, i
 		
 		function No19() {
 		    document.getElementById("ques19").value = "No: " + document.getElementById("comment19").value;
-		    document.getElementById("ques19a").value = "No: " + document.getElementById("comment6").value;
+		    document.getElementById("ques19a").value = "No: " + document.getElementById("comment19").value;
 		   
 		}
 		function Yes20() {
@@ -1286,7 +1387,27 @@ Business contractual obligations requires to be managed i.e existing contract, i
 		
 		function No20() {
 		    document.getElementById("ques20").value = "No: " + document.getElementById("comment20").value;
-		    document.getElementById("ques20a").value = "No: " + document.getElementById("comment6").value;
+		    document.getElementById("ques20a").value = "No: " + document.getElementById("comment20").value;
+		   
+		}
+		function Yes21() {
+		    document.getElementById("ques21").value = "Yes";
+		   
+		}
+		
+		function No21() {
+		    document.getElementById("ques21").value = "No: " + document.getElementById("comment21").value;
+		    document.getElementById("ques21a").value = "No: " + document.getElementById("comment21").value;
+		   
+		}
+		function Yes22() {
+		    document.getElementById("ques22").value = "Yes";
+		   
+		}
+		
+		function No22() {
+		    document.getElementById("ques22").value = "No: " + document.getElementById("comment22").value;
+		    document.getElementById("ques22a").value = "No: " + document.getElementById("comment22").value;
 		   
 		}
 </script>

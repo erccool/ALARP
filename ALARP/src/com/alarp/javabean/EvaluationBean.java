@@ -24,8 +24,8 @@ public class EvaluationBean {
 	public static final String Q18 = "q18";
 	public static final String Q19 = "q19";
 	public static final String Q20 = "q20";
-	
-	
+	public static final String Q21 = "q21";
+	public static final String Q22 = "q22";
 	public static final String DATE_SUBMITTED = "date_submitted";
 	public static final String DATE_INSPECTED = "date_inspected";
 	public static final String SME_DECISION = "sme_decision";
@@ -155,7 +155,20 @@ public class EvaluationBean {
 	private String q18;
 	private String q19;
 	private String q20;
-	
+	private String q21;
+	public String getQ21() {
+		return q21;
+	}
+	public void setQ21(String q21) {
+		this.q21 = q21;
+	}
+	public String getQ22() {
+		return q22;
+	}
+	public void setQ22(String q22) {
+		this.q22 = q22;
+	}
+	private String q22;
 	public String getType() {
 		return type;
 	}

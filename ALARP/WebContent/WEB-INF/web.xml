@@ -7,7 +7,7 @@
     <welcome-file>index.jsp</welcome-file>
     <welcome-file>default.html</welcome-file>
     <welcome-file>default.htm</welcome-file>
-    <welcome-file>Home.jsp</welcome-file>
+    <welcome-file>WelcomeReview.jsp</welcome-file>
   </welcome-file-list>
   <session-config>
     <session-timeout>2</session-timeout>

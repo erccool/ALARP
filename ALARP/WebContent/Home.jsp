@@ -25,11 +25,6 @@ function alertSessionTimeout() {
 </head>
 <body style="background-color:lemonchiffon;">
 
-<%
-	if(session.getAttribute("username")==null){
-	  	response.sendRedirect("error.jsp");
-	}
-%>
 
 <div class="row">
 <nav class="nnavbar navbar-inverse navbar-static-top nav-upper nav1">

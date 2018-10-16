@@ -20,8 +20,8 @@ public class EmailSend {
     	String host ="smtp.gmail.com" ;
         String user = "evaluator.alarpterminal@gmail.com";
         String pass = "alarpeval123";
-        String to = "edward_curugan@dlsu.edu.ph";
-        String from = "edward_curugan@dlsu.edu.ph";
+        String to = "amiel_lumbuan@dlsu.edu.ph";
+        String from = "evaluator.alarpterminal@gmail.com";
         String subject = "New Evaluation";
         String messageText = "Kindly check the newly sent evaluation";
         boolean sessionDebug = false;
