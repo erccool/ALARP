@@ -617,7 +617,7 @@ Is this true?
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes11()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes11()" type="submit" class="btn  btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
@@ -640,7 +640,7 @@ Is this true?
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes12()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes12()" type="submit" class="btn  btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
@@ -661,7 +661,7 @@ Is this true?
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes13()" type="submit" class="btn btn-lg btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes13()" type="submit" class="btn  btn-warning signup-btn active">Yes</button>
 	
 		</div>  
 		
