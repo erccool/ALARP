@@ -12,7 +12,7 @@ import com.alarp.javabean.EvaluationBean;
 
 import org.apache.tomcat.dbcp.dbcp2.BasicDataSource;
 public class EvaluationService {
-	static String url ="jdbc:mysql://localhost:3306/alarp";
+	static String url ="jdbc:mysql://alarpss.cmieqxippee0.ap-southeast-1.rds.amazonaws.com:3306/alarp";
 	static String username ="root";
 	static String password = "password";
 
@@ -43,6 +43,7 @@ public ArrayList getEval(int id) {
 
 			
 			eval.add(eb);
+			con.close();
 		}		
 
 	} catch (ClassNotFoundException | SQLException e) {
@@ -96,6 +97,8 @@ public ArrayList getFullEval(int id) {
 
 			
 			eval.add(eb);
+			con.close();
+
 		}		
 
 	} catch (ClassNotFoundException | SQLException e) {
@@ -127,6 +130,8 @@ public ArrayList getAllEvaluations() {
 			eb.setIdeval(rs.getInt(EvaluationBean.IDEVAL));
 			
 			evalLists.add(eb);
+			con.close();
+
 		}		
 
 	} catch (ClassNotFoundException | SQLException e) {
@@ -153,6 +158,8 @@ public void decide(int id, String decision) {
 		st.setInt(2, id);
 		System.out.println(st);
 		st.executeUpdate();
+		con.close();
+
 	} catch (ClassNotFoundException | SQLException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
@@ -168,6 +175,7 @@ public void deleteEval(int id) {
 		Connection con = DriverManager.getConnection(url,username,password);
 		PreparedStatement st = con.prepareStatement(sql);
 		st.executeUpdate();	
+		con.close();
 
 	} catch (ClassNotFoundException | SQLException e) {
 		// TODO Auto-generated catch block
@@ -207,6 +215,8 @@ public void addEvaluation(EvaluationBean e) {
 		st.setString(9, e.getQ5());
 		st.setString(10, e.getQ6());
 		st.executeUpdate();
+		con.close();
+
 	} catch (ClassNotFoundException | SQLException b) {
 		// TODO Auto-generated catch block
 		b.printStackTrace();
@@ -278,6 +288,8 @@ public void addFullEvaluation (EvaluationBean e) {
 		st.setString(25, e.getQ21());
 		st.setString(26, e.getQ22());
 		st.executeUpdate();
+		con.close();
+
 	} catch (ClassNotFoundException | SQLException b) {
 		// TODO Auto-generated catch block
 		b.printStackTrace();

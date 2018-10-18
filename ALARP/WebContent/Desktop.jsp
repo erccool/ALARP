@@ -93,7 +93,7 @@
 		      <li ><a href="Moved.jsp">Moved to a later date</a></li>	      
 		      <li><a href="NotLocated.jsp">Located at a Remote Area</a></li>
 		      <li class ="active"><a href="Desktop.jsp">Annual exposure exceeded over 100 clearance / CARM waiver</a></li>
-		      <li><a href="Unproven.jsp">Unproven Technology</a></li> 
+		      <li><a href="Unproven.jsp">NEW Terminal/Design Phase</a></li> 
 		 </ul>
 	</div>
 </nav></div></br>
@@ -643,7 +643,7 @@
  	
  	 <br><div class = "row"><div class = "col-md-6 col-md-offset-3">
  	<label for="email">1.3 The terminal has shared a 3rd party or internal report that may be considered a BLC equivalent. 
- Is this true? </label>
+ </label>
 		    <input type="email" class="fform-group mb-2" id="ques3a" name="q2" readonly>
  	
  	</div> </div> <br>
@@ -728,7 +728,7 @@
 1.7 The terminal has been inspected by an AP or a company approved Contractor in the past 5 years. All former high observations, if any were closed. 
 Is this true?	</label>
 		    <input type="email" class="fform-group mb-2" id="ques7a" name="q2" readonly> 		
- 	</div> </div>
+ 	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
@@ -749,7 +749,7 @@ Is this true?	</label>
 Is this true?	</label>
 		    <input type="email" class="fform-group mb-2" id="ques8a" name="q2" readonly> 		
  	
- 	</div> </div>
+ 	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
@@ -769,7 +769,7 @@ Is this true?	</label>
 Is this true?	</label>
 	<input type="email" class="fform-group mb-2" id="ques9a" name="q2" readonly> 		
  		
- 	</div> </div>
+ 	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
@@ -794,7 +794,7 @@ Is this true?	</label>
 Is this true? 	</label>
 	<input type="email" class="fform-group mb-2" id="ques10a" name="q2" readonly> 		
 
- 	</div> </div>
+ 	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
@@ -814,7 +814,7 @@ Is this true? 	</label>
 Is this true? 	</label>
 	<input type="email" class="fform-group mb-2" id="ques11a" name="q2" readonly> 		
  	
- 	</div> </div>
+ 	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
@@ -835,7 +835,7 @@ Is this true? 	</label>
 Is this true? 	</label>
 	<input type="email" class="fform-group mb-2" id="ques12a" name="q2" readonly> 		
  	
- 	</div> </div>
+ 	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
@@ -857,7 +857,7 @@ Is this true?	</label>
 	<input type="email" class="fform-group mb-2" id="ques13a" name="q2" readonly> 		
 	
  	
- 	</div> </div>
+ 	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
@@ -879,7 +879,7 @@ Is this true?	</label>
 	<input type="email" class="fform-group mb-2" id="ques14a" name="q2" readonly> 		
 	
  	
- 	</div> </div>
+ 	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
@@ -900,7 +900,7 @@ Is this true?	</label>
 	<input type="email" class="fform-group mb-2" id="ques15a" name="q2" readonly> 		
 	
  	
- 	</div> </div>
+ 	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
@@ -920,7 +920,7 @@ Is this true?	</label>
 Is this true? 	</label>
 	<input type="email" class="fform-group mb-2" id="ques16a" name="q2" readonly> 		
  	
- 	</div> </div>
+ 	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
@@ -940,7 +940,7 @@ Is this true? 	</label>
 Is this true? 	</label>
 	<input type="email" class="fform-group mb-2" id="ques17a" name="q2" readonly> 		 	
  	
- 	</div> </div>
+ 	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
@@ -961,7 +961,7 @@ Is this true? 	</label>
 Is this true? 	</label>
 	<input type="email" class="fform-group mb-2" id="ques18a" name="q2" readonly> 		 	
  	
- 	</div> </div>
+ 	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
@@ -981,7 +981,7 @@ Is this true? 	</label>
 Is this true? 	</label>
 	<input type="email" class="fform-group mb-2" id="ques19a" name="q2" readonly> 		 	
  	
- 	</div> </div>
+ 	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
@@ -1001,7 +1001,7 @@ Is this true? 	</label>
 Is this true? 	</label>
 	<input type="email" class="fform-group mb-2" id="ques20a" name="q2" readonly> 		 	
  	
- 	</div> </div>
+ 	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
@@ -1021,7 +1021,7 @@ Is this true? 	</label>
 Is this true? 	</label>
 	<input type="email" class="fform-group mb-2" id="ques21a" name="q2" readonly> 		 	
  	
- 	</div> </div>
+ 	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">
@@ -1041,7 +1041,7 @@ Is this true? 	</label>
 Is this true? 	</label>
 	<input type="email" class="fform-group mb-2" id="ques22a" name="q2" readonly> 		 	
  	
- 	</div> </div>
+ 	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-9 col-sm-3 col-xs-12 ">

@@ -94,7 +94,7 @@
 		      <li ><a href="Moved.jsp">Moved to a later date</a></li>	      
 		      <li><a href="NotLocated.jsp">Terminal is Located at a Remote Area</a></li>
 		      <li><a href="Desktop.jsp">Desktop Review</a></li>
-		      <li><a href="Unproven.jsp">Unproven Technology</a></li> 
+		      <li><a href="Unproven.jsp">NEW Terminal/Design Phase </a></li> 
 		      
 		      
 		 </ul>
