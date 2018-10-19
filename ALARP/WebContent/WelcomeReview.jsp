@@ -35,9 +35,7 @@
         </a>
 		  <ul class="nav navbar-nav">
 		      <li><a href="GetAllEvalServlet"><font color="white">Decide On Forms</font></a></li>
-		      <li><a href="WelcomeReview.jsp"><font color="white">Submit Review</font></a></li>
-		      <li><a href="Display?page=Digital"><font color="white">View Past Reviews</font></a></li>
-		 </ul>
+		      <li><a href="WelcomeReview.jsp"><font color="white">Submit Review</font></a></li>		 </ul>
 		<c:choose>
   				<c:when test="${sessionScope.iduser != null}">
   				<form action="Logout" class="navbar-form navbar-right">
