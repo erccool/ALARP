@@ -590,6 +590,34 @@
  <font color="gray">	
  	
  	<div class="panel-body bg-default">
+ 	
+ 	<div class = "row" id = "comment">
+ 	<div class = "col-md-6 col-md-offset-3">
+ 	<div class="form-group" id = answer display = "none" >
+		    <label for="email"> Is recent 3rd Party BLC , Marine Jetty inspection or CDI report available?</label>
+		    <input type="email" class="fform-group mb-2" id="ques1a" name="q1" readonly>
+	 </div> 
+
+ 	
+ 	</div> </div>
+ 	
+ 	<div class = "row">
+ 	<div class = "col-md-6 col-md-offset-3">
+ 	<div class = "col-md-4 col-sm-3 col-xs-12 ">
+		<button onClick = "" type="submit" class="btn btn-md btn-warning signup-btn active">Yes</button>
+	
+		</div> 
+		
+		<div class = "col-md-5 col-sm-3 col-xs-12 ">
+		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		</div> 
+		
+		<div class = "col-md-3 col-sm-3 col-xs-12 ">
+		<button type="submit" class="btn btn-danger signup-btn active" data-toggle="modal" data-target="#Modal">No</button>
+
+	</div>  
+	</div>
+ 	</div>
 
  	
  	</br></br><label for="comment">Terminal & Associated asset Review</label>
@@ -607,10 +635,14 @@
  	
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
- 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+ 	<div class = "col-md-4 col-sm-3 col-xs-12 ">
 		<button onClick = "Yes1()" type="submit" class="btn btn-md btn-warning signup-btn active">Yes</button>
 	
 		</div>  
+		
+		<div class = "col-md-5 col-sm-3 col-xs-12 ">
+		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
 		<button type="submit" class="btn btn-danger signup-btn active" data-toggle="modal" data-target="#Modal1">No</button>
@@ -629,10 +661,14 @@
  	</div> </div> <br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
- 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+ 	<div class = "col-md-4 col-sm-3 col-xs-12 ">
 		<button onClick = "Yes2()" type="submit" class="btn  btn-warning signup-btn active">Yes</button>
 	
 		</div>  
+		
+		<div class = "col-md-5 col-sm-3 col-xs-12 ">
+		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
 		<button type="submit" class="btn  btn-danger signup-btn active" data-toggle="modal" data-target="#Modal2">No</button>
@@ -647,10 +683,14 @@
  	</div> </div> <br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
- 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+ 	<div class = "col-md-4 col-sm-3 col-xs-12 ">
 		<button onClick = "Yes3()" type="submit" class="btn  btn-warning signup-btn active">Yes</button>
 	
 		</div>  
+		
+		<div class = "col-md-5 col-sm-3 col-xs-12 ">
+		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
 		<button type="submit" class="btn  btn-danger signup-btn active" data-toggle="modal" data-target="#Modal3">No</button>`
@@ -666,10 +706,14 @@
  	</div> </div> <br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
- 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+ 	<div class = "col-md-4 col-sm-3 col-xs-12 ">
 		<button onClick = "Yes4()" type="submit" class="btn   btn-warning signup-btn active">Yes</button>
 	
 		</div>  
+		
+		<div class = "col-md-5 col-sm-3 col-xs-12 ">
+		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
 		<button type="submit" class="btn   btn-danger signup-btn active" data-toggle="modal" data-target="#Modal4">No</button>
@@ -687,10 +731,14 @@
  	</div> </div> <br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
- 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+ 	<div class = "col-md-4 col-sm-3 col-xs-12 ">
 		<button type="submit" class="btn  btn-warning signup-btn active" data-toggle="modal" data-target="#Modal5">Yes</button>
 	
 		</div>  
+		
+		<div class = "col-md-5 col-sm-3 col-xs-12 ">
+		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
 		<button onClick = "Yes5()" type="submit" class="btn  btn-danger signup-btn active">No</button>
@@ -708,10 +756,14 @@
  	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
- 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+ 	<div class = "col-md-4 col-sm-3 col-xs-12 ">
 		<button onClick = "Yes6()" type="submit" class="btn   btn-warning signup-btn active">Yes</button>
 	
 		</div>  
+		
+		<div class = "col-md-5 col-sm-3 col-xs-12 ">
+		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
 		<button type="submit" class="btn   btn-danger signup-btn active" data-toggle="modal" data-target="#Modal6">No</button>
@@ -729,10 +781,14 @@ Is this true?	</label>
  	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
- 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+ 	<div class = "col-md-4 col-sm-3 col-xs-12 ">
 		<button onClick = "Yes7()" type="submit" class="btn btn-md btn-warning signup-btn active">Yes</button>
 	
 		</div>  
+		
+		<div class = "col-md-5 col-sm-3 col-xs-12 ">
+		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
 		<button type="submit" class="btn btn-md btn-danger signup-btn active" data-toggle="modal" data-target="#Modal7">No</button>
@@ -750,10 +806,14 @@ Is this true?	</label><br>
  	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
- 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+ 	<div class = "col-md-4 col-sm-3 col-xs-12 ">
 		<button onClick = "Yes8()" type="submit" class="btn btn-md btn-warning signup-btn active">Yes</button>
 	
 		</div>  
+		
+		<div class = "col-md-5 col-sm-3 col-xs-12 ">
+		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
 		<button type="submit" class="btn btn-md btn-danger signup-btn active" data-toggle="modal" data-target="#Modal8">No</button>
@@ -770,10 +830,14 @@ Is this true?	</label>
  	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
- 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+ 	<div class = "col-md-4 col-sm-3 col-xs-12 ">
 		<button onClick = "Yes9()" type="submit" class="btn btn-md btn-warning signup-btn active">Yes</button>
 	
 		</div>  
+		
+		<div class = "col-md-5 col-sm-3 col-xs-12 ">
+		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
 		<button type="submit" class="btn btn-md btn-danger signup-btn active" data-toggle="modal" data-target="#Modal9">No</button>
@@ -795,10 +859,14 @@ Is this true? 	</label>
  	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
- 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+ 	<div class = "col-md-4 col-sm-3 col-xs-12 ">
 		<button onClick = "Yes10()" type="submit" class="btn btn-md btn-warning signup-btn active">Yes</button>
 	
 		</div>  
+		
+		<div class = "col-md-5 col-sm-3 col-xs-12 ">
+		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
 		<button type="submit" class="btn btn-md btn-danger signup-btn active" data-toggle="modal" data-target="#Modal10">No</button>
@@ -815,10 +883,14 @@ Is this true? 	</label>
  	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
- 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+ 	<div class = "col-md-4 col-sm-3 col-xs-12 ">
 		<button onClick = "Yes11()" type="submit" class="btn btn-md btn-warning signup-btn active">Yes</button>
 	
 		</div>  
+		
+		<div class = "col-md-5 col-sm-3 col-xs-12 ">
+		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
 		<button type="submit" class="btn btn-md btn-danger signup-btn active" data-toggle="modal" data-target="#Modal11">No</button>
@@ -836,10 +908,13 @@ Is this true? 	</label>
  	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
- 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+ 	<div class = "col-md-4 col-sm-3 col-xs-12 ">
 		<button onClick = "Yes12()" type="submit" class="btn btn-md btn-warning signup-btn active">Yes</button>
 	
 		</div>  
+		<div class = "col-md-5 col-sm-3 col-xs-12 ">
+		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
 		<button type="submit" class="btn btn-md btn-danger signup-btn active" data-toggle="modal" data-target="#Modal12">No</button>
@@ -858,10 +933,14 @@ Is this true?	</label>
  	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
- 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+ 	<div class = "col-md-4 col-sm-3 col-xs-12 ">
 		<button onClick = "Yes13()" type="submit" class="btn btn-md btn-warning signup-btn active">Yes</button>
 	
 		</div>  
+		
+		<div class = "col-md-5 col-sm-3 col-xs-12 ">
+		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
 		<button type="submit" class="btn btn-md btn-danger signup-btn active" data-toggle="modal" data-target="#Modal13">No</button>
@@ -880,10 +959,14 @@ Is this true?	</label>
  	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
- 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+ 	<div class = "col-md-4 col-sm-3 col-xs-12 ">
 		<button onClick = "Yes14()" type="submit" class="btn btn-md btn-warning signup-btn active">Yes</button>
 	
 		</div>  
+		
+		<div class = "col-md-5 col-sm-3 col-xs-12 ">
+		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
 		<button type="submit" class="btn btn-md btn-danger signup-btn active" data-toggle="modal" data-target="#Modal14">No</button>
@@ -901,10 +984,14 @@ Is this true?	</label>
  	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
- 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+ 	<div class = "col-md-4 col-sm-3 col-xs-12 ">
 		<button onClick = "Yes15()" type="submit" class="btn btn-md btn-warning signup-btn active">Yes</button>
 	
 		</div>  
+		
+		<div class = "col-md-5 col-sm-3 col-xs-12 ">
+		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
 		<button type="submit" class="btn btn-md btn-danger signup-btn active" data-toggle="modal" data-target="#Modal15">No</button>
@@ -921,10 +1008,14 @@ Is this true? 	</label>
  	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
- 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+ 	<div class = "col-md-4 col-sm-3 col-xs-12 ">
 		<button onClick = "Yes16()" type="submit" class="btn btn-md btn-warning signup-btn active">Yes</button>
 	
 		</div>  
+		
+		<div class = "col-md-5 col-sm-3 col-xs-12 ">
+		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
 		<button type="submit" class="btn btn-md btn-danger signup-btn active" data-toggle="modal" data-target="#Modal16">No</button>
@@ -941,10 +1032,14 @@ Is this true? 	</label>
  	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
- 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+ 	<div class = "col-md-4 col-sm-3 col-xs-12 ">
 		<button onClick = "Yes17()" type="submit" class="btn btn-md btn-warning signup-btn active">Yes</button>
 	
 		</div>  
+		
+		<div class = "col-md-5 col-sm-3 col-xs-12 ">
+		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
 		<button type="submit" class="btn btn-md btn-danger signup-btn active" data-toggle="modal" data-target="#Modal17">No</button>
@@ -962,10 +1057,14 @@ Is this true? 	</label>
  	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
- 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+ 	<div class = "col-md-4 col-sm-3 col-xs-12 ">
 		<button onClick = "Yes18()" type="submit" class="btn btn-md btn-warning signup-btn active">Yes</button>
 	
 		</div>  
+		
+		<div class = "col-md-5 col-sm-3 col-xs-12 ">
+		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
 		<button type="submit" class="btn btn-md btn-danger signup-btn active" data-toggle="modal" data-target="#Modal18">No</button>
@@ -982,10 +1081,14 @@ Is this true? 	</label>
  	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
- 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+ 	<div class = "col-md-4 col-sm-3 col-xs-12 ">
 		<button onClick = "Yes19 ()"type="submit" class="btn btn-md btn-warning signup-btn active">Yes</button>
 	
 		</div>  
+		
+		<div class = "col-md-5 col-sm-3 col-xs-12 ">
+		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
 		<button type="submit" class="btn btn-md btn-danger signup-btn active" data-toggle="modal" data-target="#Modal19">No</button>
@@ -1002,10 +1105,14 @@ Is this true? 	</label>
  	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
- 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+ 	<div class = "col-md-4 col-sm-3 col-xs-12 ">
 		<button onClick = "Yes20()" type="submit" class="btn btn-md btn-warning signup-btn active">Yes</button>
 	
 		</div>  
+		
+		<div class = "col-md-5 col-sm-3 col-xs-12 ">
+		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
 		<button type="submit" class="btn btn-md btn-danger signup-btn active" data-toggle="modal" data-target="#Modal20">No</button>
@@ -1022,10 +1129,14 @@ Is this true? 	</label>
  	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
- 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+ 	<div class = "col-md-4 col-sm-3 col-xs-12 ">
 		<button onClick = "Yes21()" type="submit" class="btn btn-md btn-warning signup-btn active">Yes</button>
 	
 		</div>  
+		
+		<div class = "col-md-5 col-sm-3 col-xs-12 ">
+		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
 		<button type="submit" class="btn btn-md btn-danger signup-btn active" data-toggle="modal" data-target="#Modal21">No</button>
@@ -1042,10 +1153,14 @@ Is this true? 	</label>
  	</div> </div><br>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
- 	<div class = "col-md-9 col-sm-3 col-xs-12 ">
+ 	<div class = "col-md-4 col-sm-3 col-xs-12 ">
 		<button onClick = "Yes22()" type="submit" class="btn btn-md btn-warning signup-btn active">Yes</button>
 	
 		</div>  
+		
+		<div class = "col-md-5 col-sm-3 col-xs-12 ">
+		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
 		<button type="submit" class="btn btn-md btn-danger signup-btn active" data-toggle="modal" data-target="#Modal22">No</button>
