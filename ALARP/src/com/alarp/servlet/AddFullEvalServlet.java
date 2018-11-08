@@ -49,6 +49,8 @@ public class AddFullEvalServlet extends HttpServlet {
 		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
 		Date date = new Date();
 		
+		String id = null;
+		
 		eb.setType(request.getParameter("type"));
 		
 		if(eb.getType().equals("Moved") == true) {
@@ -88,7 +90,8 @@ public class AddFullEvalServlet extends HttpServlet {
 		
 		EvaluationService evaluationsService = new EvaluationService();
 		evaluationsService.addFullEvaluation(eb);
-		es.send();
+		id = evaluationsService.getlastID();
+		es.send(dateFormat.format(date), id);
 		request.getRequestDispatcher("WelcomeReview.jsp").forward(request, response);
 
 	}

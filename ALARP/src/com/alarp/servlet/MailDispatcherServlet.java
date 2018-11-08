@@ -56,7 +56,7 @@ public class MailDispatcherServlet extends HttpServlet {
         EmailSend es = new EmailSend();
 		
 		
-		es.send();
+		
 	
 		request.getRequestDispatcher("WelcomeReview.jsp").forward(request, response);
 

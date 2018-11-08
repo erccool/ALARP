@@ -13,7 +13,7 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <style>
 .bg-company-red {
-    background-color: darkred;
+    background-color: #f72c36;
 }
 
 .bg-company-white {

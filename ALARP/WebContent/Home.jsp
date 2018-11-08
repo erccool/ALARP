@@ -18,24 +18,41 @@ function startCountdown() {
 function alertSessionTimeout() {
     alert("You're session is going to timeout in 1 minute.");
 </script>
+<style>
+.bg-company-red {
+    background-color: #f72c36;
+}
+
+.bg-company-white {
+    background-color: white;
+}
+</style>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Home</title>
 </head>
 <body style="background-color:lemonchiffon;">
+<%	
+
+  if(session.getAttribute("username")==null){
+	  	response.sendRedirect("error.jsp");
+	}
+
+  
+%>
+
 
 
 <div class="row">
-<nav class="nnavbar navbar-inverse navbar-static-top nav-upper nav1">
+<nav class="nnavbar navbar-inverse navbar-static-top bg-company-red nav-upper nav1">
 
 	<div class="container-fluid">
 		<a class="navbar-brand"><img src="Shell.png" alt="Dispute Bills" height = 120% >
         </a>
 		  <ul class="nav navbar-nav">
-		      <li><a href="GetAllEvalServlet"><font color="orange">Decide on forms</font></a></li>
-		      <li><a href="WelcomeReview.jsp"><font color="orange">Submit Evaluation</font></a></li>
-		      <li><a href="Display?page=Digital"><font color="orange">View Past Reviews</font></a></li>
+		      <li><a href="GetAllEvalServlet"><font color="white">Decide on forms</font></a></li>
+		      <li><a href="WelcomeReview.jsp"><font color="white">Submit Evaluation</font></a></li>
 		 </ul>
 		<c:choose>
   				<c:when test="${sessionScope.iduser != null}">
@@ -107,22 +124,6 @@ function alertSessionTimeout() {
 					    </tr>
 					  </thead>
 					  <tbody>
-					    <tr>
-					      <td>I</td></a>
-					      <td>Juan De La Cruz</td>
-					      <td>10-10-19</td>
-					      <td>Not Approved</td>
-					      <td>Supported</td>
-					      <td><a href="EvalResults.jsp" class="btn btn-warning a-btn-slide-text">
-						        <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>           
-						      </a>
-						  </td>
-	    				  <td><a href="#" class="btn btn-danger a-btn-slide-text">
-						       <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>         
-						      </a>
-						  </td>	
-					
-					    </tr>
 					    <c:forEach items = "${evalLists}" var = "e">
 					    <tr>
 					    <td>${e.ideval }</td></a>

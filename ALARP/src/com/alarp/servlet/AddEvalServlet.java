@@ -48,7 +48,7 @@ public class AddEvalServlet extends HttpServlet {
 		
 		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
 		Date date = new Date();
-		
+		String id;
 		eb.setType("Not Approved");
 		eb.setDate_inspected("Not applicable");
 		eb.setDate_submitted(dateFormat.format(date));
@@ -64,8 +64,8 @@ public class AddEvalServlet extends HttpServlet {
 		evaluationsService.addEvaluation(eb);
 EmailSend es = new EmailSend();
 		
-		
-		es.send();
+		id = evaluationsService.getlastID();
+		es.send(dateFormat.format(date), id);
 		request.getRequestDispatcher("WelcomeReview.jsp").forward(request, response);
 
 	}

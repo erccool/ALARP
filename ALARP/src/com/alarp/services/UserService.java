@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class UserService {
-	static String url ="jdbc:mysql://alarpss.cmieqxippee0.ap-southeast-1.rds.amazonaws.com:3306/alarp";
+	static String url ="jdbc:mysql://aa1hgjsge0u107w.c4ffploofhfk.ap-southeast-1.rds.amazonaws.com:3306/alarp";
 	static String username ="root";
 	static String passwords = "password";
 	

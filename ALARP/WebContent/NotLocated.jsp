@@ -13,11 +13,15 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <style>
 .bg-company-red {
-    background-color: darkred;
+    background-color: #f72c36;
 }
 
 .bg-company-white {
     background-color: white;
+}
+
+.bg-company-yellow {
+    background-color: #ffff26;
 }
 </style>
 <html>
@@ -567,7 +571,7 @@
 		</div> 
 		
 		<div class = "col-md-5 col-sm-3 col-xs-12 ">
-		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		<button onClick = "" type="submit" class="btn   signup-btn active bg-company-yellow"><font color ="white">N/A</font></button>
 		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
@@ -598,7 +602,7 @@
 		</div>  
 		
 		<div class = "col-md-5 col-sm-3 col-xs-12 ">
-		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		<button onClick = "" type="submit" class="btn   signup-btn active bg-company-yellow"><font color = "white">N/A</font></button>
 		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
@@ -624,7 +628,7 @@
 		</div>  
 		
 		<div class = "col-md-5 col-sm-3 col-xs-12 ">
-		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		<button onClick = "" type="submit" class="btn   signup-btn active bg-company-yellow"><font color = "white">N/A</font></button>
 		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
@@ -646,7 +650,7 @@
 		</div>  
 		
 		<div class = "col-md-5 col-sm-3 col-xs-12 ">
-		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		<button onClick = "" type="submit" class="btn   signup-btn active bg-company-yellow"><font color = "white">N/A</font></button>
 		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
@@ -669,7 +673,7 @@
 		</div>  
 		
 		<div class = "col-md-5 col-sm-3 col-xs-12 ">
-		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		<button onClick = "" type="submit" class="btn   signup-btn active bg-company-yellow"><font color="White">N/A</font></button>
 		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
@@ -694,11 +698,11 @@
 		</div>  
 		
 		<div class = "col-md-5 col-sm-3 col-xs-12 ">
-		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		<button onClick = "" type="submit" class="btn   signup-btn active bg-company-yellow"><font color = "white">N/A</font></button>
 		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes5()" type="submit" class="btn  btn-danger signup-btn active">No</button>
+		<button onClick = "Yes5()" type="submit" class="btn  btn-danger signup-btn active ">No</button>
 	</div>  
 	</div>
  	</div>
@@ -719,11 +723,11 @@
 		</div>  
 		
 		<div class = "col-md-5 col-sm-3 col-xs-12 ">
-		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		<button onClick = "" type="submit" class="btn   signup-btn active bg-company-yellow"><font color = "White">N/A</font></button>
 		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
-		<button type="submit" class="btn   btn-danger signup-btn active" data-toggle="modal" data-target="#Modal6">No</button>
+		<button type="submit" class="btn   btn-danger signup-btn active " data-toggle="modal" data-target="#Modal6">No</button>
 
 	</div>  
 	</div>
@@ -739,12 +743,12 @@ Is this true?	</label>
  	<div class = "row">
  	<div class = "col-md-6 col-md-offset-3">
  	<div class = "col-md-4 col-sm-3 col-xs-12 ">
-		<button onClick = "Yes7()" type="submit" class="btn btn-md btn-warning signup-btn active">Yes</button>
+		<button onClick = "Yes7()" type="submit" class="btn btn-md btn-warning signup-btn active"><font color = "White">Yes</font></button>
 	
 		</div>  
 		
 		<div class = "col-md-5 col-sm-3 col-xs-12 ">
-		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		<button onClick = "" type="submit" class="btn   signup-btn active bg-company-yellow"><font color = "white">N/A</font></button>
 		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
@@ -769,7 +773,7 @@ Is this true?	</label>
 		</div>  
 		
 		<div class = "col-md-5 col-sm-3 col-xs-12 ">
-		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		<button onClick = "" type="submit" class="btn   signup-btn active bg-company-yellow"><font color = "white">N/A</font></button>
 		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
@@ -792,7 +796,7 @@ Is this true?	</label>
 	
 		</div>  
 		<div class = "col-md-5 col-sm-3 col-xs-12 ">
-		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		<button onClick = "" type="submit" class="btn   signup-btn active bg-company-yellow"><font color = "White">N/A</font></button>
 		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
@@ -820,7 +824,7 @@ Is this true? 	</label>
 	
 		</div>  
 		<div class = "col-md-5 col-sm-3 col-xs-12 ">
-		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		<button onClick = "" type="submit" class="btn   signup-btn active bg-company-yellow"><font color = "white">N/A</font></button>
 		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
@@ -843,7 +847,7 @@ Is this true? 	</label>
 	
 		</div>  
 		<div class = "col-md-5 col-sm-3 col-xs-12 ">
-		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		<button onClick = "" type="submit" class="btn   signup-btn active bg-company-yellow"><font color = "White">N/A</font></button>
 		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
@@ -868,7 +872,7 @@ Is this true? 	</label>
 		</div>  
 		
 		<div class = "col-md-5 col-sm-3 col-xs-12 ">
-		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		<button onClick = "" type="submit" class="btn   signup-btn active bg-company-yellow"><font color = "White">N/A</font></button>
 		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
@@ -893,7 +897,7 @@ Is this true?	</label>
 	
 		</div>  
 		<div class = "col-md-5 col-sm-3 col-xs-12 ">
-		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		<button onClick = "" type="submit" class="btn   signup-btn active bg-company-yellow"><font color="White">N/A</font></button>
 		</div> 
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
 		<button type="submit" class="btn btn-md btn-danger signup-btn active" data-toggle="modal" data-target="#Modal13">No</button>
@@ -918,7 +922,7 @@ Is this true?	</label>
 		</div>  
 		
 		<div class = "col-md-5 col-sm-3 col-xs-12 ">
-		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		<button onClick = "" type="submit" class="btn   signup-btn active bg-company-yellow"><font color = "White">N/A</font></button>
 		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
@@ -942,7 +946,7 @@ Is this true?	</label>
 	
 		</div>  
 		<div class = "col-md-5 col-sm-3 col-xs-12 ">
-		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		<button onClick = "" type="submit" class="btn   signup-btn active bg-company-yellow"><font color = "White">N/A</font></button>
 		</div> 
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
 		<button type="submit" class="btn btn-md btn-danger signup-btn active" data-toggle="modal" data-target="#Modal15">No</button>
@@ -964,7 +968,7 @@ Is this true? 	</label>
 	
 		</div>  
 		<div class = "col-md-5 col-sm-3 col-xs-12 ">
-		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		<button onClick = "" type="submit" class="btn   signup-btn active bg-company-yellow"><font color ="White">N/A</font></button>
 		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
@@ -987,7 +991,7 @@ Is this true? 	</label>
 	
 		</div>  
 		<div class = "col-md-5 col-sm-3 col-xs-12 ">
-		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		<button onClick = "" type="submit" class="btn   signup-btn active bg-company-yellow"><font color ="White">N/A</font></button>
 		</div> 
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
 		<button type="submit" class="btn   btn-danger signup-btn active" data-toggle="modal" data-target="#Modal17">No</button>
@@ -1011,7 +1015,7 @@ Is this true? 	</label>
 		</div>  
 		
 		<div class = "col-md-5 col-sm-3 col-xs-12 ">
-		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		<button onClick = "" type="submit" class="btn   signup-btn active bg-company-yellow"><font color="white">N/A</font></button>
 		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
@@ -1034,7 +1038,7 @@ Is this true? 	</label>
 	
 		</div>  
 		<div class = "col-md-5 col-sm-3 col-xs-12 ">
-		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		<button onClick = "" type="submit" class="btn   signup-btn active bg-company-yellow"><font color ="white">N/A</font></button>
 		</div> 
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">
 		<button type="submit" class="btn   btn-danger signup-btn active" data-toggle="modal" data-target="#Modal19">No</button>
@@ -1056,7 +1060,7 @@ Is this true? 	</label>
 	
 		</div>  
 		<div class = "col-md-5 col-sm-3 col-xs-12 ">
-		<button onClick = "" type="submit" class="btn   signup-btn active">N/ A</button>
+		<button onClick = "" type="submit" class="btn   signup-btn active bg-company-yellow"><font color ="White">N/A</font></button>
 		</div> 
 		
 		<div class = "col-md-3 col-sm-3 col-xs-12 ">

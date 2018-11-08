@@ -12,7 +12,7 @@ import com.alarp.javabean.EvaluationBean;
 
 import org.apache.tomcat.dbcp.dbcp2.BasicDataSource;
 public class EvaluationService {
-	static String url ="jdbc:mysql://alarpss.cmieqxippee0.ap-southeast-1.rds.amazonaws.com:3306/alarp";
+	static String url ="jdbc:mysql://aa1hgjsge0u107w.c4ffploofhfk.ap-southeast-1.rds.amazonaws.com:3306/alarp";
 	static String username ="root";
 	static String password = "password";
 
@@ -130,7 +130,6 @@ public ArrayList getAllEvaluations() {
 			eb.setIdeval(rs.getInt(EvaluationBean.IDEVAL));
 			
 			evalLists.add(eb);
-			con.close();
 
 		}		
 
@@ -140,6 +139,35 @@ public ArrayList getAllEvaluations() {
 	}
 	
 	return evalLists;
+}
+
+public String getlastID() {
+	String sql = "SELECT MAX(ideval) FROM alarp.eval";
+	String results = null;
+	int trys;
+	try {
+		Class.forName("com.mysql.jdbc.Driver");
+		Connection con = DriverManager.getConnection(url,username,password);
+		PreparedStatement st = con.prepareStatement(sql);
+		ResultSet rs = st.executeQuery();
+		
+		while(rs.next()) {
+					  
+			trys = Integer.parseInt(rs.getString("MAX(ideval)"));
+			
+			
+			
+			results = Integer.toString(trys);
+			
+		
+		} 
+		con.close();
+	}catch (ClassNotFoundException | SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
+		
+		return results;
 }
 	
 public void decide(int id, String decision) {

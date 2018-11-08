@@ -12,7 +12,13 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <style>
+.bg-company-red {
+    background-color: #f72c36;
+}
 
+.bg-company-white {
+    background-color: white;
+}
 </style>
 <html>
 <head>
@@ -22,15 +28,14 @@
 <body style="background-color:lemonchiffon;">
 
 <div class="row">
-<nav class="nnavbar navbar-inverse navbar-static-top nav-upper nav1">
+<nav class="nnavbar navbar-inverse navbar-static-top nav-upper bg-company-red nav1">
 
 	<div class="container-fluid">
 		<a class="navbar-brand"><img src="Shell.png" alt="Dispute Bills" height = 120% >
         </a>
 		  <ul class="nav navbar-nav">
-		      <li><a href="GetAllEvalServlet"><font color="orange">Decide On Forms</font></a></li>
-		      <li><a href="WelcomeReview.jsp"><font color="orange">Submit Review</font></a></li>
-		      <li><a href="Display?page=Digital"><font color="orange">View Past Reviews</font></a></li>
+		      <li><a href="GetAllEvalServlet"><font color="white">Decide On Forms</font></a></li>
+		      <li><a href="WelcomeReview.jsp"><font color="white">Submit Evaluation</font></a></li>
 		 </ul>
 		<div class = "pull-right"><a href = "SignUp.jsp"><button type="button" class="btn btn-danger">Sign Up</button></a></div>
 		<div class = "pull-right"><button type="submit" class="btn btn-warning" onclick ="checkForm()">Login</button><br></div>

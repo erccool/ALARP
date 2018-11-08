@@ -16,13 +16,13 @@ import javax.mail.*;
 import javax.mail.internet.*;
 public class EmailSend {
 
-    public void send(){
+    public void send(String date, String ID){
     	String host ="smtp.gmail.com" ;
         String user = "evaluator.alarpterminal@gmail.com";
         String pass = "alarpeval123";
-        String to = "amiel_lumbuan@dlsu.edu.ph";
+        String to = "Larry.Cortez@shell.com";
         String from = "evaluator.alarpterminal@gmail.com";
-        String subject = "New Evaluation";
+        String subject =   "New Evaluation ID" + ID + " submitted on " + date;
         String messageText = "Kindly check the newly sent evaluation";
         boolean sessionDebug = false;
 
