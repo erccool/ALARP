@@ -279,9 +279,9 @@ public void addFullEvaluation (EvaluationBean e) {
 			+ EvaluationBean.Q19 + ","		
 			+ EvaluationBean.Q20 + ","
 			+ EvaluationBean.Q21 + ","
-			+ EvaluationBean.Q22 + ")"					
-			
-			+ "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+			+ EvaluationBean.Q22 + ","					
+			+ EvaluationBean.Q23 + ")"
+			+ "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 	
 	System.out.println("Hey this is the statement: " + sql); 
 	
@@ -315,6 +315,7 @@ public void addFullEvaluation (EvaluationBean e) {
 		st.setString(24, e.getQ20());
 		st.setString(25, e.getQ21());
 		st.setString(26, e.getQ22());
+		st.setString(27, e.getQ23());
 		st.executeUpdate();
 		con.close();
 

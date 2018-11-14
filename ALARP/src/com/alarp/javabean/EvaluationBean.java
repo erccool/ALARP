@@ -26,6 +26,7 @@ public class EvaluationBean {
 	public static final String Q20 = "q20";
 	public static final String Q21 = "q21";
 	public static final String Q22 = "q22";
+	public static final String Q23 = "q23";
 	public static final String DATE_SUBMITTED = "date_submitted";
 	public static final String DATE_INSPECTED = "date_inspected";
 	public static final String SME_DECISION = "sme_decision";
@@ -169,6 +170,13 @@ public class EvaluationBean {
 		this.q22 = q22;
 	}
 	private String q22;
+	public String getQ23() {
+		return q23;
+	}
+	public void setQ23(String q23) {
+		this.q23 = q23;
+	}
+	private String q23;
 	public String getType() {
 		return type;
 	}

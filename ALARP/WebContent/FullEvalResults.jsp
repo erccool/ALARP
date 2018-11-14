@@ -177,6 +177,7 @@ Berth data and parameters were extracted from Ship Shore Compatibility Check or 
     </div>
   </div> 
 	</div>
+	</div>
  	</div>
  	<br><label for="section1">Task 2</label>
  	<div id="section1" class = "row"><div class = "col-md-6 col-md-offset-3">
@@ -256,7 +257,12 @@ Alternative terminals available for the deal due consideration that a vessel fee
 
 	</div>
  	</div>
- 	
+ 	</div>
+ 	</div>
+ 	</div>
+ 	</div>
+ 	</div>
+ 	</div>
  	<br><br><br><br><label for="section2">Task 3</label><br><br>
  	<div id = "section2"class = "row"><div class = "col-md-6 col-md-offset-3">
  	

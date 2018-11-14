@@ -83,7 +83,7 @@ public class AddFullEvalServlet extends HttpServlet {
 		eb.setQ20(request.getParameter(EvaluationBean.Q20));
 		eb.setQ21(request.getParameter(EvaluationBean.Q21));
 		eb.setQ22(request.getParameter(EvaluationBean.Q22));
-
+		eb.setQ23(request.getParameter(EvaluationBean.Q23));
 
 		
 		

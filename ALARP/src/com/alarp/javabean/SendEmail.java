@@ -9,7 +9,7 @@ final String senderEmailID = "edward_curugan@dlsu.edu.ph";
 final String senderPassword = "Oggbog12!";
 final String emailSMTPserver = "smtp.gmail.com";
 final String emailServerPort = "465";
-String receiverEmailID = "edward_curugan@dlsu.edu.ph";
+String receiverEmailID = "amiel_lumbuan@dlsu.edu.ph";
 static String emailSubject = "Test Mail";
 static String emailBody = ":)";
   public SendEmail(String receiverEmailID,String Subject,

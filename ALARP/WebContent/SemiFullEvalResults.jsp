@@ -136,7 +136,7 @@ Berth data and parameters were extracted from Ship Shore Compatibility Check or 
   </div> 
 	</div>
  	</div>
- 	<br><label for="section1">Task 2</label>
+ 	<br><br><label for="section1">Task 2</label>
  	<div id="section1" class = "row"><div class = "col-md-6 col-md-offset-3">
  	
  The terminal has been inspected by an AP or a company approved Contractor in the past 5 years. All former high observations, if any were closed. 

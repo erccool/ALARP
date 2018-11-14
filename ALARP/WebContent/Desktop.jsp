@@ -800,7 +800,7 @@ Is this true?	</label>
 	</div>  
 	</div>
  	</div>
- 	
+ 	</div>
  	</br></br><label for="comment">AP Research Methodology</label>
  	<div class = "row" id = "comment"><div class = "col-md-6 col-md-offset-3">
  	<label for="email">
